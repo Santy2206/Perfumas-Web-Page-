@@ -2,9 +2,8 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  color: white;
-  
   font-family: Montserrat, sans-serif;
+  
 }
 
 body {
@@ -13,7 +12,8 @@ body {
   outline: auto;
   min-height: 100vh; 
   height:2000px;
-  background-color: rgb(31,4,4);
+  /* background-color: rgb(31,4,4); */
+  background-color: #FC0F0F;
 }
 
 .part-one {
@@ -29,10 +29,12 @@ body {
   flex-direction: column;
   font-size: 16px;
   padding: 15px;
-  height: 500px;
+  height: 100vh;
+  color: white;
   background-color:gray;
-  background-image:url("../Images/AdobeStock_776907471_Preview-transformed.jpeg");
-  background-size: cover;
+  /* background-image:url("../Images/AdobeStock_776907471_Preview-transformed.jpeg"); */
+  background-image:url("https://as1.ftcdn.net/v2/jpg/08/03/54/20/1000_F_803542075_PHT5r2cDQ28y79bsBTVJEJhj1iLZayuG.jpg");
+  background-size: cover; 
   background-blend-mode:multiply;
  
   
@@ -73,7 +75,7 @@ ul{
 
 li{
   list-style: none; 
-  
+
   /* color:rgba(195,133,33,255); */
   
   padding: 15px;
@@ -81,6 +83,7 @@ li{
 }
 a{
   text-decoration: none;
+  color: inherit;
 }
 #cost{
  color: white;
@@ -96,9 +99,10 @@ a{
 }
 .hero-text {
   display: flex;
+  flex-direction: column;
   flex-grow: 1;
+  align-items: center;
   justify-content: center;
-  align-content: center;
   
 }
 #sell-phase{
@@ -106,5 +110,57 @@ a{
   display: flex;
   align-items: center;
   font-weight: bold;
+  padding-top: 110px;
   /* color:rgba(195,133,33,255); */
+}
+#call-to-action{
+  position: relative;
+  background: #fff;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  letter-spacing:0.1em;
+  font-weight: 400;
+  padding: 10px 30px;
+  transition: 0.5s;
+}
+#call-to-action:hover 
+{
+  background: var(--clr);
+  color: var(--clr) ;
+  letter-spacing: 0.2em; 
+  box-shadow: 0 0 35px var(--clr);
+}
+
+#call-to-action:before{
+  content:"";
+  position: absolute;
+  inset:2px;
+  background:#27282c ;
+}
+#call-to-action span {
+  position: relative;
+  z-index: 1;
+}
+#call-to-action i {
+  position: absolute;
+  inset:0;
+  display: block;
+} 
+#call-to-action i::before {
+  content: '';
+  position: absolute;
+  top:0;
+  left: 80%;
+  width:10px;
+  height:4px;
+  background: #27282c;
+  transition: 0.5s;
+  transform:translateX(-50%)skewX(325deg);
+
+
+}
+#call-to-action::hover, i::before{
+  width: 20px;
+  left:20%;
 }
