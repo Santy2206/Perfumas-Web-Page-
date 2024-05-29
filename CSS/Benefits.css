@@ -1,0 +1,14 @@
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  
+
+} 
+.card {
+  width: 600px;
+  font-size: 40px;
+  color: white;
+  margin-top: 20px; 
+  
+}

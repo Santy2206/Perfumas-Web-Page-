@@ -5,9 +5,13 @@
   font-family: Montserrat, sans-serif;
 
 }
+html{
+  display: flex;
+}
 
 body {
-  min-height: 100%;
+  flex-grow: 1;
+  
 }
  
 .header {
@@ -15,8 +19,8 @@ body {
   flex-direction: column;
   font-size: 16px;
   padding: 15px;
-  height: 100vh;
-  height: 100svh;
+  min-height: 100vh;
+  min-height: 100svh;
   color: white;
   background-color:gray;
   
@@ -100,6 +104,9 @@ a{
   
 }
 #sub-sell-phase {
+  display: flex;
+  flex-direction: column;
+
   font-size: 25px;
 }
 .content{
@@ -111,8 +118,6 @@ a{
   padding: 50px;
 }
 .part.two {
-  
-  height:100vh ;
   display: flex;
   flex-direction: column;
   background-color: #9b3228;
@@ -130,6 +135,7 @@ a{
   justify-content: center;
   align-items: center;
   gap: 5em;
+  flex-wrap: wrap;
 
 }
 #image-container-one{
@@ -169,25 +175,24 @@ a{
 
 
 .part.three {
-  height:100vh;
   background-color: #5f1b17;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
  
 }
-.three-content{
+.cards-container {
   display: flex;
-  flex-grow: 1;
-}
+  flex-wrap: wrap;
+  justify-content: space-around;
+  
 
-.cards {
-  display: flex;
-  flex-direction: column;
-
-}
+} 
 .card {
+  width: 600px;
+  font-size: 40px;
   color: white;
+  margin-top: 20px; 
+  
 }
 
 .footer {
