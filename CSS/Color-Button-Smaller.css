@@ -1,15 +1,18 @@
-.call-to-action{
+
+
+.call-to-action-smaller{
+  top: 30px;
   position: relative;
   background: #fff;
   color: #fff;
   text-transform: uppercase;
-  font-size: 2em;
+  font-size: 1em;
   letter-spacing:0.1em;
   font-weight: 400;
   padding: 10px 30px;
   transition: 0.5s;
 }
-.call-to-action:hover 
+.call-to-action-smaller:hover 
 {
   background: var(--clr);
   color: var(--clr) ;
@@ -17,22 +20,22 @@
   box-shadow: 0 0 35px var(--clr);
 }
 
-.call-to-action:before{
+.call-to-action-smaller:before{
   content:"";
   position: absolute;
   inset:2px;
   background:#27282c ;
 }
-.call-to-action span {
+.call-to-action-smaller span {
   position: relative;
   z-index: 1;
 }
-.call-to-action i {
+.call-to-action-smaller i {
   position: absolute;
   inset:0;
   display: block;
 } 
-.call-to-action i::before {
+.call-to-action-smaller i::before {
   content: '';
   position: absolute;
   top:0;
@@ -45,11 +48,11 @@
 
 
 }
-.call-to-action:hover i::before{
+.call-to-action-smaller:hover i::before{
   width: 20px;
   left:20%;
 }
-.call-to-action i::after {
+.call-to-action-smaller i::after {
   content: '';
   position: absolute;
   bottom:0;
@@ -62,7 +65,7 @@
 
 
 }
-.call-to-action:hover i::after{
+.call-to-action-smaller:hover i::after{
   width: 20px;
   left:80%;
 }
