@@ -5,21 +5,13 @@
   font-family: Montserrat, sans-serif;
 
 }
-html{
-  display: flex;
+body{
+  width: 100%;
 }
 .container{
   border:5px solid black;
-  padding: 5px 20px;
 }
 
-body {
-  flex-grow: 1;
-
-  
-}
-
- 
 .header {
   display: flex;
   flex-direction: column;
@@ -36,7 +28,7 @@ body {
 }
 .logo-container {
   background-blend-mode: multiply;
-  flex-shrink: 1;
+  /* flex-shrink: 1; */
 }
 
 .logo{
@@ -55,6 +47,7 @@ body {
 }
 ul{
   display: flex;
+  flex-wrap: nowrap;
   gap:3em;
 }
 
@@ -83,6 +76,7 @@ a{
   font-size: 50px;
   display: flex;
   align-items: center;
+  text-align: center;
   font-weight: bold;
   padding-top: 110px;
   
@@ -114,15 +108,12 @@ a{
   display: flex;
   padding: 0;
   align-items: center;
-  gap: 5em;
   flex-wrap: wrap; 
 
 }
-#image-container-one{
-}
 #personalize-image {
    background-color:gray; 
-   width: 900px;
+   width: 800px;
 
 }
 
@@ -130,21 +121,22 @@ a{
   display: flex;
   flex-direction: column;
   color: white;
-  width: 200px;
   flex-grow: 1;
   gap: 2vh;
+  width: 200px;
+  height: 450px;
+  padding: 20px;
   /* padding-bottom: 10px; */
 
 } 
  .inside-text-information-header{
   display: flex;
-  align-items: center;
+  text-align: center;
   font-size: 40px;
 }
-/* .inside-text-information-text{
-  flex-grow: 1;
+.inside-text-information-text p{
   font-size: 30px;
-}  */
+} 
 
 
 .part.three {
