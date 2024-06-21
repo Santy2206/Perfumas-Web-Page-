@@ -5,170 +5,117 @@
   padding-left: 0.5rem;
   padding-right: 0.5rem;
 }
-
-@media (width<=1440px) {
-  
-  }
-
-/* xl */
-@media (width<=1024px) {
+@media (max-width:2800px) {
   .container{
-    max-width: 1024px;
+    max-width: 2800px;
+    padding:0px 40px 40px 40px;
   }
-  
-  
-}
+  .logo{
+    width: 300px;
+  }
+  #search-icon{
+    padding-top: 20px;
+  }
+  li{
+   font-size: 35px; 
+  }
+  .hero-text{
+    gap:3em;
+  }
 
-/* lg */
-@media (width<=768px) {
-  .container{
-    max-width: 768px;
-  }
-  .header{
-    font-size: 10px;
-    text-align: center;
-  }
-  nav{
-    display: none;
-  }
   #sell-phase{
-    font-size: 30px;
+    font-size: 65px;
   }
   #sub-sell-phase {
-    font-size: 20px;
+    font-size: 40px;
+  }
+  .call-to-action {
+    font-size: 2.7em;
+  }
+  .text-information{
+
   }
   .text-information-header{
-    font-size: 19px;
-    padding: 20px 0px;
+    font-size: 55px;
+    padding: 40px 0px;
   }
   #image-container-one{
-    width:100% ;
+    width: 72%;
   }
   #personalize-image{
     width: 100%;
   }
   .part {
-    gap:0em;
+    gap:1.5em;
+  }
+  .two-content {
+    gap: 3em;
   }
   .inside-text-information-header{
-    font-size: 30px;
+    font-size: 55px;
   }
   .inside-text-information-text p{
-    font-size: 30px;
+    font-size: 55px;
   }
+  .card .face {
+    height: 400px;
+    width:530px;
+  }
+  .card .face1 {
+    background-color: #ff1867;
+    transform: translateY(0);
+    box-shadow: none;
+    height: 250px;
+
+  }
+  .card .face1 .card-inside-content h3 {
+    opacity: 1;
+    color: black;
+    font-size: 1.5em;
+    right: 105px;
+    top:90px
+  }
+  .card .face2 {
+    transform: translateY(0);
+  }
+  .card .face2 .card-inside-content p {
+    position: relative;
+    font-size: 33px;
+    top: 60px;
+
+  }
+  .call-to-action-smaller {
+    font-size:1.5em;
+  }
+
+}
+@media (max-width:2500px) {
   
+  }
+
+/* xl */
+@media (max-width:1500px) {
+  
+}
+
+/* lg */
+@media (max-width:1300px) {
   
   
 }
 
 /* md */
 @media (width<=425px) {
-  .container{
-    max-width: 425px;
-  }
-  .header{
-    font-size: 8px;
-    text-align: center;
-  }
-  nav{
-    display: none;
-  }
-  #sell-phase{
-    font-size: 25px;
-  }
-  #sub-sell-phase {
-    font-size: 20px;
-  }
-  .text-information-header{
-    font-size: 19px;
-    padding: 20px 0px;
-  }
- 
-  #personalize-image{
-    width: 100%;
-  }
-  .part {
-    gap:0em;
-  }
-  .inside-text-information-header{
-    font-size: 30px;
-  }
-  .inside-text-information-text p{
-    font-size: 25px;
-  }
+  
 }
 
 /* sm */
 @media (width<=375px) {
-  .container{
-    max-width: 375px;
-  }
-  .header{
-    font-size: 8px;
-    text-align: center;
-  }
-  nav{
-    display: none;
-  }
-  #sell-phase{
-    font-size: 25px;
-  }
-  #sub-sell-phase {
-    font-size: 20px;
-  }
-  .text-information-header{
-    font-size: 19px;
-    padding: 20px 0px;
-  }
   
-  #personalize-image{
-    width: 100%;
-  }
-  .part {
-    gap:0em;
-  }
-  .inside-text-information-header{
-    font-size: 30px;
-  }
-  .inside-text-information-text p{
-    font-size: 25px;
-  }
 }
 /* xs */
 @media(width<=320px){
-  .container{
-    width: 350px;
-  }
-  .header{
-    font-size: 8px;
-    text-align: center;
-  }
-  nav{
-    display: none;
-  }
-  #sell-phase{
-    font-size: 25px;
-  }
-  #sub-sell-phase {
-    font-size: 20px;
-  }
-  .text-information-header{
-    font-size: 19px;
-    padding: 20px 0px;
-  }
-  #personalize-image{
-    width: 100%;
-  }
-  .part {
-    gap:0em;
-  }
-  .inside-text-information-header{
-    font-size: 30px;
-  }
-  .inside-text-information-text p{
-    font-size: 25px;
-  }
- 
+  
   }
   
 

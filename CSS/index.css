@@ -14,9 +14,9 @@ body{
 
 .header {
   display: flex;
+  text-align: center;
   flex-direction: column;
   flex-grow: 1;
-  font-size: 16px;
   min-height: 100vh;
   min-height: 100svh;
   color: white;
@@ -39,10 +39,7 @@ body{
 }
 
 .logo{
-  width: auto;
-  height: 90px;
-
-
+  width: 170px;
 }
 
 nav{
@@ -65,7 +62,6 @@ a{
   color: inherit;
 }
 #search-icon{
-  position: relative;
   padding-top: 10px;
 }
 #cost{
@@ -117,15 +113,16 @@ a{
 .two-content {
   display: flex;
   padding: 0;
-  align-items: center;
   flex-wrap: wrap; 
   gap: 1em;
 
 }
-#personalize-image {
-   background-color:gray; 
-   width: 800px;
-
+#image-container-one{
+  width: 73%;
+}
+#personalize-image{
+  width: 100%;
+  background-color: gray;
 }
 
  .text-information{
@@ -136,7 +133,7 @@ a{
   gap: 2em;
   width: 200px;
   height: 450px;
-  padding: 20px;
+  padding: 0 20px;
   /* padding-bottom: 10px; */
 
 } 
