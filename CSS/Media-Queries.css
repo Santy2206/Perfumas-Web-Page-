@@ -2,13 +2,16 @@
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
 }
-@media (max-width:2800px) {
+@media (max-width:280rem) {
+  :root {
+    --fs-xl:55px;
+    --fs-600:40px;
+    --fs-500:65px;
+    --fs-400:35px;
+  }
   .container{
-    max-width: 2800px;
-    padding:0px 40px 40px 40px;
+    max-width: 280rem;
   }
   .logo{
     width: 300px;
@@ -17,26 +20,23 @@
     padding-top: 20px;
   }
   li{
-   font-size: 35px; 
+   font-size: var(--fs-400);  
   }
   .hero-text{
     gap:3em;
   }
 
   #sell-phase{
-    font-size: 65px;
+    font-size:var(--fs-500);
   }
   #sub-sell-phase {
-    font-size: 40px;
+    font-size: var(--fs-600);
   }
   .call-to-action {
     font-size: 2.7em;
   }
-  .text-information{
-
-  }
   .text-information-header{
-    font-size: 55px;
+    font-size: var(--fs-xl);
     padding: 40px 0px;
   }
   #image-container-one{
@@ -52,10 +52,10 @@
     gap: 3em;
   }
   .inside-text-information-header{
-    font-size: 55px;
+    font-size: var(--fs-xl);
   }
   .inside-text-information-text p{
-    font-size: 55px;
+    font-size: var(--fs-xl);
   }
   .card .face {
     height: 400px;
@@ -72,7 +72,7 @@
     opacity: 1;
     color: black;
     font-size: 1.5em;
-    right: 105px;
+    right: 120px;
     top:90px
   }
   .card .face2 {
@@ -106,7 +106,6 @@
 
 /* md */
 @media (width<=425px) {
-  
 }
 
 /* sm */

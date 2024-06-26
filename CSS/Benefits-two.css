@@ -1,3 +1,11 @@
+:root{
+  --fs-500:65px;
+  --fs-400:40px;
+  --fs-300:30px;
+  --fs-250:25px;
+  --fs-200:20px;
+  
+}
 
 
 .cards-container {
@@ -44,7 +52,7 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: end;
-  font-size: 25px;
+  font-size:var(--fs-250);
   
 
 

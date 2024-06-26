@@ -1,9 +1,13 @@
+html{
+  font-size: 62.5%;
+}
+
 :root{
-  --fs-500:65px;
-  --fs-400:40px;
-  --fs-300:30px;
-  --fs-250:25px;
-  --fs-200:20px;
+  --fs-650:6.5rem;
+  --fs-400:4rem;
+  --fs-300:3rem;
+  --fs-250:2.5rem;
+  --fs-200:2.0rem;
   
 }
 
@@ -49,7 +53,7 @@ body{
 }
 
 .logo{
-  width: 170px;
+  width: 15%;
 }
 
 nav{
@@ -59,7 +63,7 @@ nav{
 
 ul{
   display: flex;
-  gap:3em;
+  gap:var(--fs-650);
 }
 
 li{
@@ -72,7 +76,7 @@ a{
   color: inherit;
 }
 #search-icon{
-  padding-top: 10px;
+  padding-top: 0.5em;
 }
 #cost{
  color: white;
@@ -92,9 +96,7 @@ a{
   display: flex;
   align-items: center;
   text-align: center;
-  font-weight: bold;
-  padding-top: 110px;
-  
+  font-weight: bold;  
 }
 #sub-sell-phase {
   display: flex;
@@ -109,10 +111,9 @@ a{
   flex-direction: column;
   flex-wrap: wrap;
   gap: 1.5em;
-  padding-bottom: 50px;
 }
 .text-information-header {
-  padding: 40px 0px;
+  padding: 1.5em 1em ;
   display: flex;
   font-size: var(--fs-300);
   color: white;
@@ -122,39 +123,22 @@ a{
 }
 .two-content {
   display: flex;
-  padding: 0;
-  flex-wrap: wrap; 
-  gap: 1em;
+  flex-wrap: wrap;
+  color: white;
+  font-size: var(--fs-300);
+  padding:var(--fs-200);
+  gap:var(--fs-300);
 
 }
-#image-container-one{
-  width: 73%;
-}
-#personalize-image{
-  width: 100%;
-  background-color: gray;
+.personalize-image{
+  width: 63%;
 }
 
  .text-information{
-  display: flex;
-  flex-direction: column;
+  width:34%;
   color: white;
-  flex-grow: 1;
   gap: 2em;
-  width: 200px;
-  height: 450px;
-  padding: 0 20px;
-  /* padding-bottom: 10px; */
 
-} 
- .inside-text-information-header{
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  font-size: var(--fs-300);
-}
-.inside-text-information-text p{
-  font-size: var(--fs-300);
 } 
 
 
@@ -173,12 +157,12 @@ a{
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 400px;
+  width: 20%;
 
 
 }
 #footer-logo {
-  width: 300px;
+  width:100%;
 }
 #slogan {
   color: white;
