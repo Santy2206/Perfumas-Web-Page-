@@ -1,18 +1,17 @@
 
-@media (max-width:256rem) {
+@media (max-width:230rem) {
   :root {
-    --fs-650:13rem;
-    --fs-400:10rem;
-    --fs-300:7rem;
-    --fs-250:5.5rem;
-    --fs-200:5rem;
+    --fs-400:7.5rem;
+    --fs-300:6rem;
+    --fs-250:5rem;
+    --fs-200:4.5rem;
     }
 
     .call-to-action{
       font-size: var(--fs-200);
     }
-    .cards-container {
-      gap: var(--fs-650);
+    .cards-container{
+      gap:10rem;
     }
     .fa-2xl {
       font-size: 15rem;
@@ -51,11 +50,7 @@
   
   }
 
-@media (max-width:230rem) {
-  .cards-container {
-    gap: var(--fs-650);
-    width: 74%;
-  }
+@media (max-width:100rem) {
   .card .face{
     width: 100rem;
   }
@@ -63,18 +58,20 @@
     right: 31rem;
   }
 }
-  
-
-
 
 /* xl */
-@media (max-width:140rem) {
+@media (max-width:50rem) {
   :root {
-    --fs-650:8.5rem;
-    --fs-400:6rem;
-    --fs-300:4rem;
-    --fs-250:3.5rem;
-    --fs-200:3rem;
+    --fs-400:4rem;
+    --fs-300:3rem;
+    --fs-250:2.5rem;
+    --fs-200:2rem;
+    }
+    .two-content{
+      gap: var(--fs-250);
+    }
+    .personalize-image{
+      width: 73%;
     }
     .cards-container {
       width: 100%;
@@ -82,11 +79,11 @@
     }
     .fa-2xl{
       padding-top:0;
-      font-size: 4rem;
+      font-size: 8rem;
     }
     .card .face {
-      height: 41rem;
-      width:41rem;
+      height:30rem;
+      width:32rem;
     }
     .card .face1 {
       background-color:#27282c;
@@ -99,26 +96,47 @@
       position: static;
       opacity: 0.02;
       color: white;
-      right: 0px;
-      top:0px;
       font-size: 4rem;
     }
     .card .face2 {
       transform: translateY(-50%);
     }
     .card .face2 .card-inside-content p {
-      font-size: 2.8rem;
+      font-size: 2.3rem;
       top: 6px;
   
     }
     .call-to-action-smaller {
-      font-size:2rem;
+      font-size:1.75rem;
     }
 }
 
 /* lg */
-@media (max-width:1300px) {
-  
+@media (max-width:20rem) {
+  :root {
+    --fs-400: 3.5rem;
+    --fs-300: 2.6rem;
+    --fs-250: 2rem;
+    --fs-200: 1.5rem;
+    }
+    .personalize-image {
+      width: 72.9%;
+    }
+    .card .face {
+      height: 23rem;
+      width: 23rem;
+    }
+    .card .face1 .card-inside-content h3 {
+      font-size: 2.5rem;
+      top: 10px;
+    }
+    .card .face2 .card-inside-content p{
+      top: 10px;
+      font-size: 1.79rem;
+    }
+    .call-to-action-smaller{
+      font-size: 1.1rem;
+    }
   
 }
 
