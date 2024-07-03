@@ -5,6 +5,7 @@
   flex-wrap: wrap;
   align-items: center;
   padding: 0;
+  gap: var(--fs-200)
 }
 .card{
   display: flex;
@@ -38,12 +39,11 @@
 }
 .card .face1 .card-inside-content{
   display: flex;
-  height: 220px;
   text-align: center;
-  flex-wrap: wrap;
   justify-content: center;
-  align-items: end;
+  align-items: center;
   font-size:2rem;
+  flex-direction: column;
   
 
 
@@ -88,5 +88,5 @@
 .card .face2 .card-inside-content p{
 
   flex-direction: column;
-  font-size: 20px;
+  font-size: 2rem;
 }

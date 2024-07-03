@@ -1,25 +1,43 @@
 
-@media (max-width:230rem) {
+@media (max-width:2560px) {
   :root {
-    --fs-400:7.5rem;
-    --fs-300:6rem;
-    --fs-250:5rem;
-    --fs-200:4.5rem;
+    --fs-400:6.5rem;
+    --fs-300:5.5rem;
+    --fs-250:4rem;
+    --fs-200:3.5rem;
     }
-
+    i.fa-solid.fa-bars {
+      display: none;
+    }
+    
     .call-to-action{
       font-size: var(--fs-200);
     }
+    .two-content {
+      gap: var(--fs-200)
+    }
+    .text-information {
+      display: flex;
+      flex-direction: column;
+      gap:0.5rem;
+    }
+    .text-information h3{
+      text-align: center;
+    }
+
+    .personalize-image{
+      width:72.9%;
+    }
     .cards-container{
-      gap:10rem;
+      gap: var(--fs-400);
     }
     .fa-2xl {
       font-size: 15rem;
-      padding-top: 5rem;
+      top: 15rem;
     }
     .card .face {
       height: 60rem;
-      width:75rem;
+      width:90rem;
     }
     .card .face1 {
       background-color: #ff1867;
@@ -31,7 +49,7 @@
     .card .face1 .card-inside-content h3 {
       opacity: 1;
       color: black;
-      right:18rem;
+      right:25rem;
       top:20rem;
       font-size: 5rem;
     }
@@ -49,18 +67,42 @@
     }
   
   }
-
-@media (max-width:100rem) {
-  .card .face{
-    width: 100rem;
-  }
-  .card .face1 .card-inside-content h3{
-    right: 31rem;
-  }
-}
+@media (max-width:2050px) {
+  :root {
+    --fs-400:5rem;
+    --fs-300:4rem;
+    --fs-250:3.5rem;
+    --fs-200:3rem;
+    }
+    .fa-2xl {
+      font-size: 10rem;
+    }
+    .card .face {
+      height: 40rem;
+      width:70rem;
+    }
+    .card .face1{
+      height: 30rem;
+    }
+    .card .face1 .card-inside-content h3 {
+      font-size: 3.5rem;
+      top: 18rem;
+      right:22rem;
+    }
+    .card .face2 .card-inside-content p {
+      position: relative;
+      font-size:3.5rem;
+      top: 60px;
+  
+    }
+    .call-to-action-smaller {
+      font-size: 3rem;
+    }
+  
+} 
 
 /* xl */
-@media (max-width:50rem) {
+@media (max-width:1600px) {
   :root {
     --fs-400:4rem;
     --fs-300:3rem;
@@ -75,16 +117,18 @@
     }
     .cards-container {
       width: 100%;
-      gap: 0rem;
+      gap: 2rem;
     }
     .fa-2xl{
-      padding-top:0;
+      position: static;
       font-size: 8rem;
+      padding: 4rem;
     }
     .card .face {
       height:30rem;
       width:32rem;
     }
+
     .card .face1 {
       background-color:#27282c;
       transform: translateY(50%);
@@ -112,10 +156,10 @@
 }
 
 /* lg */
-@media (max-width:20rem) {
+@media (max-width:1410px) {
   :root {
     --fs-400: 3.5rem;
-    --fs-300: 2.6rem;
+    --fs-300: 2.5rem;
     --fs-250: 2rem;
     --fs-200: 1.5rem;
     }
@@ -139,7 +183,69 @@
     }
   
 }
+@media (max-width:1100px){
+  :root {
+    --fs-400: 3rem;
+    --fs-300: 2rem;
+    --fs-250: 1.5rem;
+    --fs-200: 1rem;
+    }
+    .cards-container{
+      gap: var(--fs-400);
+    }
+    .fa-2xl {
+      font-size: 5rem;
+    }
+    .card .face {
+      height: 40rem;
+      width:40rem;
+    }
+    .card .face1 .card-inside-content h3 {
+      font-size: 2rem;
+    }
+    .card .face2 .card-inside-content p {
+      font-size:5rem;
+  
+    }
+    .call-to-action-smaller {
+      font-size: 1rem;
+    }
 
+@media (max-width:800px){
+  :root {
+    --fs-400: 3rem;
+    --fs-300: 2rem;
+    --fs-250: 1.5rem;
+    --fs-200: 1rem;
+    }
+    .personalize-image{
+      width: 100%;
+    }
+    .text-information {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      width: 100%;
+    }
+    .text-information h3{
+      text-align: center;
+
+    }
+    
+}
+@media(max-width:700px){
+  .logo{
+    width:12rem ;
+  }
+  nav{
+    display: none;
+  }
+  i.fa-solid.fa-bars {
+    display: inline;
+    font-size:2rem;
+  }
+
+}
 /* md */
 @media (width<=425px) {
 }
