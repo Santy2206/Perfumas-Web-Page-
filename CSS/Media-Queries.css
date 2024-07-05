@@ -47,19 +47,24 @@
   
     }
     .card .face1 .card-inside-content h3 {
-      opacity: 1;
-      color: black;
-      right:25rem;
-      top:20rem;
-      font-size: 5rem;
+      
+      display: none;
     }
     .card .face2 {
       transform: translateY(0);
     }
+    .card .face2 .card-inside-content {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+  }
+    .card .face2 .card-inside-content .fantom-h3{
+      font-size: 5rem;
+
+    }
+   
     .card .face2 .card-inside-content p {
-      position: relative;
       font-size:5rem;
-      top: 60px;
   
     }
     .call-to-action-smaller {
@@ -84,16 +89,14 @@
     .card .face1{
       height: 30rem;
     }
-    .card .face1 .card-inside-content h3 {
+    .card .face2 .card-inside-content {
+      gap:1rem;
+    }
+    .card .face2 .card-inside-content .fantom-h3{
       font-size: 3.5rem;
-      top: 18rem;
-      right:22rem;
     }
     .card .face2 .card-inside-content p {
-      position: relative;
       font-size:3.5rem;
-      top: 60px;
-  
     }
     .call-to-action-smaller {
       font-size: 3rem;
@@ -136,7 +139,11 @@
       height: none;
   
     }
+    .card .face2 .card-inside-content .fantom-h3{
+      display: none;
+    }
     .card .face1 .card-inside-content h3 {
+      display: inline;
       position: static;
       opacity: 0.02;
       color: white;
@@ -197,21 +204,21 @@
       font-size: 5rem;
     }
     .card .face {
-      height: 40rem;
-      width:40rem;
+      height: 20rem;
+      width:20rem;
     }
     .card .face1 .card-inside-content h3 {
       font-size: 2rem;
     }
     .card .face2 .card-inside-content p {
-      font-size:5rem;
+      font-size:1.53rem;
   
     }
     .call-to-action-smaller {
-      font-size: 1rem;
+      font-size: 0.956rem;
     }
-
-@media (max-width:800px){
+  }
+@media (max-width:950px){
   :root {
     --fs-400: 3rem;
     --fs-300: 2rem;
@@ -227,13 +234,47 @@
       gap: 0.5rem;
       width: 100%;
     }
-    .text-information h3{
-      text-align: center;
+    .fa-2xl {
+      font-size: 5rem;
+    }
+    .card .face {
+      height: 25rem;
+      width:30rem;
+    }
+    .card .face1 {
+      background-color: #ff1867;
+      transform: translateY(0);
+      box-shadow: none;
+      height:10rem;
+  
+    }
+    .card .face2 .card-inside-content .fantom-h3{
+      display: inline;
+      font-size: 2rem;
 
     }
+    .card .face1 .card-inside-content h3 {
+      display: none;
+    }
+    .card .face2 {
+      transform: translateY(0);
+    }
+    .card .face2 .card-inside-content p {
+      font-size:2rem;  
+    }
+    .call-to-action-smaller {
+      font-size: 1.5rem;
+    }
+   
     
 }
 @media(max-width:700px){
+  :root {
+    --fs-400: 3rem;
+    --fs-300: 2rem;
+    --fs-250: 1.5rem;
+    --fs-200: 1rem;
+    }
   .logo{
     width:12rem ;
   }
@@ -244,20 +285,38 @@
     display: inline;
     font-size:2rem;
   }
+  .card{
+    width:100% ;
+    align-items: center;
+  }
+  .card .face {
+    width:60% ;
+  }
+  .card .face1{
+    height: 15rem;
+  }
+  .card .face1 .card-inside-content h3{
+    right: 10.5rem;
+  }
+  .card .face2 {
+    height:30rem;
+  }
+
+
 
 }
 /* md */
-@media (width<=425px) {
-}
-
-/* sm */
-@media (width<=375px) {
-  
+@media (max-width:470px) {
+  .card .face{
+    width:90%;
+  }
 }
 /* xs */
-@media(width<=320px){
-  
+@media(max-width:350px){
+  .call-to-action-smaller {
+    font-size: 1.2rem;
   }
+}
   
 
 

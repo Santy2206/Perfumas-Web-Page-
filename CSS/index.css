@@ -118,6 +118,7 @@ a{
   color: white;
   font-weight: 900;
   justify-content: center;
+  text-align: center;
  
 }
 .two-content {
@@ -150,6 +151,7 @@ a{
   height:50vh;
   height: 50svh;
   background-color: black;
+  display: flex;
 }
 .footer-logo-container{
   display: flex;
@@ -164,4 +166,5 @@ a{
 }
 #slogan {
   color: white;
+  font-size: 2rem;
 }
