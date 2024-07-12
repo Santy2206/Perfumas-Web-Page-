@@ -26,7 +26,7 @@ body{
   padding: 0 var(--fs-400);
 }
 
-.Hero {
+.hero {
   display: flex;
   text-align: center;
   flex-direction: column;
@@ -158,15 +158,12 @@ a{
   width: 20%;
   gap: 1rem;
 }
-.footer-logo-container{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+
 #footer-logo {
   width:100%;
 }
 #slogan {
+  text-align: center;
   font-size: var(--fs-250);
 }
 #mission{
@@ -176,8 +173,8 @@ a{
   flex-grow: 1;
   display: flex;
   flex-direction: column;
-  min-height:28rem;
-  padding: 2rem;
+  gap: 4rem;
+  padding-top:3rem;
 }
 .footer-links{
   display: flex;
@@ -188,23 +185,59 @@ a{
   display: flex;
   flex-direction: column;
 }
+
 .footer-links h3{
-  font-size: var(--fs-250);
+  font-size: var(--fs-300);
+
 }
 .footer-links li {
-  font-size:var(--fs-200) ;
+  font-size:var(--fs-250) ;
+}
+.footer-links li{
+  opacity: 0.3;
+}
+.footer-links li:hover{
+  opacity: 1;
+  transition: 0.5s;
+
 }
 .footer-links span{
   gap: 1rem;
 }
 .footer-links i{
   font-size: 2rem;
+  opacity:0.3;
 }
 .social-media{
   display: flex;
 }
 .social-media p {
-  font-size: var(--fs-200);
+  font-size: var(--fs-250);
+  opacity: 0.3;
+}
+.social-media:hover i,.social-media:hover p{
+  opacity:1;
+  transition: 0.5s;
+
+}
+.contacts{
+  display: flex;
+  justify-content: space-around;
+}
+.contacts span{
+  display: flex;
+  gap: 1rem;
+}
+.contacts  i {
+  font-size: var(--fs-400);
+
+}
+.contacts  i:hover{
+  color:
+}
+.contacts span p {
+  display: flex;
+  font-size: var(--fs-250);
 }
 
 
