@@ -20,6 +20,7 @@ html{
 }
 body{
   width: 100%;
+  background-color: black;
 }
 .container{
   /* border:5px solid black; */
@@ -70,7 +71,7 @@ li{
   list-style: none;
   font-size: var(--fs-250);
 }
-a{
+a{ 
   text-decoration: none;
   color: inherit;
 }
@@ -168,12 +169,13 @@ a{
 }
 #mission{
   font-size: var(--fs-250);
+  text-align: center;
 }
 .section.two{
   flex-grow: 1;
   display: flex;
   flex-direction: column;
-  gap: 4rem;
+  gap: var(--fs-400);
   padding-top:3rem;
 }
 .footer-links{
@@ -238,6 +240,30 @@ a{
 .contacts span p {
   display: flex;
   font-size: var(--fs-250);
+}
+.perfumas-rights{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 80%;
+}
+.divider-line{
+  background-color: white;
+  height: 1px;
+  width: 100%;
+}
+
+.rights{
+  background-color: black;
+  color: white;
+  padding: 2rem;
+  font-size: var(--fs-200);
+}
+.rights::after{
+  color: white;
+  content:"©";
+  font-size: var(--fs-200);
 }
 
 
