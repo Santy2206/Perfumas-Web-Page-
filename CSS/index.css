@@ -34,7 +34,7 @@ body{
   flex-grow: 1;
   min-height: 100vh;
   min-height: 100svh;
-  color: white;
+  color: rgba(255, 255, 255, 0.911);
   background-color:gray;
   background-image:url("../Images/Heroimage-transformed.jpeg");
   background-position-x: 46%;
@@ -70,6 +70,12 @@ li{
   display: flex;
   list-style: none;
   font-size: var(--fs-250);
+  
+}
+li:hover{
+  font-weight: 300;
+  text-shadow: 0 0 20px;
+  transition: 0.5s ;
 }
 a{ 
   text-decoration: none;
@@ -151,7 +157,11 @@ a{
 .footer { 
   background-color: black;
   color: white;
-  flex-direction: row;
+  flex-direction: column;
+}
+.footer-content {
+  display: flex;
+  width:100%;
 }
 .footer .section.one{
   display: flex;
@@ -176,7 +186,7 @@ a{
   display: flex;
   flex-direction: column;
   gap: var(--fs-400);
-  padding-top:3rem;
+  padding-top:7rem;
 }
 .footer-links{
   display: flex;
@@ -246,7 +256,7 @@ a{
   flex-direction: column;
   align-items: center;
   text-align: center;
-  width: 80%;
+  width: 100%;
 }
 .divider-line{
   background-color: white;
@@ -260,7 +270,7 @@ a{
   padding: 2rem;
   font-size: var(--fs-200);
 }
-.rights::after{
+.rights::before{
   color: white;
   content:"©";
   font-size: var(--fs-200);

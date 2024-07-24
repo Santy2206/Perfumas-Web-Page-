@@ -305,6 +305,9 @@
   .footer{
     flex-direction: column;
   }
+  .footer-content{
+    flex-direction: column;
+  }
   .footer .section.one{
     width: 100%;
     align-items: center;
