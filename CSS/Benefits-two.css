@@ -2,7 +2,6 @@
 .cards-container {
   display: flex;
   justify-content: space-evenly;
-  flex-wrap: wrap;
   align-items: center;
   padding: 0;
   gap: var(--fs-200)
@@ -32,7 +31,7 @@
 }
 .card:hover .face1 {
   position: relative;
-  background-color: #ff1867;
+  background:#ff1867;
   z-index: 1;
   transform: translateY(0)
 

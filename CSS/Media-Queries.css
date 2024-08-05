@@ -1,4 +1,7 @@
 
+
+/* STANDART:1440 */
+/* x1,1,777777778 */
 @media (max-width:2560px) {
   :root {
     --fs-400:6.5rem;
@@ -9,9 +12,15 @@
     i.fa-solid.fa-bars {
       display: none;
     }
-    
+  
     .call-to-action{
       font-size: var(--fs-200);
+    }
+    .hero-text{
+      width: 40%;
+    }
+    .hero-image{
+      width: 70%;
     }
     .two-content {
       gap: var(--fs-200)
@@ -19,14 +28,12 @@
     .text-information {
       display: flex;
       flex-direction: column;
-      gap:0.5rem;
-    }
-    .text-information h3{
-      text-align: center;
+      justify-content: center;
+      gap:2rem;
     }
 
     .personalize-image{
-      width:72.9%;
+      width:50%;
     }
     .cards-container{
       gap: var(--fs-400);
@@ -113,10 +120,10 @@
     --fs-200:2rem;
     }
     .two-content{
-      gap: var(--fs-250);
+      gap: 6rem;
     }
     .personalize-image{
-      width: 73%;
+      width:50%;
     }
     .cards-container {
       width: 100%;
@@ -171,7 +178,7 @@
     --fs-200: 1.5rem;
     }
     .personalize-image {
-      width: 72.9%;
+      width: 50%;
     }
     .card .face {
       height: 23rem;
@@ -197,6 +204,7 @@
     --fs-250: 1.5rem;
     --fs-200: 1rem;
     }
+    #sell-phase
     .cards-container{
       gap: var(--fs-400);
     }
@@ -231,6 +239,7 @@
     .text-information {
       display: flex;
       flex-direction: column;
+      justify-content: center;
       gap: 0.5rem;
       width: 100%;
     }

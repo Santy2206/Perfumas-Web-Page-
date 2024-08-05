@@ -3,7 +3,7 @@ html{
 }
 
 :root{
-  --fs-400:4rem;
+  --fs-400:4.5rem;
   --fs-300:3rem;
   --fs-250:2.5rem;
   --fs-200:2rem;
@@ -20,26 +20,19 @@ html{
 }
 body{
   width: 100%;
-  background-color: black;
+  background-color: #5f1b17; 
+
 }
 .container{
-  /* border:5px solid black; */
-  padding: 0 var(--fs-400);
+  /* border:5px solid white; */
 }
 
-.hero {
+.part.one {
   display: flex;
-  text-align: center;
   flex-direction: column;
-  flex-grow: 1;
   min-height: 100vh;
   min-height: 100svh;
-  color: rgba(255, 255, 255, 0.911);
-  background-color:gray;
-  background-image:url("../Images/Heroimage-transformed.jpeg");
-  background-position-x: 46%;
-  background-size: cover;
-  background-blend-mode:multiply;
+  color:white;
 }
 .links{
   display: flex;
@@ -63,18 +56,21 @@ nav{
 
 ul{
   display: flex;
-  gap:var(--fs-200);
+  gap:var(--fs-400);
+  position: relative;
 }
 
 li{
   display: flex;
   list-style: none;
   font-size: var(--fs-250);
-  
+  color: white;  
+}
+.Home{
+  color: white;
 }
 li:hover{
-  font-weight: 300;
-  text-shadow: 0 0 20px;
+  text-shadow: 0 0 20px #C0881E;
   transition: 0.5s ;
 }
 a{ 
@@ -83,75 +79,84 @@ a{
 }
 #search-icon{
   padding-top: 0.5em;
+  color: white;
 }
-#cost{
- color: white;
+.hero{
+  display: flex;
+  flex-direction: column;
 
+}
+.hero-content{
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
 }
 .hero-text {
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
-  align-items: center;
+  gap: var(--fs-250);
   justify-content: center;
-  gap: var(--fs-200);
 
 }
 #sell-phase{
   font-size: var(--fs-400);
   display: flex;
-  align-items: center;
-  text-align: center;
-  font-weight: bold;  
 }
 #sub-sell-phase {
   display: flex;
   flex-direction: column;
   font-size: var(--fs-250);
 }
+img .hero-image {
+  width:70%;
+}
 .content{
-  background-color: #9b3228;
+  background-color:white;
+  background-color: #9B3228 
 }
 .part {
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: var(--fs-200) var(--fs-300) var(--fs-400);
-  gap: var(--fs-300);
+  padding:3rem 9rem 9em;
+  gap:3rem;
+  min-height: 100vh;
+  min-height: 100svh;
+  justify-content: space-evenly;
+  
 }
 .text-information-header {
   display: flex;
   font-size: var(--fs-300);
-  color: white;
   font-weight: 900;
-  justify-content: center;
-  text-align: center;
+  color:white;
+
  
 }
 .two-content {
   display: flex;
-  flex-wrap: wrap;
-  color: white;
-  font-size: var(--fs-300);
-  gap:var(--fs-300);
+  font-size: var(--fs-250);
+  gap:var(--fs-400);
 
 }
 .personalize-image{
-  width: 72%;
+  width: 50%;
+  display: flex;
 }
-
- .text-information{
-  width:25%;
+.sub-header{
+  font-size: var(--fs-400);
   color: white;
+}
+ .text-information{
+  width:50%;
   gap: 2em;
 
 } 
 
 
 .part.three {
-  background-color: #5f1b17;
+  background-color: #A4453C;
 }
-
 
 
 .footer { 
@@ -274,6 +279,7 @@ a{
   color: white;
   content:"©";
   font-size: var(--fs-200);
+
 }
 
 
