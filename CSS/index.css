@@ -3,10 +3,13 @@ html{
 }
 
 :root{
-  --fs-400:4.5rem;
-  --fs-300:3rem;
-  --fs-250:2.5rem;
-  --fs-200:2rem;
+  --fs-2xl:4.5rem;
+  --fs-xl:4rem;
+  --fs-lg:3.5rem;
+  --fs-md:2.5rem;
+  --fs-sm:2rem;
+  --fs-xs:1.5rem;
+
   
 }
 
@@ -56,14 +59,14 @@ nav{
 
 ul{
   display: flex;
-  gap:var(--fs-400);
+  gap:var(--fs-xl);
   position: relative;
 }
 
 li{
   display: flex;
   list-style: none;
-  font-size: var(--fs-250);
+  font-size: var(--fs-sm);
   color: white;  
 }
 .Home{
@@ -89,26 +92,29 @@ a{
 .hero-content{
   display: flex;
   justify-content: space-between;
-  gap: 3rem;
 }
 .hero-text {
   display: flex;
   flex-direction: column;
-  gap: var(--fs-250);
+  gap: var(--fs-md);
   justify-content: center;
+  width: 40%;
 
 }
 #sell-phase{
-  font-size: var(--fs-400);
+  font-size: var(--fs-2xl);
   display: flex;
 }
 #sub-sell-phase {
   display: flex;
   flex-direction: column;
-  font-size: var(--fs-250);
+  font-size: var(--fs-sm);
 }
-img .hero-image {
-  width:70%;
+.call-to-action{
+  font-size: var(--fs-xs);
+}
+.hero-image {
+  width:55%;
 }
 .content{
   background-color:white;

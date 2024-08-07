@@ -3,12 +3,12 @@
   background:#ff1867;
   color: white;
   text-transform: uppercase;
-  font-size: 1.5em;
   letter-spacing:0.1em;
   font-weight: 400;
   padding: 10px 30px;
   text-align: center;
   transition: 0.5s;
+  border-radius: 10px;
 }
 .call-to-action:hover 
 {
@@ -23,6 +23,7 @@
   position: absolute;
   inset:2px;
   background:#ff1867;
+  border-radius: 10px;
 }
 .call-to-action span {
   position: relative;

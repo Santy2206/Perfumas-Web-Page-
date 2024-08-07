@@ -1,26 +1,29 @@
 
 
-/* STANDART:1440 */
-/* x1,1,777777778 */
+/* STANDART:1410 */
+/* 2x1 2 */
 @media (max-width:2560px) {
-  :root {
-    --fs-400:6.5rem;
-    --fs-300:5.5rem;
-    --fs-250:4rem;
-    --fs-200:3.5rem;
-    }
+  :root{
+    --fs-2xl:9rem;
+    --fs-xl:8rem;
+    --fs-lg:7rem;
+    --fs-md:5rem;
+    --fs-sm:4rem;
+    --fs-xs:3rem;
+  
+    
+  }
     i.fa-solid.fa-bars {
       display: none;
     }
   
     .call-to-action{
-      font-size: var(--fs-200);
     }
     .hero-text{
-      width: 40%;
+      width: 45%;
     }
     .hero-image{
-      width: 70%;
+      width: 50%;
     }
     .two-content {
       gap: var(--fs-200)
@@ -79,13 +82,19 @@
     }
   
   }
+  /*x1 1,5 */
 @media (max-width:2050px) {
-  :root {
-    --fs-400:5rem;
-    --fs-300:4rem;
-    --fs-250:3.5rem;
-    --fs-200:3rem;
+    :root{
+      --fs-2xl:7rem;
+      --fs-xl:6rem;
+      --fs-lg:5rem;
+      --fs-md:4rem;
+      --fs-sm:3rem;
+      --fs-xs:2rem;
     }
+    .links  ul {
+      gap: var(--fs-lg);
+    }    
     .fa-2xl {
       font-size: 10rem;
     }
@@ -111,14 +120,20 @@
   
 } 
 
-/* xl */
+/* 2lg xl 1 */
 @media (max-width:1600px) {
-  :root {
-    --fs-400:4rem;
-    --fs-300:3rem;
-    --fs-250:2.5rem;
-    --fs-200:2rem;
+  
+    :root{
+      --fs-2xl:4.5rem;
+      --fs-xl:4rem;
+      --fs-lg:3.5rem;
+      --fs-md:2.5rem;
+      --fs-sm:2rem;
+      --fs-xs:1.5rem;
+    
+      
     }
+  
     .two-content{
       gap: 6rem;
     }
@@ -169,14 +184,18 @@
     }
 }
 
-/* lg */
-@media (max-width:1410px) {
-  :root {
-    --fs-400: 3.5rem;
-    --fs-300: 2.5rem;
-    --fs-250: 2rem;
-    --fs-200: 1.5rem;
-    }
+/* lg 0,7*/
+@media (max-width:1024px) {
+  :root{
+    --fs-2xl:3.5rem;
+    --fs-xl:3rem;
+    --fs-lg:2.5rem;
+    --fs-md:2rem;
+    --fs-sm:1.5rem;
+    --fs-xs:1rem;
+  
+    
+  }
     .personalize-image {
       width: 50%;
     }
@@ -197,13 +216,21 @@
     }
   
 }
-@media (max-width:1100px){
-  :root {
-    --fs-400: 3rem;
-    --fs-300: 2rem;
-    --fs-250: 1.5rem;
-    --fs-200: 1rem;
-    }
+/* 2md */
+@media (max-width:){
+  :root{
+    --fs-2xl:3rem;
+    --fs-xl:2.5rem;
+    --fs-lg:2rem;
+    --fs-md:1.5rem;
+    --fs-sm:1rem;
+    --fs-xs:0.5rem;
+  
+    
+  }
+  .hero-text{
+    width: ;
+  }
     #sell-phase
     .cards-container{
       gap: var(--fs-400);
@@ -226,7 +253,8 @@
       font-size: 0.956rem;
     }
   }
-@media (max-width:950px){
+  /* md */
+@media (max-width:px){
   :root {
     --fs-400: 3rem;
     --fs-300: 2rem;
@@ -278,16 +306,21 @@
    
     
 }
-@media(max-width:700px){
-  :root {
-    --fs-400: 3rem;
-    --fs-300: 2rem;
-    --fs-250: 1.5rem;
-    --fs-200: 1rem;
-    }
+/* 2sm */
+@media(max-width:900px){
+  .part{
+    padding: 1rem 3rem 3rem ;
+  }
+  .part.one{
+    flex-direction: column;
+  }
+  .navigation-bar{
+    width: 100%;
+  }
   .logo{
     width:12rem ;
   }
+
   nav{
     display: none;
   }
@@ -295,6 +328,17 @@
     display: inline;
     font-size:2rem;
   }
+  .hero-content{
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero-text{
+    width: 100%;
+  }
+  .hero-image{
+    width: 100%;
+  }
+
   .card{
     width:100% ;
     align-items: center;
@@ -358,7 +402,7 @@
 
 
 }
-/* md */
+/* sm */
 @media (max-width:470px) {
   .card .face{
     width:90%;
