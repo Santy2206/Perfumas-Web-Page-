@@ -1,6 +1,6 @@
 
 
-/* STANDART:1410 */
+/* STAN/DART:1410 */
 /* 2x1 2 */
 @media (max-width:2560px) {
   :root{
@@ -10,36 +10,14 @@
     --fs-md:5rem;
     --fs-sm:4rem;
     --fs-xs:3rem;
-  
-    
   }
+    
     i.fa-solid.fa-bars {
       display: none;
     }
-  
-    .call-to-action{
-    }
-    .hero-text{
-      width: 45%;
-    }
-    .hero-image{
-      width: 50%;
-    }
-    .two-content {
-      gap: var(--fs-200)
-    }
-    .text-information {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      gap:2rem;
-    }
-
-    .personalize-image{
-      width:50%;
-    }
     .cards-container{
-      gap: var(--fs-400);
+      gap: var(--fs-2xl);
+      flex-wrap: wrap;
     }
     .fa-2xl {
       font-size: 15rem;
@@ -57,7 +35,6 @@
   
     }
     .card .face1 .card-inside-content h3 {
-      
       display: none;
     }
     .card .face2 {
@@ -69,16 +46,18 @@
       gap: 2rem;
   }
     .card .face2 .card-inside-content .fantom-h3{
-      font-size: 5rem;
+      display: inline;
+      font-size: var(--fs-md);
 
     }
    
     .card .face2 .card-inside-content p {
-      font-size:5rem;
+      font-size:var(--fs-md);
   
     }
     .call-to-action-smaller {
       font-size: 4.5rem;
+      width: 95%;
     }
   
   }
@@ -99,20 +78,11 @@
       font-size: 10rem;
     }
     .card .face {
-      height: 40rem;
+      height: 50rem;
       width:70rem;
-    }
-    .card .face1{
+    } 
+     .card .face1{
       height: 30rem;
-    }
-    .card .face2 .card-inside-content {
-      gap:1rem;
-    }
-    .card .face2 .card-inside-content .fantom-h3{
-      font-size: 3.5rem;
-    }
-    .card .face2 .card-inside-content p {
-      font-size:3.5rem;
     }
     .call-to-action-smaller {
       font-size: 3rem;
@@ -133,25 +103,18 @@
     
       
     }
-  
-    .two-content{
-      gap: 6rem;
-    }
-    .personalize-image{
-      width:50%;
-    }
     .cards-container {
-      width: 100%;
-      gap: 2rem;
+      gap: var(--fs-md);
+      flex-wrap: nowrap;
     }
     .fa-2xl{
       position: static;
       font-size: 8rem;
-      padding: 4rem;
     }
     .card .face {
-      height:30rem;
-      width:32rem;
+      width:282px;
+      height:250px;
+      
     }
 
     .card .face1 {
@@ -166,21 +129,22 @@
     }
     .card .face1 .card-inside-content h3 {
       display: inline;
-      position: static;
+      position: relative;
+      top: var(--fs-sm);
       opacity: 0.02;
       color: white;
-      font-size: 4rem;
+      font-size: var(--fs-md);
     }
     .card .face2 {
       transform: translateY(-50%);
     }
     .card .face2 .card-inside-content p {
-      font-size: 2.3rem;
-      top: 6px;
+      font-size: var(--fs-sm);
   
     }
     .call-to-action-smaller {
-      font-size:1.75rem;
+      font-size:1em;
+      width: 85%;
     }
 }
 
@@ -231,7 +195,6 @@
   .hero-text{
     width: ;
   }
-    #sell-phase
     .cards-container{
       gap: var(--fs-400);
     }
@@ -308,11 +271,14 @@
 }
 /* 2sm */
 @media(max-width:900px){
+  
   .part{
     padding: 1rem 3rem 3rem ;
+    min-height: auto;
   }
   .part.one{
     flex-direction: column;
+    min-height:auto;
   }
   .navigation-bar{
     width: 100%;
@@ -320,6 +286,7 @@
   .logo{
     width:12rem ;
   }
+
 
   nav{
     display: none;
@@ -331,12 +298,42 @@
   .hero-content{
     flex-direction: column;
     text-align: center;
+    gap: var(--fs-md);
+    align-items: center;
+    
   }
   .hero-text{
     width: 100%;
   }
-  .hero-image{
-    width: 100%;
+  .sub-sell-phrase{
+    font-size: var(--fs-md);
+  }
+
+  .call-to-action{
+    width:100%;
+  }
+  .hero-image-desktop {
+    display: none;
+  }
+  .hero-image-mobile{
+    display: inline;
+    width:100%;
+  }
+  .call-to-action{
+    font-size: var(--fs-md);
+  }
+  .information img {
+    display: none;
+  }
+  .information-text .main-pain-point {
+    display: flex;
+    align-items: center;
+    gap: var(--fs-md);
+  }
+  .information span img{
+    display: inline;
+    width:60%;
+
   }
 
   .card{
@@ -402,10 +399,25 @@
 
 
 }
+/* sm 0,5*/
+@media(max-width:650px){
+  :root{
+    --fs-2xl:3rem;
+    --fs-xl:2.5rem;
+    --fs-lg:2rem;
+    --fs-md:1.5rem;
+    --fs-sm:1rem;
+    --fs-xs:1rem;
+  }
+
+}
 /* sm */
 @media (max-width:470px) {
   .card .face{
     width:90%;
+  }
+  .information span img{
+    width:100%;
   }
 }
 /* xs */

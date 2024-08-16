@@ -29,6 +29,9 @@ body{
 .container{
   /* border:5px solid white; */
 }
+img,.face{
+  border-radius: 2rem;
+}
 
 .part.one {
   display: flex;
@@ -73,7 +76,7 @@ li{
   color: white;
 }
 li:hover{
-  text-shadow: 0 0 20px #C0881E;
+  text-shadow: 0 0 20px white;
   transition: 0.5s ;
 }
 a{ 
@@ -96,16 +99,17 @@ a{
 .hero-text {
   display: flex;
   flex-direction: column;
-  gap: var(--fs-md);
+  gap: var(--fs-sm);
   justify-content: center;
-  width: 40%;
+  align-items: center;
+  width: 45%;
 
 }
-#sell-phase{
+.sell-phrase{
   font-size: var(--fs-2xl);
   display: flex;
 }
-#sub-sell-phase {
+.sub-sell-phrase {
   display: flex;
   flex-direction: column;
   font-size: var(--fs-sm);
@@ -113,28 +117,64 @@ a{
 .call-to-action{
   font-size: var(--fs-xs);
 }
-.hero-image {
-  width:55%;
+.hero-image-desktop {
+  width:50%;
+}
+.hero-image-mobile{
+  display: none;
+  background-image: url('../Images/istockphoto-1367978020-1024x1024-transformed.jpeg');
 }
 .content{
   background-color:white;
-  background-color: #9B3228 
+  background-color:#A4453C;
 }
 .part {
-  display: flex;
-  align-items: center;
+  display: flex;  
   flex-direction: column;
+  align-items: center;
   padding:3rem 9rem 9em;
-  gap:3rem;
+  gap:var(--fs-2xl);
   min-height: 100vh;
   min-height: 100svh;
-  justify-content: space-evenly;
-  
+  justify-content: center;
 }
-.text-information-header {
+.part.two{
+  flex-direction: row;
+}
+
+.information-text{
   display: flex;
-  font-size: var(--fs-300);
-  font-weight: 900;
+  flex-direction: column ;
+  gap: var(--fs-xs);
+}
+.information-text span {
+  display: flex;
+  flex-direction: column;
+  gap: var(--fs-xs);
+}
+.information-text span img{
+  display: none;
+}
+.information-text h1,.information-text h2{
+  color: white;
+}
+.information-text h2 {
+  font-size: var(--fs-lg);
+}
+.main-pain-point h1{
+  font-size: var(--fs-2xl);
+}
+.information-text p{
+  font-size: var(--fs-md);
+  color: black;
+}
+.information img {
+  width: 50%;
+  height: 200%;
+}
+.section-header {
+  display: flex;
+  font-size: var(--fs-md);
   color:white;
 
  
@@ -161,7 +201,13 @@ a{
 
 
 .part.three {
-  background-color: #A4453C;
+  background-color: white;
+  background-color: black;
+  background-color: #333333;
+  background-color: #5F1617;
+  background-color: #9B3228;
+  background-color: #E08D85;Aprove it 
+
 }
 
 
