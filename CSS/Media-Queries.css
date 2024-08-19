@@ -149,7 +149,7 @@
 }
 
 /* lg 0,7*/
-@media (max-width:1024px) {
+ @media (max-width:1250px) {
   :root{
     --fs-2xl:3.5rem;
     --fs-xl:3rem;
@@ -164,22 +164,18 @@
       width: 50%;
     }
     .card .face {
-      height: 23rem;
-      width: 23rem;
+      height: 21rem;
+      width: 22rem;
     }
     .card .face1 .card-inside-content h3 {
-      font-size: 2.5rem;
-      top: 10px;
+      font-size:var(--fs-lg);
+      top: 30px;
     }
-    .card .face2 .card-inside-content p{
-      top: 10px;
-      font-size: 1.79rem;
-    }
-    .call-to-action-smaller{
-      font-size: 1.1rem;
-    }
+
+   
+
   
-}
+} 
 /* 2md */
 @media (max-width:){
   :root{
@@ -270,10 +266,11 @@
     
 }
 /* 2sm */
-@media(max-width:900px){
+@media(max-width:950px){
+
   
   .part{
-    padding: 1rem 3rem 3rem ;
+    padding: 3rem ;
     min-height: auto;
   }
   .part.one{
@@ -332,26 +329,57 @@
   }
   .information span img{
     display: inline;
-    width:60%;
+    width: 100%;
 
   }
-
-  .card{
-    width:100% ;
-    align-items: center;
+  .cards-container{
+    gap: var(--fs-2xl);
+    flex-wrap: wrap;
+  }
+  .card {
+    width:75% ;
   }
   .card .face {
-    width:60% ;
+    height: 30rem;
+    width:35rem;
+    border-radius: 1rem;
   }
-  .card .face1{
-    height: 15rem;
+  .card .face1 {
+    background-color: #ff1867;
+    transform: translateY(0);
+    box-shadow: none;
+    height:17rem;
+
   }
-  .card .face1 .card-inside-content h3{
-    right: 10.5rem;
+  .card .face1 .card-inside-content h3 {
+    display: none;
   }
   .card .face2 {
-    height:30rem;
+    transform: translateY(0);
   }
+  .card .face2 .card-inside-content {
+    display: flex;
+    flex-direction: column;
+}
+  .card .face2 .card-inside-content .fantom-h3{
+    display: inline;
+
+  }
+ 
+  .card .face2 .card-inside-content p {
+    font-size:var(--fs-md);
+
+  }
+  .call-to-action-smaller {
+    font-size: 1.5rem;
+    width: 88%;
+  }
+
+
+
+
+
+  
   .footer{
     flex-direction: column;
   }
@@ -399,27 +427,40 @@
 
 
 }
+@media(max-width:810px){
+  
+  .card{
+    width: 85%;
+  }
+  .card .face{
+    width: 100%;
+  }
+}
 /* sm 0,5*/
 @media(max-width:650px){
-  :root{
+  /* :root{
     --fs-2xl:3rem;
     --fs-xl:2.5rem;
     --fs-lg:2rem;
     --fs-md:1.5rem;
     --fs-sm:1rem;
     --fs-xs:1rem;
+  } */
+  .part.one{
+    min-height: auto;
+  }
+  .card{
+    width: 85%;
+  }
+  .card .face{
+    height: 28rem;
+  }
+  .card .face1{
+    height: 20rem;
   }
 
 }
 /* sm */
-@media (max-width:470px) {
-  .card .face{
-    width:90%;
-  }
-  .information span img{
-    width:100%;
-  }
-}
 /* xs */
 @media(max-width:350px){
   .call-to-action-smaller {
