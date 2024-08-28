@@ -197,7 +197,6 @@ a{
 
 } 
 
-
 .part.three {
   background-color: white;
   background-color: black;
@@ -249,6 +248,64 @@ img.testimony-client-photo{
 .sub-static-icon{
   font-size: var(--fs-xl);
 }
+.features.part.five{
+  background-color: #E08D85;
+}
+.part-content.five{
+  flex-direction: row;
+  width:100%;
+  gap:0rem;
+}
+.part-five-image-container{
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 50px;
+  width: 40%;
+  background-image: url('/Images/Heroimage-one.jpeg');
+  background-position-x:center;
+  background-position-y: center;
+}
+.part-content.five img{
+  position: relative;
+  z-index: -999;
+  border-radius: 0px;
+  width: 40%;
+}
+.carrusel{
+  position: relative;
+  width:100%;
+  background-color: gray;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.button{
+  position: absolute;
+  font-size:7rem;
+  background: none;
+  border: none;
+  top: 50%;
+  color: rgba(255,255, 255, .5);
+  transform:translateY(-50%);
+  cursor:pointer;
+  background-color: rgba(0, 0, 0, .1);
+  padding: 0.5rem;
+  border-radius: .25rem;
+
+}
+.button:hover,
+.button:focus{
+  color: white;
+  background-color: rgba(0, 0, 0, .2);
+}
+.button:focus{
+  outline: 1px solid black;
+}
+.button.right{
+  right:1rem;
+}
+.button.left{
+  left: 1rem;
+}
+
 
 
 
