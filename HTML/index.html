@@ -6,6 +6,7 @@
     <title>Perfumas.com</title>
     <link rel="stylesheet" href="../CSS/index.css">
     <script src="https://kit.fontawesome.com/4f11154ed4.js" crossorigin="anonymous" ></script>
+    <script src="../javascript.js" defer></script>
   </head>
   <body>   
     <div class="part one">
@@ -258,15 +259,16 @@
             <span class="part-five-image-container">
               <img src="../Images/Heroimage-one.jpeg" alt="">
             </span>
-            <div class="carrusel">
-              <button class="button left">&#x21d0;</button><button class="button right" >&#x21d2;</button>
-              <ul>
-                <li><span></span></li>
-                <li><span></span></li>
-                <li><span></span></li>
-                <li><span></span></li>
-              </ul>
-            </div>
+           <span data-carousel class="carousel">
+            <button class="button preview"data-carousel-button='preview'>&#x291D;</button>
+            <button class ="button next" data-carousel-button='next'>&#x291E;</button>
+            <ul data-slides>
+              <li class="slide" data-active ><span><p data-text="Hii">HII</p></span></li>
+              <li class="slide" ><span><P>HELLO</P></span></li>
+              <li class="slide" ><span><P>WHAT'S UP</P></span></li>
+              <li class="slide" ><span><P>HOW YOU DOING</P></span></li>
+            </ul>
+           </span>
             
           </div>
         </div>
