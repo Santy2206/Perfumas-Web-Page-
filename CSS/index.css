@@ -290,6 +290,9 @@ img.testimony-client-photo{
   position: absolute;
   inset: 0;
   opacity: 0;
+  transition: 200ms opacity ease-in-out;
+  transition-delay: 200ms;
+
 }
 .slide > span{
   display: flex;
@@ -345,7 +348,7 @@ img.testimony-client-photo{
   font-size: var(--fs-sm);
   top:95%;
 }
-.card-icon i[data-active]{
+.card-icon i[data-white]{
   color: white;
 }
 .our-physical-store {

@@ -10,19 +10,25 @@ buttons.forEach(button => {
     function selectSlides(){
       return button.closest('[data-carousel]').querySelector('[data-slides]')
     }
-   
-    const slidesIcon=button.closest('[data-carousel]').querySelector('[data-slides-icon]')
+    function selectIconsContainer(){
+      return button.closest('[data-carousel]').querySelector('[data-slides-icon]')
+    }
+    //select active slides 
     let activeSlide=selectSlides().querySelector('[data-active]')
-    let activeIcon=slidesIcon.querySelector('[data-active]')
+    let whiteIcon=selectIconsContainer().querySelector('[data-white]')
+    //Create new index
     let newIndex=[...selectSlides().children].indexOf(activeSlide)+getOffset()
-    let newIndexIcon=[...slidesIcon.children].indexOf(activeIcon)+getOffset()
+    let newIndexIcon=[...selectIconsContainer().children].indexOf(whiteIcon)+getOffset()
+
+    //Loop back if pass the amount of slides 
     if(newIndex<0)newIndex=selectSlides().children.length -1
-    if(newIndexIcon<0)newIndexIcon=slidesIcon.children.length -1
+    if(newIndexIcon<0)newIndexIcon=selectIconsContainer().children.length -1
     if(newIndex>=selectSlides().children.length)newIndex=0
-    if(newIndexIcon>=slidesIcon.children.length)newIndexIcon=0
+    if(newIndexIcon>=selectIconsContainer().children.length)newIndexIcon=0 
     selectSlides().children[newIndex].dataset.active=true 
-    slidesIcon.children[newIndexIcon].dataset.active=true 
+    selectIconsContainer().children[newIndexIcon].dataset.white=true 
+    //pass and delete the active datatype to each slide in the array 
     delete activeSlide.dataset.active
-    delete activeIcon.dataset.active
+    delete whiteIcon.dataset.white
   })
 });
