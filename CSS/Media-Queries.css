@@ -59,6 +59,9 @@
       font-size: 4.5rem;
       width: 95%;
     }
+    .part-content.five{
+      min-height: 95rem;
+    }
   
   }
   /*x1 1,5 */
@@ -86,6 +89,9 @@
     }
     .call-to-action-smaller {
       font-size: 3rem;
+    }
+    .part-content.five{
+      min-height: 0rem;
     }
   
 } 
@@ -146,6 +152,9 @@
       font-size:1em;
       width: 85%;
     }
+    .part-content.five{
+      min-height: 40rem;
+    }
 }
 
 /* lg 0,7*/
@@ -170,6 +179,9 @@
     .card .face1 .card-inside-content h3 {
       font-size:var(--fs-lg);
       top: 30px;
+    }
+    .part-content.five{
+      min-height: 0rem;
     }
 
    
@@ -371,6 +383,56 @@
     font-size: 1.5rem;
     width: 88%;
   }
+  .part-five-image-container{
+    width: 100%;
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 114px;
+    border-bottom-left-radius: 0px;
+    min-height: 30rem;
+  }
+  .part-content.five{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    border-top-left-radius: 116px;
+    border-bottom-left-radius: 58px;
+    border-bottom-right-radius: 101px;
+  }
+  .button{
+    font-size: var(--fs-lg);
+  }
+  .part-content.five .carousel{
+    width:100%;
+    min-height: 45rem;
+  }
+  .part-content.five .carousel{
+    width:100%;
+    min-height: 50rem;
+  }
+  .part-content.five .carousel .slide span{
+    display: flex;
+    align-items: center;
+    width: 60%;
+  }
+  .slide li{
+    font-size:var(--fs-lg);
+  }
+  .slide > span >h3{
+    font-size: var(--fs-lg);
+  }
+  .our-physical-store{
+    border-bottom-right-radius:114px ;
+  }
+  .our-physical-store ul {
+    align-items: center;
+    min-height: 30rem;
+  }
+  .our-physical-store li {
+    font-size: var(--fs-md);
+  }
+
+  
+
 
 
 
@@ -438,6 +500,9 @@
   .proof.part.four,.section-headline{
     text-align: center;
   }
+  .part-content.five .carousel{
+    min-height: 50rem;
+  }
 }
 /* sm 0,5*/
 @media(max-width:650px){
@@ -475,11 +540,20 @@
     align-items: center;
     gap: var(--fs-sm);
   }
+  .part-content.five .carousel{
+    min-height: 60rem;
+  }
+  .part-content.five .carousel .slide span{
+    width:80%;
+  }
 
 }
 /* sm */
 /* xs */
 @media(max-width:445px){
+  .part{
+    padding: 2rem;
+  }
   .card{
     width:100% ;
   }
@@ -503,10 +577,28 @@
     flex-direction: column;
     gap: var(--fs-lg);
   }
+  .part-content.five .carousel{
+    min-height:68rem;
+  }
+  .part-content.five .carousel .slide span{
+    width: 100%;
+  }
+  .button{
+    transform: translateY(725%);
+  }
+  .button.next{
+    right: 6rem;
+  }
+  .button.preview{
+    left: 6rem ;
+  }
 
 
 }
 @media(max-width:330px){
+  .part{
+    padding: 1rem;
+  }
   
   .card .face{
     height: 34rem;

@@ -1,7 +1,6 @@
 const buttons=document.querySelectorAll('[data-carousel-button]')
 
-const carousel=
-buttons.forEach(button => {
+const carouselChangeSlide=buttons.forEach(button => {
   button.addEventListener('click',()=>{
     function getOffset(){
       return button.dataset.carouselButton==='next'?1:-1
@@ -31,4 +30,5 @@ buttons.forEach(button => {
     delete activeSlide.dataset.active
     delete whiteIcon.dataset.white
   })
-});
+})
+

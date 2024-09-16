@@ -259,6 +259,11 @@ img.testimony-client-photo{
   border-top-left-radius: 10px;
   border-bottom-left-radius: 50px;
 }
+.part-content.five.mobile{
+  display: none;
+}
+
+
 .part-content.five span{
   padding:var(--fs-sm);
 }
@@ -269,13 +274,15 @@ img.testimony-client-photo{
   background-image: url('/Images/Heroimage-one.jpeg');
   background-position-x:center;
   background-position-y: center;
+  background-size: cover;
+
 }
 
 .part-content.five img{
   position: relative;
-  z-index: -999;
   border-radius: 0px;
   width: 40%;
+  z-index: -999;
 }
 .carousel{
   display: flex;
@@ -285,14 +292,17 @@ img.testimony-client-photo{
   background-color:#27282c;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
+  align-items: center;
+}
+.carousel ul{
+  width: 100%;
 }
 .slide{
   position: absolute;
   inset: 0;
   opacity: 0;
   transition: 200ms opacity ease-in-out;
-  transition-delay: 200ms;
-
+  justify-content: center;
 }
 .slide > span{
   display: flex;
@@ -318,7 +328,7 @@ img.testimony-client-photo{
   position: absolute;
   background: none;
   border: none;
-  font-size: 2rem;
+  font-size: var(--fs-md);
   color: rgba(255, 255, 255, .5);
   background-color: rgba(0, 0, 0, .1);
   top: 50%;
@@ -344,7 +354,6 @@ img.testimony-client-photo{
 .card-icon{
   position: absolute;
   transform: translateY(-50%);
-  right: 40%;
   font-size: var(--fs-sm);
   top:95%;
 }
@@ -356,6 +365,7 @@ img.testimony-client-photo{
   background-image: url('../Images/1000_F_177137562_N8tXCeC7CqOuAFqejdUnhQFvOzUQiDnw.jpg');
   background-blend-mode: multiply;
   background-position-x: center;
+  background-size: cover;
 }
 .our-physical-store ul{
   display: flex;
@@ -457,7 +467,6 @@ img.testimony-client-photo{
 
 }
 .contacts  i:hover{
-  color:
 }
 .contacts span p {
   display: flex;
