@@ -33,20 +33,13 @@ img,.face{
   border-radius: 2rem;
 }
 
-.part.one {
+header {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   min-height: 100svh;
   color:white;
   justify-content: center;
-}
-.links{
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  align-items: center;
-
 }
 .logo-container {
   background-blend-mode: multiply;
@@ -58,6 +51,11 @@ img,.face{
 
 nav{
   flex-shrink: 0;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+
 
 }
 
@@ -125,11 +123,11 @@ a{
   display: none;
   background-image: url('../Images/istockphoto-1367978020-1024x1024-transformed.jpeg');
 }
-.content{
+main{
   background-color:white;
   background-color:#A4453C;
 }
-.part {
+header,section,footer {
   display: flex;  
   flex-direction: column;
   align-items: center;
@@ -139,7 +137,7 @@ a{
   min-height: 100svh;
   
 }
-.part.two{
+section.two{
   flex-direction: row;
 }
 
@@ -197,7 +195,7 @@ a{
 
 } 
 
-.part.three {
+section.three {
   background-color: white;
   background-color: black;
   background-color: #333333;
@@ -248,10 +246,10 @@ img.testimony-client-photo{
 .sub-static-icon{
   font-size: var(--fs-xl);
 }
-.features.part.five{
+.features.five{
   background-color: #E08D85;
 }
-.part-content.five{
+.five .part-content{
   flex-direction: row;
   width:100%;
   gap:0rem;
@@ -259,12 +257,12 @@ img.testimony-client-photo{
   border-top-left-radius: 10px;
   border-bottom-left-radius: 50px;
 }
-.part-content.five.mobile{
+.five .part-content.mobile{
   display: none;
 }
 
 
-.part-content.five span{
+.five .part-content span{
   padding:var(--fs-sm);
 }
 .part-five-image-container{
@@ -278,7 +276,7 @@ img.testimony-client-photo{
 
 }
 
-.part-content.five img{
+.five .part-content img{
   position: relative;
   border-radius: 0px;
   width: 40%;
@@ -376,7 +374,7 @@ img.testimony-client-photo{
 }
 
 
-.footer { 
+footer { 
   background-color: black;
   color: white;
   flex-direction: column;
@@ -385,7 +383,7 @@ img.testimony-client-photo{
   display: flex;
   width:100%;
 }
-.footer .section.one{
+footer .section.one{
   display: flex;
   flex-direction: column;
   width: 20%;
@@ -409,6 +407,15 @@ img.testimony-client-photo{
   flex-direction: column;
   gap: var(--fs-400);
   padding-top:7rem;
+}
+.FAQS .part-content{
+  justify-content: start;
+}
+.drop-down{
+  display: flex;
+  gap: var(--fs-sm);
+  color: white;
+  font-size: var(--fs-md);
 }
 .footer-links{
   display: flex;
