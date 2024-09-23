@@ -408,15 +408,40 @@ footer .section.one{
   gap: var(--fs-400);
   padding-top:7rem;
 }
+.FAQS > article > ul > li {
+  width:100%;
+}
 .FAQS .part-content{
   justify-content: start;
+  width: 100%;
 }
-.drop-down{
+.drop-down-container{
   display: flex;
   gap: var(--fs-sm);
   color: white;
   font-size: var(--fs-md);
+  position: relative;
+  width: 100%;
 }
+.drop-down{
+  width: 100%;
+}
+/* .drop-down:hover .answer{
+  position: relative;
+  z-index: 1;
+  transform: translateY(100%);
+  transition: 0.5s;
+} */
+.drop-down-list{
+  width: 100%;
+}
+.question , .answer {
+  position: absolute;
+}
+.answer{
+  z-index:-999;
+}
+
 .footer-links{
   display: flex;
   justify-content: space-around;
