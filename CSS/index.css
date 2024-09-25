@@ -440,6 +440,7 @@ footer .section.one{
 }
 .answer{
   z-index:-999;
+  opacity: 0;
 }
 
 .footer-links{
