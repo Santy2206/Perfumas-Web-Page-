@@ -154,8 +154,8 @@
     section.five .part-content{
       min-height: 0rem;
     }
+    
 }
-
 /* lg 0,7*/
  @media (max-width:1250px) {
   :root{
@@ -176,6 +176,7 @@
       font-size:var(--fs-lg);
       top: 30px;
     }
+    
 
    
 
@@ -537,6 +538,7 @@
   section.five .part-content .carousel .slide span{
     width:80%;
   }
+ 
 
 }
 /* sm */
@@ -568,10 +570,10 @@
     flex-direction: column;
     gap: var(--fs-lg);
   }
-  section.five .part-content .carouse{
+  section.five .part-content .carousel{
     min-height:68rem;
   }
-  section.five .part-content .carouse .slide span{
+  section.five .part-content .carousel .slide span{
     width: 100%;
   }
   .button{
