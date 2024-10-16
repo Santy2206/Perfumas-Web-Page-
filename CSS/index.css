@@ -387,7 +387,7 @@ section.six{
   flex-direction: column;
   gap: var(--fs-md);
 }
-/* .ask-questions li[data-active] .answer{
+.ask-questions li[data-active] .answer{
   z-index: 1;
   opacity: 1;
   transition: 200ms opacity ;
@@ -396,7 +396,7 @@ section.six{
 }
 .ask-questions li[data-active] i[data-drop-down-icon]{
   color: red;
-} */
+} 
 .drop-down-container{
   display: flex;
   color: white;
