@@ -152,7 +152,7 @@
       width: 85%;
     }
     section.five .part-content{
-      min-height: 0rem;
+      min-height: 40rem;
     }
     
 }
@@ -395,7 +395,7 @@
   }
   .part-content  .carousel{
     width:100%;
-    min-height: 45rem;
+    min-height: 40rem;
   }
   .part-content .carousel{
     width:100%;
@@ -533,7 +533,7 @@
     gap: var(--fs-sm);
   }
   section.five .part-content .carousel{
-    min-height: 60rem;
+    min-height: 55rem;
   }
   section.five .part-content .carousel .slide span{
     width:80%;
@@ -571,13 +571,13 @@
     gap: var(--fs-lg);
   }
   section.five .part-content .carousel{
-    min-height:68rem;
+    min-height:55rem;
   }
   section.five .part-content .carousel .slide span{
     width: 100%;
   }
   .button{
-    transform: translateY(725%);
+    transform: translateY(575%);
   }
   .button.next{
     right: 6rem;

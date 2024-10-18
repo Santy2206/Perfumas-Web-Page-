@@ -133,8 +133,6 @@ header,section,footer {
   align-items: center;
   padding:3rem 9rem 9em;
   gap:var(--fs-2xl);
-  min-height: 100vh;
-  min-height: 100svh;
   
 }
 section.two{
@@ -447,15 +445,18 @@ footer {
 .footer-content {
   display: flex;
   width:100%;
+  font-size: var(--fs-sm);
+  align-items: center;
 }
-footer .section.one{
+footer div .section.one{
   display: flex;
   flex-direction: column;
-  width: 20%;
+  width: 30%;
   gap: 1rem;
+  padding: 0rem;
 }
 
-#footer-logo {
+.footer-logo {
   width:100%;
 }
 #slogan {
@@ -466,22 +467,26 @@ footer .section.one{
   font-size: var(--fs-250);
   text-align: center;
 }
-.section.two{
+footer div .section.two{
   flex-grow: 1;
   display: flex;
   flex-direction: column;
   gap: var(--fs-400);
   padding-top:7rem;
+  width: 100%;
+  padding: 0rem;
 }
 
 .footer-links{
   display: flex;
   justify-content: space-around;
+  width: 100%;
   
 }
-.footer-links-colums,.footer-links span ul{
+.footer-links-colum,.footer-links span ul{
   display: flex;
   flex-direction: column;
+  gap: var(--fs-sm);
 }
 
 .footer-links h3{
@@ -498,9 +503,6 @@ footer .section.one{
   opacity: 1;
   transition: 0.5s;
 
-}
-.footer-links span{
-  gap: 1rem;
 }
 .footer-links i{
   font-size: 2rem;
@@ -521,6 +523,7 @@ footer .section.one{
 .contacts{
   display: flex;
   justify-content: space-around;
+  width: 100%;
 }
 .contacts span{
   display: flex;
