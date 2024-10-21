@@ -467,29 +467,44 @@ footer div .section.one{
   font-size: var(--fs-250);
   text-align: center;
 }
-footer div .section.two{
-  flex-grow: 1;
+.section.two{
   display: flex;
-  flex-direction: column;
-  gap: var(--fs-400);
-  padding-top:7rem;
-  width: 100%;
   padding: 0rem;
 }
-
-.footer-links{
+.section.two span ,.section.two span ul{
   display: flex;
-  justify-content: space-around;
-  width: 100%;
-  
+  flex-direction: column;
 }
-.footer-links-colum,.footer-links span ul{
+.section.two span ul{
+  gap:0rem;
+}
+.section.two span {
+  display: flex;
+  flex-direction: column;
+
+}
+.social-media{
+  display: flex;
+}
+.social-media p {
+  font-size: var(--fs-250);
+  opacity: 0.3;
+}
+.social-media:hover i,.social-media:hover p{
+  opacity:1;
+  transition: 0.5s;
+
+}
+/* 
+
+
+.section.two,.section.two span ul{
   display: flex;
   flex-direction: column;
   gap: var(--fs-sm);
 }
 
-.footer-links h3{
+.footer-links-colum h3{
   font-size: var(--fs-300);
 
 }
@@ -508,18 +523,7 @@ footer div .section.two{
   font-size: 2rem;
   opacity:0.3;
 }
-.social-media{
-  display: flex;
-}
-.social-media p {
-  font-size: var(--fs-250);
-  opacity: 0.3;
-}
-.social-media:hover i,.social-media:hover p{
-  opacity:1;
-  transition: 0.5s;
 
-}
 .contacts{
   display: flex;
   justify-content: space-around;
@@ -538,7 +542,7 @@ footer div .section.two{
 .contacts span p {
   display: flex;
   font-size: var(--fs-250);
-}
+} */
 .perfumas-rights{
   display: flex;
   flex-direction: column;
