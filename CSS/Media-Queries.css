@@ -62,6 +62,11 @@
     section.five .part-content{
       min-height: 95rem;
     }
+    .footer-logo{
+      width: 45rem;
+    }
+
+
   
   }
   /*x1 1,5 */
@@ -93,6 +98,13 @@
     section.five .part-content{
       min-height: 65rem;
     }
+    footer div .section.one{
+      width: 22%;
+    }
+    .footer-logo{
+      width: 35rem;
+    }
+
   
 } 
 
