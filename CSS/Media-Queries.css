@@ -166,6 +166,9 @@
     section.five .part-content{
       min-height: 40rem;
     }
+    .footer-logo{
+      width: 25rem;
+    }
     
 }
 /* lg 0,7*/
@@ -188,106 +191,21 @@
       font-size:var(--fs-lg);
       top: 30px;
     }
-    
+    .footer-logo{
+      width:19rem ;
+    }
 
    
 
   
 } 
 /* 2md */
-@media (max-width:){
-  :root{
-    --fs-2xl:3rem;
-    --fs-xl:2.5rem;
-    --fs-lg:2rem;
-    --fs-md:1.5rem;
-    --fs-sm:1rem;
-    --fs-xs:0.5rem;
-  
-    
-  }
-  .hero-text{
-    width: ;
-  }
-    .cards-container{
-      gap: var(--fs-400);
-    }
-    .fa-2xl {
-      font-size: 5rem;
-    }
-    .card .face {
-      height: 20rem;
-      width:20rem;
-    }
-    .card .face1 .card-inside-content h3 {
-      font-size: 2rem;
-    }
-    .card .face2 .card-inside-content p {
-      font-size:1.53rem;
-  
-    }
-    .call-to-action-smaller {
-      font-size: 0.956rem;
-    }
-  }
   /* md */
-@media (max-width:px){
-  :root {
-    --fs-400: 3rem;
-    --fs-300: 2rem;
-    --fs-250: 1.5rem;
-    --fs-200: 1rem;
-    }
-    .personalize-image{
-      width: 100%;
-    }
-    .text-information {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      gap: 0.5rem;
-      width: 100%;
-    }
-    .fa-2xl {
-      font-size: 5rem;
-    }
-    .card .face {
-      height: 25rem;
-      width:30rem;
-    }
-    .card .face1 {
-      background-color: #ff1867;
-      transform: translateY(0);
-      box-shadow: none;
-      height:10rem;
-  
-    }
-    .card .face2 .card-inside-content .fantom-h3{
-      display: inline;
-      font-size: 2rem;
-
-    }
-    .card .face1 .card-inside-content h3 {
-      display: none;
-    }
-    .card .face2 {
-      transform: translateY(0);
-    }
-    .card .face2 .card-inside-content p {
-      font-size:2rem;  
-    }
-    .call-to-action-smaller {
-      font-size: 1.5rem;
-    }
-    
-   
-    
-}
 /* 2sm */
 @media(max-width:950px){
 
   
-  section,header{
+  section,header,footer{
     padding: 3rem ;
     min-height: auto;
   }
@@ -483,6 +401,12 @@
   .contacts i{
     font-size: var(--fs-300);
   }
+  footer div .section.one{
+    width: 100%;
+  }
+  img.footer-logo{
+    width:25rem;
+  }
  
 
 
@@ -611,6 +535,10 @@
   .card .face1{
     height: 15rem;
   }
+  img.footer-logo{
+    width:20rem;
+  }
+ 
 
 }
   
