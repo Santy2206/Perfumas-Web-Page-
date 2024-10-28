@@ -219,7 +219,7 @@
   .logo{
     width:12rem ;
   }
-  nav.navigation-bar{
+  nav .links{
     display: none;
   }
   i.fa-solid.fa-bars {
