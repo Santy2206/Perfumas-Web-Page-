@@ -1,8 +1,6 @@
 const buttons=document.querySelectorAll('[data-carousel-button]')
 
-const iconContainer=document.querySelectorAll('[data-drop-down-icon-container]')
-
-const carouselChangeSlide=buttons.forEach(button => {
+const proofChangeSlideCarousel=buttons.forEach(button => {
   button.addEventListener('click',()=>{
     function getOffset(){
       return button.dataset.carouselButton==='next'?1:-1
@@ -33,7 +31,9 @@ const carouselChangeSlide=buttons.forEach(button => {
     delete whiteIcon.dataset.white
   })
 })
-const showDropAnswer=iconContainer.forEach(iconContainer => {
+const iconContainer=document.querySelectorAll('[data-drop-down-icon-container]')
+
+const faqsDropAnswer=iconContainer.forEach(iconContainer => {
  iconContainer.addEventListener('click',()=>{
  
   let dropDownContainer=iconContainer.closest('[data-drop-down-container ]')
@@ -49,7 +49,7 @@ const showDropAnswer=iconContainer.forEach(iconContainer => {
   slider.dataset.active='true'
   slider.dataset.slider++
     
-  if(counter%2==0){
+    if(counter%2==0){
     answer.style.zIndex='1'
     answer.style.opacity='1'
     answer.style.transition='200ms opacity'
@@ -59,7 +59,7 @@ const showDropAnswer=iconContainer.forEach(iconContainer => {
 
 
    
-  } 
+    } 
   
    else if(counter%2!=0){
     answer.style.zIndex='-999'
@@ -68,22 +68,45 @@ const showDropAnswer=iconContainer.forEach(iconContainer => {
     answer.style.position='absolute'
     icon.style.color='white'
     icon.classList.replace('fa-caret-down','fa-caret-right')
-    // newIndex.dataset.slider='1'
-
-    
-
-
    } 
-   
-  
-  //  activeSlide.dataset.active='false'
-  //  slides.children[newIndex].dataset.active='true'
-  
-
-   
-
-  // if(activeSlide.dataset.active=true){
  })
 });
+const menuBarButton=document.querySelectorAll('[data-menu-bar]')
+
+let desktopMenu=document.querySelector('[data-desk-menu]')
+let mobileMenu=document.querySelector('[data-mobile-menu]')
+let heroContainer=document.querySelector('[data-hero-container]')
+const header=document.querySelector('[data-header] ')
+const main=document.querySelector('[data-main]')
+const footer=document.querySelector('[data-footer]')
+const headerOpenMobileMenu=menuBarButton.forEach(barButton=>{
+  barButton.addEventListener('click',()=>{
+    desktopMenu.style.display='none'
+    heroContainer.style.display='none'
+    mobileMenu.style.display='flex'
+    header.style.cssText='position:fixed; top: 0; left: 0;right: 0;bottom: 0;padding: 0rem; z-index: 999;';
+    main.style.display='none'
+    footer.style.display='none'
+
+
+
+    
+    
+    
+  })
+  
+})
+const closeButton=document.querySelectorAll('[data-close-button]')
+
+const headerCloseMobileMenu=closeButton.forEach(closeButton=>{
+  closeButton.addEventListener('click',()=>{
+    desktopMenu.style.display='flex'
+    heroContainer.style.display='flex'
+    mobileMenu.style.display='none'
+    header.style.cssText='position:sticky'
+    main.style.display='block'
+    footer.style.display='block'
+  })
+})
 
 

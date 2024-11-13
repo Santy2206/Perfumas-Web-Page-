@@ -219,7 +219,7 @@
   .logo{
     width:12rem ;
   }
-  nav .links{
+  nav .desktop-links{
     display: none;
   }
   i.fa-solid.fa-bars {
@@ -236,7 +236,7 @@
   .hero-text{
     width: 100%;
   }
-  .sub-sell-phrase{
+  .sub-hero-headline{
     font-size: var(--fs-md);
   }
 
