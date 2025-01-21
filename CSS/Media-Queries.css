@@ -1,7 +1,3 @@
-
-
-/* STAN/DART:1410 */
-/* 2x1 2 */
 @media (max-width:2560px) {
   :root{
     --fs-2xl:9rem;
@@ -69,7 +65,7 @@
 
   
   }
-  /*x1 1,5 */
+
 @media (max-width:2095px) {
     :root{
       --fs-2xl:7rem;
@@ -108,7 +104,6 @@
   
 } 
 
-/* 2lg xl 1 */
 @media (max-width:1670px) {
   
     :root{
@@ -171,7 +166,7 @@
     }
     
 }
-/* lg 0,7*/
+
  @media (max-width:1250px) {
   :root{
     --fs-2xl:3.5rem;
@@ -199,9 +194,7 @@
 
   
 } 
-/* 2md */
-  /* md */
-/* 2sm */
+
 @media(max-width:950px){
 
   
@@ -414,6 +407,7 @@
 
 
 }
+
 @media(max-width:810px){
   
   .card{
@@ -432,7 +426,7 @@
     min-height: 50rem;
   }
 }
-/* sm 0,5*/
+
 @media(max-width:650px){
   /* :root{
     --fs-2xl:3rem;
@@ -477,8 +471,7 @@
  
 
 }
-/* sm */
-/* xs */
+
 @media(max-width:445px){
   section{
     padding: 2rem;
@@ -524,6 +517,7 @@
 
 
 }
+
 @media(max-width:330px){
   section{
     padding: 1rem;

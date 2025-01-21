@@ -31,6 +31,7 @@ const proofChangeSlideCarousel=buttons.forEach(button => {
     delete whiteIcon.dataset.white
   })
 })
+
 const iconContainer=document.querySelectorAll('[data-drop-down-icon-container]')
 
 const faqsDropAnswer=iconContainer.forEach(iconContainer => {
@@ -71,6 +72,7 @@ const faqsDropAnswer=iconContainer.forEach(iconContainer => {
    } 
  })
 });
+
 const menuBarButton=document.querySelectorAll('[data-menu-bar]')
 
 let desktopMenu=document.querySelector('[data-desk-menu]')
@@ -79,6 +81,7 @@ let heroContainer=document.querySelector('[data-hero-container]')
 const header=document.querySelector('[data-header] ')
 const main=document.querySelector('[data-main]')
 const footer=document.querySelector('[data-footer]')
+
 const headerOpenMobileMenu=menuBarButton.forEach(barButton=>{
   barButton.addEventListener('click',()=>{
     desktopMenu.style.display='none'
@@ -96,6 +99,7 @@ const headerOpenMobileMenu=menuBarButton.forEach(barButton=>{
   })
   
 })
+
 const closeButton=document.querySelectorAll('[data-close-button]')
 
 const headerCloseMobileMenu=closeButton.forEach(closeButton=>{
@@ -108,5 +112,3 @@ const headerCloseMobileMenu=closeButton.forEach(closeButton=>{
     footer.style.display='block'
   })
 })
-
-

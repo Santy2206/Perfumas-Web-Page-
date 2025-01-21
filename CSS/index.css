@@ -18,9 +18,10 @@ html{
 body{
   background-color: #5f1b17;
 }
+
  img,.face{
   border-radius: 2rem;
-} 
+}
 header {
   position: relative;
   flex-direction: column;
@@ -63,14 +64,13 @@ ul{
   gap:var(--fs-xl);
   position: relative;
 }
-
 li{
   display: flex;
   list-style: none;
   font-size: var(--fs-sm);
   color: white;  
 }
-.fa-x:hover,.fa-bars:hover,.links li:hover, .mobile-links li:hover{
+.fa-x:hover,.fa-bars:hover,.desktop-links li:hover, .mobile-links li:hover{
   text-shadow: 0 0 20px white;
   transition: 0.3s ;
 }
@@ -85,23 +85,11 @@ a{
   justify-content: space-between; 
   padding: 0rem;
 }
-.hero-content.about-us{
-  min-height: 55vh;
-}
 .hero-text {
   display: flex;
   flex-direction: column;
   gap: var(--fs-sm);
   width: 45%;
-}
-.hero-text-about-us{
-  min-width: 60vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  gap: var(--fs-lg);
 }
 .hero-headline{
   font-size: var(--fs-2xl);
@@ -119,6 +107,7 @@ a{
   display: none;
   /* background-image: url('../Images/istockphoto-1367978020-1024x1024-transformed.jpeg'); */
 }
+
 main{
   background-color:#A4453C;
 }
@@ -207,13 +196,13 @@ section.three {
   gap: var(--fs-2xl);
   flex-direction: column;
 }
+
 .testimony {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap:var(--fs-sm);
 }
-
 img.testimony-client-photo{
   border-radius:50%;
   width: 15%;
@@ -232,7 +221,6 @@ img.testimony-client-photo{
 .statistic-group-mobile{
   display: none;
 }
-
 .sub-statistic{
   display: flex;
   flex-direction: column;
@@ -242,6 +230,7 @@ img.testimony-client-photo{
 .sub-static-icon{
   font-size: var(--fs-xl);
 }
+
 .features.five{
   background-color: #E08D85;
 }
@@ -256,8 +245,6 @@ img.testimony-client-photo{
 .five .part-content.mobile{
   display: none;
 }
-
-
 .five .part-content span{
   padding:var(--fs-sm);
 }
@@ -271,7 +258,6 @@ img.testimony-client-photo{
   background-size: cover;
 
 }
-
 .five .part-content img{
   position: relative;
   border-radius: 0px;
@@ -368,6 +354,7 @@ img.testimony-client-photo{
 .our-physical-store span {
   align-items: center;
 }
+
 section.six{
   min-height: auto;
 }
@@ -413,12 +400,6 @@ span.icon-container{
   display: flex;
   flex-direction: column;
 }
-/* .drop-down:hover .answer{
-  position: relative;
-  z-index: 1;
-  transform: translateY(100%);
-  transition: 0.5s;
-} */
 .drop-down-list{
   width: 100%;
 }
@@ -432,8 +413,6 @@ span.icon-container{
   position: absolute;
   opacity: 0;
 }
-
-
 
 footer { 
   background-color: black;
@@ -454,7 +433,6 @@ footer div .section.one{
   gap: 1rem;
   padding: 0rem;
 }
-
 .footer-logo {
   width:100%;
 }
@@ -512,8 +490,6 @@ span.footer-links-column{
   font-size: var(--fs-md);
   opacity:0.3;
 }
-
-
 .contacts{
   display: flex;
   justify-content: space-around;
@@ -545,7 +521,6 @@ span.footer-links-column{
   height: 1px;
   width: 100%;
 }
-
 .rights{
   background-color: black;
   color: white;
@@ -558,6 +533,7 @@ span.footer-links-column{
   font-size: var(--fs-200);
 
 }
+
 
 
 
