@@ -1,5 +1,4 @@
 const buttons=document.querySelectorAll('[data-carousel-button]')
-
 const proofChangeSlideCarousel=buttons.forEach(button => {
   button.addEventListener('click',()=>{
     function getOffset(){
@@ -33,7 +32,6 @@ const proofChangeSlideCarousel=buttons.forEach(button => {
 })
 
 const iconContainer=document.querySelectorAll('[data-drop-down-icon-container]')
-
 const faqsDropAnswer=iconContainer.forEach(iconContainer => {
  iconContainer.addEventListener('click',()=>{
  
@@ -74,14 +72,12 @@ const faqsDropAnswer=iconContainer.forEach(iconContainer => {
 });
 
 const menuBarButton=document.querySelectorAll('[data-menu-bar]')
-
 let desktopMenu=document.querySelector('[data-desk-menu]')
 let mobileMenu=document.querySelector('[data-mobile-menu]')
 let heroContainer=document.querySelector('[data-hero-container]')
 const header=document.querySelector('[data-header] ')
 const main=document.querySelector('[data-main]')
 const footer=document.querySelector('[data-footer]')
-
 const headerOpenMobileMenu=menuBarButton.forEach(barButton=>{
   barButton.addEventListener('click',()=>{
     desktopMenu.style.display='none'
@@ -101,7 +97,6 @@ const headerOpenMobileMenu=menuBarButton.forEach(barButton=>{
 })
 
 const closeButton=document.querySelectorAll('[data-close-button]')
-
 const headerCloseMobileMenu=closeButton.forEach(closeButton=>{
   closeButton.addEventListener('click',()=>{
     desktopMenu.style.display='flex'

@@ -1,3 +1,12 @@
+:root{
+  --fs-2xl:4.5rem;
+  --fs-xl:4rem;
+  --fs-lg:3.5rem;
+  --fs-md:2.5rem;
+  --fs-sm:2rem;
+  --fs-xs:1.5rem;
+}
+
 header{
   position: relative;
 }
@@ -13,8 +22,7 @@ header{
   text-align: center;
   gap: var(--fs-lg);
 }
-
-.wave {
+.wave-animation {
   background: url(../Images/wave.png);
   background-size: 1000px 50px;
   position: absolute;
@@ -32,6 +40,76 @@ header{
     background-position-x: 1000px;
   }
 }
+
+
+section article{
+  font-size:var(--fs-md);
+}
+.who-we-are article{
+  gap:var(--fs-2xl);
+}
+.who-we-are article span {
+  display: flex;
+  flex-direction: column;
+  gap: var(--fs-md);
+}
+#CEO-image{
+  width: 40%;
+}
+
+
+.why-we-exist article{
+  flex-direction: column;
+  gap: var(--fs-sm);
+}
+.why-we-exist article div{
+  display: grid;
+  grid-template-rows:repeat(auto-fit,1fr) ; 
+  grid-template-columns:repeat(auto-fit,minMax(200px,1fr));
+  grid-gap:var(--fs-xs);
+}
+.stadistic{
+  color: white;
+  font-family: sans-serif;
+  font-size: var(--fs-xl);
+}
+h2{
+  color:white;
+}
+.future-vision article{
+  display: grid;
+  gap:var(--fs-xs)
+
+}
+.future-vision article div {
+  display: flex;
+  align-items: baseline;
+  gap:var(--fs-xs)
+}
+.visit-us article{
+  display: flex;
+  flex-direction: column;
+  gap:var(--fs-2xl)
+}
+.visit-us article div{
+  display:flex;
+  flex-wrap: wrap;  
+  gap: var(--fs-sm);
+}
+.visit-us article div img{
+  width:55%;
+}
+.visit-us article div iframe{
+  width:40%;
+  min-width:300px;
+}
+
+
+
+
+
+
+
 
 
 

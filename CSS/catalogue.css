@@ -1,0 +1,13 @@
+
+
+.catalogue div {
+  display: flex;
+  opacity:0.4;
+  flex-direction: column;
+  max-width: 50%;
+  background-color: #27282c;
+}
+.catalogue div:hover{
+  opacity:1;
+  transition:1s;
+}
