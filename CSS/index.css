@@ -112,6 +112,7 @@ main{
   background-color:#A4453C;
 }
 header,section,footer {
+  width:100%;
   display: flex;  
   align-items: center;
   padding:3rem 9rem 9em;

@@ -1,13 +1,42 @@
+:root{
+  --fs-2xl:4.5rem;
+  --fs-xl:4rem;
+  --fs-lg:3.5rem;
+  --fs-md:2.5rem;
+  --fs-sm:2rem;
+  --fs-xs:1.5rem;
+}
 
+.catalogue article{
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  gap:var(--fs-2xl);
+  grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+  
+}
 
-.catalogue div {
+.catalogue article div {
   display: flex;
   opacity:0.4;
   flex-direction: column;
-  max-width: 50%;
-  background-color: #27282c;
+ 
 }
-.catalogue div:hover{
+.catalogue article div:hover{
   opacity:1;
   transition:1s;
+}
+.catalogue div:hover .call-to-action{
+  background: var(--clr);
+  color: var(--clr) ;
+  letter-spacing: 0.2em; 
+  box-shadow: 0 0 35px var(--clr);
+}
+.catalogue div .call-to-action{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.catalogue div span img {
+  width:100%;
 }

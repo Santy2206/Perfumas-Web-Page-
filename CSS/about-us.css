@@ -23,7 +23,7 @@ header{
   gap: var(--fs-lg);
 }
 .wave-animation {
-  background: url(../Images/wave.png);
+  background: url('../Images/About-Us/wave.png');
   background-size: 1000px 50px;
   position: absolute;
   left: 0;
