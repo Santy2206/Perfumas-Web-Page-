@@ -357,7 +357,7 @@
   .footer-content{
     flex-direction: column;
   }
-  .footer .section.one{
+  footer section.footer-presentation{
     width: 100%;
     align-items: center;
   }
@@ -391,7 +391,7 @@
   .contacts i{
     font-size: var(--fs-300);
   }
-  footer div .section.one{
+  footer div .footer-presentation{
     width: 100%;
   }
   img.footer-logo{

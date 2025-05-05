@@ -1,0 +1,42 @@
+:root{
+  --fs-2xl:4.5rem;
+  --fs-xl:4rem;
+  --fs-lg:3.5rem;
+  --fs-md:2.5rem;
+  --fs-sm:2rem;
+  --fs-xs:1.5rem;
+}
+
+#header{
+  background-image:url('../Images/Contact-Us/Heroimage-transformed.jpeg');
+  background-color: gray;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode:multiply;
+}
+.hero-content{
+  justify-content: center;
+}
+.contact-us{
+  font-size: var(--fs-2xl);
+}
+
+
+.contact-title{
+  color: white;
+  font-size: var(--fs-md);
+}
+
+.contact-methods{
+  justify-content: space-between;
+  gap:var(--fs-2xl)
+}
+.contact-method{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.contact-icon{
+  color:white;
+  font-size: var(--fs-sm);
+}

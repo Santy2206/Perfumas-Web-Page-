@@ -1,109 +1,104 @@
-const buttons=document.querySelectorAll('[data-carousel-button]')
-const proofChangeSlideCarousel=buttons.forEach(button => {
-  button.addEventListener('click',()=>{
-    function getOffset(){
-      return button.dataset.carouselButton==='next'?1:-1
-
-    }
-    function selectSlides(){
-      return button.closest('[data-carousel]').querySelector('[data-slides]')
-    }
-    function selectIconsContainer(){
-      return button.closest('[data-carousel]').querySelector('[data-slides-icon]')
-    }
-    //select active slides 
-    let activeSlide=selectSlides().querySelector('[data-active]')
-    let whiteIcon=selectIconsContainer().querySelector('[data-white]')
-    //Create new index
-    let newIndex=[...selectSlides().children].indexOf(activeSlide)+getOffset()
-    let newIndexIcon=[...selectIconsContainer().children].indexOf(whiteIcon)+getOffset()
-
-    //Loop back if pass the amount of slides 
-    if(newIndex<0)newIndex=selectSlides().children.length -1
-    if(newIndexIcon<0)newIndexIcon=selectIconsContainer().children.length -1
-    if(newIndex>=selectSlides().children.length)newIndex=0
-    if(newIndexIcon>=selectIconsContainer().children.length)newIndexIcon=0 
-    selectSlides().children[newIndex].dataset.active=true 
-    selectIconsContainer().children[newIndexIcon].dataset.white=true 
-    //pass and delete the active datatype to each slide in the array 
-    delete activeSlide.dataset.active
-    delete whiteIcon.dataset.white
-  })
-})
-
-const iconContainer=document.querySelectorAll('[data-drop-down-icon-container]')
-const faqsDropAnswer=iconContainer.forEach(iconContainer => {
- iconContainer.addEventListener('click',()=>{
- 
-  let dropDownContainer=iconContainer.closest('[data-drop-down-container ]')
-  let slider=dropDownContainer.closest('[data-slider]')
-  let counter=slider.dataset.slider
-  
-  let slides=slider.closest('[data-slides]')
-  let activeSlide=slides.querySelector('[data-active]')
-  
-  let icon=iconContainer.querySelector('[data-drop-down-icon]')
-  let dropDown=dropDownContainer.querySelector('[data-drop-down]')
-  let answer=dropDown.querySelector('[data-answer]')
-  slider.dataset.active='true'
-  slider.dataset.slider++
-    
-    if(counter%2==0){
-    answer.style.zIndex='1'
-    answer.style.opacity='1'
-    answer.style.transition='200ms opacity'
-    answer.style.position='static'
-    icon.style.color='red'
-    icon.classList.replace('fa-caret-right','fa-caret-down')
-
-
-   
-    } 
-  
-   else if(counter%2!=0){
-    answer.style.zIndex='-999'
-    answer.style.opacity='0'
-    answer.style.transition='200ms opacity'
-    answer.style.position='absolute'
-    icon.style.color='white'
-    icon.classList.replace('fa-caret-down','fa-caret-right')
-   } 
- })
+const elements = {
+  header: document.querySelector('[data-header]'),
+  menuBarIcons: document.querySelectorAll('[data-menu-bar]'),
+  desktopNav: document.querySelector('[data-desk-menu]'),
+  mobileNav: document.querySelector('[data-mobile-menu]'),
+  heroContainer: document.querySelector('[data-hero-container]'),
+  main: document.querySelector('[data-main]'),
+  footer: document.querySelector('[data-footer]'),
+};
+function openMobileMenu() {
+  elements.desktopNav.style.display = 'none';
+  elements.heroContainer.style.display = 'none';
+  elements.mobileNav.style.display = 'flex';
+  elements.header.style.cssText = `
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    padding: 0;
+    z-index: 999;
+  `;
+  elements.main.style.display = 'none';
+  elements.footer.style.display = 'none';
+}
+elements.menuBarIcons.forEach((icon) => {
+  icon.addEventListener('click', openMobileMenu);
 });
 
-const menuBarButton=document.querySelectorAll('[data-menu-bar]')
-let desktopMenu=document.querySelector('[data-desk-menu]')
-let mobileMenu=document.querySelector('[data-mobile-menu]')
-let heroContainer=document.querySelector('[data-hero-container]')
-const header=document.querySelector('[data-header] ')
-const main=document.querySelector('[data-main]')
-const footer=document.querySelector('[data-footer]')
-const headerOpenMobileMenu=menuBarButton.forEach(barButton=>{
-  barButton.addEventListener('click',()=>{
-    desktopMenu.style.display='none'
-    heroContainer.style.display='none'
-    mobileMenu.style.display='flex'
-    header.style.cssText='position:fixed; top: 0; left: 0;right: 0;bottom: 0;padding: 0rem; z-index: 999;';
-    main.style.display='none'
-    footer.style.display='none'
 
 
+const closeButtons = document.querySelectorAll('[data-close-button]');
+closeButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    elements.desktopNav.style.display = 'flex';
+    elements.heroContainer.style.display = 'flex';
+    elements.mobileNav.style.display = 'none';
+    elements.header.style.cssText = 'position: sticky';
+    elements.main.style.display = 'block';
+    elements.footer.style.display = 'block';
+  });
+});
 
+
+const carouselButtons = document.querySelectorAll('[data-carousel-button]');
+carouselButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const offset = button.dataset.carouselButton === 'next' ? 1 : -1;
+
+    const carousel = button.closest('[data-carousel]');
+    const slides = carousel.querySelector('[data-slides]');
+    const icons = carousel.querySelector('[data-slides-icon]');
     
+    const activeSlide = slides.querySelector('[data-active]');
+    const activeIcon = icons.querySelector('[data-white]');
     
-    
-  })
-  
-})
+    let newIndex = [...slides.children].indexOf(activeSlide) + offset;
+    let newIconIndex = [...icons.children].indexOf(activeIcon) + offset;
 
-const closeButton=document.querySelectorAll('[data-close-button]')
-const headerCloseMobileMenu=closeButton.forEach(closeButton=>{
-  closeButton.addEventListener('click',()=>{
-    desktopMenu.style.display='flex'
-    heroContainer.style.display='flex'
-    mobileMenu.style.display='none'
-    header.style.cssText='position:sticky'
-    main.style.display='block'
-    footer.style.display='block'
-  })
-})
+    // Loop around
+    if (newIndex < 0) newIndex = slides.children.length - 1;
+    if (newIconIndex < 0) newIconIndex = icons.children.length - 1;
+    if (newIndex >= slides.children.length) newIndex = 0;
+    if (newIconIndex >= icons.children.length) newIconIndex = 0;
+
+    // Set new active
+    delete activeSlide.dataset.active;
+    delete activeIcon.dataset.white;
+    slides.children[newIndex].dataset.active = true;
+    icons.children[newIconIndex].dataset.white = true;
+  });
+});
+
+
+
+const faqsIconContainers = document.querySelectorAll('[data-drop-down-icon-container]');
+faqsIconContainers.forEach(iconContainer => {
+  iconContainer.addEventListener('click', () => {
+    const dropDownContainer = iconContainer.closest('[data-drop-down-container]');
+    const slider = dropDownContainer.closest('[data-slider]');
+    const slides = slider.closest('[data-slides]');
+    
+    const icon = iconContainer.querySelector('[data-drop-down-icon]');
+    const dropDown = dropDownContainer.querySelector('[data-drop-down]');
+    const answer = dropDown.querySelector('[data-answer]');
+    const counter = Number(slider.dataset.slider || 0);
+
+    slider.dataset.slider = counter + 1;
+    slider.dataset.active = 'true';
+
+    const isOpen = counter % 2 === 0;
+
+    answer.style.zIndex = isOpen ? '1' : '-999';
+    answer.style.opacity = isOpen ? '1' : '0';
+    answer.style.transition = '200ms opacity';
+    answer.style.position = isOpen ? 'static' : 'absolute';
+
+    icon.style.color = isOpen ? 'red' : 'white';
+    icon.classList.replace(
+      isOpen ? 'fa-caret-right' : 'fa-caret-down',
+      isOpen ? 'fa-caret-down' : 'fa-caret-right'
+    );
+  });
+});
+
+
+

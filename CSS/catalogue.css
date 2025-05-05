@@ -7,7 +7,7 @@
   --fs-xs:1.5rem;
 }
 
-.catalogue article{
+.catalogue__categories{
   width: 100%;
   display: grid;
   justify-content: center;
@@ -15,28 +15,27 @@
   grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
   
 }
-
-.catalogue article div {
+.catalogue__card {
   display: flex;
   opacity:0.4;
   flex-direction: column;
  
 }
-.catalogue article div:hover{
+.catalogue__card:hover{
   opacity:1;
   transition:1s;
 }
-.catalogue div:hover .call-to-action{
+.catalogue__card:hover .call-to-action{
   background: var(--clr);
   color: var(--clr) ;
   letter-spacing: 0.2em; 
   box-shadow: 0 0 35px var(--clr);
 }
-.catalogue div .call-to-action{
+.call-to-action{
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.catalogue div span img {
+.catalogue img {
   width:100%;
 }

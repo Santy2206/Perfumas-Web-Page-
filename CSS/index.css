@@ -422,7 +422,7 @@ footer {
   align-items: center;
   gap: var(--fs-xs);
 }
-footer div .section.one{
+footer div section.footer-presentation{
   display: flex;
   flex-direction: column;
   width: 30%;
@@ -440,7 +440,7 @@ footer div .section.one{
   font-size: var(--fs-250);
   text-align: center;
 }
-.section.two{
+footer div section.footer-nav{
   display: flex;
   flex-direction: column;
   padding: 0rem;
@@ -462,7 +462,7 @@ span.footer-links-column{
   font-size: var(--fs-md);
   gap: var(--fs-xs);
 }
-.section.two span ul{
+ .footer-nav span ul{
   display: flex;
   flex-direction: column;
   gap:var(--fs-md);
