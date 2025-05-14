@@ -22,21 +22,42 @@
 }
 
 
+.contact-methods{
+  justify-content: space-around;
+  gap:var(--fs-2xl)
+}
 .contact-title{
   color: white;
-  font-size: var(--fs-md);
-}
-
-.contact-methods{
-  justify-content: space-between;
-  gap:var(--fs-2xl)
+  font-size: var(--fs-lg);
 }
 .contact-method{
   display: flex;
   align-items: center;
   flex-direction: column;
+  gap:1rem;
 }
 .contact-icon{
   color:white;
-  font-size: var(--fs-sm);
+  font-size: var(--fs-lg);
 }
+
+
+.visit-us article{
+  display: flex;
+  flex-direction: column;
+  gap:var(--fs-2xl)
+}
+.visit-us article div{
+  display:flex;
+  flex-wrap: wrap;  
+  gap: var(--fs-sm);
+}
+.visit-us article div img{
+  width:55%;
+}
+.visit-us article div iframe{
+  width:40%;
+  min-width:300px;
+}
+
+

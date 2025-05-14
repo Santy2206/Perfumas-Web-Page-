@@ -1,5 +1,6 @@
-html{
+html , body{
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 :root{
   --fs-2xl:4.5rem;
@@ -14,6 +15,7 @@ html{
   margin: 0;
   padding: 0;
   font-family: Montserrat, sans-serif;
+  outline: 1px solid red;
 }
 body{
   background-color: #5f1b17;
@@ -21,6 +23,16 @@ body{
 
  img,.face{
   border-radius: 2rem;
+}
+.face {
+  width:100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+img , iframe{
+  max-width:100%;
+  height: auto;
 }
 header {
   position: relative;
@@ -33,25 +45,27 @@ header {
 nav{
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
+  overflow-x: hidden;
 }
-.desktop-menu{
+.nav-desktop{
   z-index: 0;
   flex-shrink: 0;
   flex-wrap: nowrap;
   justify-content: space-between;
 }
-.mobile-menu{
+.nav-mobile{
   display: none;
   min-height: 100vh;
   flex-direction: column;
   gap: var(--fs-lg);
   padding: 5.5rem;
 }
-.mobile-menu ul{
+.nav-mobile ul{
   flex-direction: column;
   align-items: center;
 }
-.mobile-menu li{
+.nav-mobile li{
   font-size: var(--fs-md);
 }
 i.fa-solid.fa-x {
@@ -422,7 +436,7 @@ footer {
   align-items: center;
   gap: var(--fs-xs);
 }
-footer div section.footer-presentation{
+.footer-presentation{
   display: flex;
   flex-direction: column;
   width: 30%;

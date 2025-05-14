@@ -195,6 +195,13 @@
       grid-template-columns: repeat(auto-fit,minMax(300px,1fr));
     }
 
+
+    .contact-methods{
+      justify-content: center;
+      flex-wrap: wrap;
+      max-width: 100%;
+    }
+
    
 
   
@@ -357,7 +364,7 @@
   .footer-content{
     flex-direction: column;
   }
-  footer section.footer-presentation{
+  .footer-presentation{
     width: 100%;
     align-items: center;
   }
@@ -402,6 +409,7 @@
   .why-we-exist article div {
     flex-direction: column;
   }
+
 
 
 
