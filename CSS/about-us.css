@@ -14,7 +14,6 @@ header{
   min-height: 55vh;
 }
 .hero-text-about-us{
-  min-width: 60vh;
   display: flex;
   flex-direction: column;
   justify-content: center;

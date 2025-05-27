@@ -7,7 +7,9 @@
     --fs-sm:4rem;
     --fs-xs:3rem;
   }
-    
+    header ,section ,footer{
+      padding:3rem 9rem 9rem;
+    }
     i.fa-solid.fa-bars {
       display: none;
     }
@@ -116,8 +118,11 @@
     
       
     }
+    header, section ,footer{
+      padding: 3rem;
+    }
     .cards-container {
-      gap: var(--fs-md);
+      gap: var(--fs-sm);
       flex-wrap: nowrap;
     }
     .fa-2xl{
@@ -299,7 +304,7 @@
 
   }
   .call-to-action-smaller {
-    font-size: 1.5rem;
+    font-size: 1rem;
     width: 88%;
   }
   .part-five-image-container{
@@ -560,6 +565,7 @@
   img.footer-logo{
     width:20rem;
   }
+
  
 
 }
