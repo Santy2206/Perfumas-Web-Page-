@@ -501,6 +501,12 @@ span.footer-links-column{
 }
 .contacts span{
   display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.contacts .adress span, .contacts .phone span,.footer-nav span ul li a{
+  display: flex;
+  flex-direction: row;
   gap: 1rem;
 }
 .contacts  i {
