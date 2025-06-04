@@ -94,6 +94,8 @@ a{
 }
 #search-icon{
   padding-top: 0.5em;
+  display:none;
+
 }
 .hero-content{
   justify-content: space-between; 
