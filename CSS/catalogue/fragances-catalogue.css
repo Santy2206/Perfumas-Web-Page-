@@ -8,7 +8,7 @@
 }
 
 .catalogue__categories{
-  width: 100%;
+  width: 60%;
   display: grid;
   justify-content: center;
   gap:var(--fs-2xl);
@@ -21,6 +21,7 @@
   flex-direction: column;
   background: var(--bg-main);
   color: var(--text-main);
+  min-height:100px;
 }
 .catalogue__card:hover{
   opacity:1;
@@ -38,7 +39,7 @@
   justify-content: center;
 }
 .catalogue img {
-  width: 100%;
-  height: 220px; 
+  width:100%;
+  height: 100%; 
   object-fit: cover;
 }

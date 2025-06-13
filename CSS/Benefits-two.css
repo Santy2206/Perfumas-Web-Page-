@@ -5,8 +5,8 @@
   --fs-md:2.5rem;
   --fs-sm:2rem;
   --fs-xs:1.5rem;
-
-  
+  --bg-benefit-card: #1e1e1e;
+  --bg-benefit-alt: #fdf6e3;
 }
 .cards-container {
   display: flex;
@@ -27,7 +27,7 @@
   height: 250px;
 }
 .card .face1{
-  background-color: #27282c;
+  background-color: var(--bg-main);
   position: relative;
   display: flex;
   color: white;
@@ -40,7 +40,7 @@
 }
 .card:hover .face1 {
   position: relative;
-  background:#ff1867;
+  background: var(--item-accent);
   z-index: 1;
   transform: translateY(0)
 
@@ -71,7 +71,7 @@
 
 
 .card .face2 {
-  background-color: white;
+  background-color: var(--bg-benefit-alt);
   display: flex;
   flex-direction: column;
   padding: 20px;
@@ -93,4 +93,5 @@
 
   flex-direction: column;
   font-size: var(--fs-sm);
+  color: var(--text-inverse);
 }

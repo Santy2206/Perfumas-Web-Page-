@@ -9,6 +9,8 @@
 
 header{
   position: relative;
+  background-color: var(--bg-main);
+  color: var(--text-main);
 }
 .hero-content.about-us{
   min-height: 55vh;
@@ -68,12 +70,12 @@ section article{
   grid-gap:var(--fs-xs);
 }
 .stadistic{
-  color: white;
+  color: var(--item-gold);
   font-family: sans-serif;
   font-size: var(--fs-xl);
 }
 h2{
-  color:white;
+  color:var(--item-gold);
 }
 .future-vision article{
   display: grid;

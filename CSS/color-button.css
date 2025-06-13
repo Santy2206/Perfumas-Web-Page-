@@ -1,7 +1,7 @@
 .call-to-action{
   position: relative;
-  background:#ff1867;
-  color: white;
+  background: var(--item-accent);
+  color: var(--text-inverse);
   text-transform: uppercase;
   letter-spacing:0.1em;
   font-weight: 400;
@@ -13,17 +13,17 @@
 }
 .call-to-action:hover 
 {
-  background: var(--clr);
-  color: var(--clr) ;
+  background: var(--text-main);
+  color: var(--text-main);
   letter-spacing: 0.2em; 
-  box-shadow: 0 0 35px var(--clr);
+  box-shadow: 0 0 35px var(--text-main);
 }
 
 .call-to-action:before{
   content:"";
   position: absolute;
   inset:2px;
-  background:#ff1867;
+  background: var(--item-accent);
   border-radius: 10px;
 }
 .call-to-action span {
@@ -42,11 +42,9 @@
   left: 80%;
   width:10px;
   height:4px;
-  background: #ff1867;
+  background: var(--item-accent);
   transform: translateX(50%)skewX(325deg);
   transition: 0.5s;
-
-
 }
 .call-to-action:hover i::before{
   width: 20px;
@@ -59,11 +57,9 @@
   left: 20%;
   width:10px;
   height:4px;
-  background:#ff1867;
+  background: var(--item-accent);
   transform: translateX(50%)skewX(325deg);
   transition: 0.5s;
-
-
 }
 .call-to-action:hover i::after{
   width: 20px;

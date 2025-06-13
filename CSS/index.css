@@ -2,14 +2,101 @@ html , body{
   font-size: 62.5%;
   overflow-x: hidden;
 }
-:root{
+
+/* Black Version */
+ /* :root{
+  
+  --bg-main: #121212;          
+  --bg-accent: #8B0000;         
+  --bg-secondary: #1e1e1e;    
+  --bg-section: #fdf6e3;      
+
+  
+  --item-accent: #b22222;       
+  --item-gold: #d4af37;         
+
+  
+  --text-main: #f5f5f5;         
+  --text-inverse: #0a0a0a;     
+  --text-muted: #c0c0c0;       
+
   --fs-2xl:4.5rem;
   --fs-xl:4rem;
   --fs-lg:3.5rem;
   --fs-md:2.5rem;
   --fs-sm:2rem;
   --fs-xs:1.5rem;
-}
+}  */
+
+/* Red Version */
+  /* :root {
+  --bg-main: #1a0000;          
+  --bg-accent: #330000;        
+  --bg-secondary: #2e0f0f;      
+  --bg-section: #f4efe6;       
+
+  --item-accent: #a60000;       
+  --item-gold: #cba135;        
+  
+  --text-main: #f8f8f8;       
+  --text-inverse: #1a1a1a;    
+  --text-muted: #b8b8b8;       
+
+  --fs-2xl: 4.5rem;
+  --fs-xl: 4rem;
+  --fs-lg: 3.5rem;
+  --fs-md: 2.5rem;
+  --fs-sm: 2rem;
+  --fs-xs: 1.5rem;
+}   */
+ :root {
+  --bg-main: #5c1a1a;
+  --bg-accent: #3d0f10;
+  --bg-secondary: #752626;
+  --bg-section: #f7f1e3;
+
+  --item-accent: #800020;
+  --item-gold: #caa969;
+
+  --text-main: #f8f8f8;
+  --text-inverse: #130909;
+  --text-muted: #bba9a9;
+
+  --fs-2xl: 4.5rem;
+  --fs-xl: 4rem;
+  --fs-lg: 3.5rem;
+  --fs-md: 2.5rem;
+  --fs-sm: 2rem;
+  --fs-xs: 1.5rem;
+}  
+
+/* White Version  */
+
+/* :root {
+  --bg-main: #fdfaf7;
+  --bg-accent: #5c1a1a;
+  --bg-secondary: #f1ece7;
+  --bg-section: #fffdf9;
+
+  --item-accent: #800020;
+  --item-gold: #bfa76f;
+
+  --text-main: #1e1e1e;
+  --text-inverse: black;
+  --text-muted: #7a6d6d;
+
+  --fs-2xl: 4.5rem;
+  --fs-xl: 4rem;
+  --fs-lg: 3.5rem;
+  --fs-md: 2.5rem;
+  --fs-sm: 2rem;
+  --fs-xs: 1.5rem;
+} */
+
+
+
+
+
 *{
   box-sizing: border-box;
   margin: 0;
@@ -18,7 +105,7 @@ html , body{
   /* outline: 1px solid red; */
 }
 body{
-  background-color: #5f1b17;
+  background-color: var(--bg-accent);
 }
 
  img,.face{
@@ -37,7 +124,8 @@ img , iframe{
 header {
   position: relative;
   flex-direction: column;
-  color:white;
+  color: var(--text-main);
+  background-color: var(--bg-main);
 }
 .logo{
   width: 15%;
@@ -47,6 +135,8 @@ nav{
   align-items: center;
   flex-wrap: wrap;
   overflow-x: hidden;
+  color:var(--text-main);
+ 
 }
 .nav-desktop{
   z-index: 0;
@@ -82,7 +172,6 @@ li{
   display: flex;
   list-style: none;
   font-size: var(--fs-sm);
-  color: white;  
 }
 .fa-x:hover,.fa-bars:hover,.desktop-links li:hover, .mobile-links li:hover{
   text-shadow: 0 0 20px white;
@@ -125,7 +214,7 @@ a{
 }
 
 main{
-  background-color:#A4453C;
+  background-color: var(--bg-section);
 }
 header,section,footer {
   width:100%;
@@ -155,8 +244,9 @@ article.information-text span {
   gap: var(--fs-xs);
 }
 .information-text h1,.information-text h2{
-  color: white;
+  color: var(--item-gold);
 }
+
 .information-text h2 {
   font-size: var(--fs-lg);
 }
@@ -165,12 +255,12 @@ article.information-text span {
 }
 .information-text p{
   font-size: var(--fs-md);
-  color: black;
+  color: var(--text--main);
 }
 
 .section-headline{
   font-size: var(--fs-2xl);
-  color: white;
+  color: var(--item-gold);
 }
 .two-content {
   display: flex;
@@ -192,14 +282,8 @@ article.information-text span {
 
 } 
 
-section.three {
-  background-color: white;
-  background-color: black;
-  background-color: #333333;
-  background-color: #5F1617;
-  background-color: #9B3228;
-  background-color: #E08D85;
-
+section.three , .features{
+  background-color: var(--bg-secondary);
 }
 .part-content{
   display: flex;
@@ -220,13 +304,11 @@ img.testimony-client-photo{
   width: 15%;
 }
 .text-testimony{
-  color: white;
   font-size: var(--fs-md);
 }
 .statistic{
   display: flex;
   font-size: var(--fs-sm);
-  color: white;
   justify-content: space-between;
   width: 100%;
 }
@@ -243,16 +325,14 @@ img.testimony-client-photo{
   font-size: var(--fs-xl);
 }
 
-.features.five{
-  background-color: #E08D85;
-}
 .five .part-content{
   flex-direction: row;
   width:100%;
   gap:0rem;
-  background-color:#27282c;
+  background-color: var(--bg-main);
   border-top-left-radius: 10px;
   border-bottom-left-radius: 50px;
+  color:var(--text-main);
 }
 .five .part-content.mobile{
   display: none;
@@ -268,14 +348,14 @@ img.testimony-client-photo{
   background-position-x:center;
   background-position-y: center;
   background-size: cover;
-
+  /* No color overlay, keep image as is */
 }
 .carousel{
   display: flex;
   flex-direction: column;
   position: relative;
   width:50%;
-  background-color:#27282c;
+  background-color: var(--bg-main);
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   align-items: center;
@@ -344,14 +424,14 @@ img.testimony-client-photo{
   top:95%;
 }
 .card-icon i[data-white]{
-  color: white;
+  color: var(--item-gold);
 }
 .our-physical-store {
-  background-color: gray;
-  background-image: url('../Images/Home/Heroimage-one.jpeg');
+  background-color: var(--bg-secondary);
   background-blend-mode: multiply;
   background-position-x: center;
   background-size: cover;
+  color: var(--text-main);
 }
 .our-physical-store ul{
   display: flex;
@@ -388,7 +468,7 @@ section.six{
 } 
 .drop-down-container{
   display: flex;
-  color: white;
+  color:var(--text-main);
   font-size: var(--fs-md);
   position: relative;
   width: 100%;
@@ -418,11 +498,12 @@ span.icon-container{
   z-index:-999;
   position: absolute;
   opacity: 0;
+  color:var(--text-muted);
 }
 
 footer { 
-  background-color: black;
-  color: white;
+  background-color: var(--bg-main);
+  color: var(--text-main);
   flex-direction: column;
 }
 .footer-content {
@@ -486,15 +567,17 @@ span.footer-links-column{
   font-size: var(--fs-md);
   display: flex;
   gap: var(--fs-xs);
+  color: var(--text-main);
 }
 .footer-links-column li:hover{
   opacity: 1;
   transition: 0.5s;
-
+  color: var(--item-gold);
 }
 .footer-links-column i{
   font-size: var(--fs-md);
   opacity:0.3;
+  color: var(--item-gold);
 }
 .contacts{
   display: flex;
@@ -513,7 +596,7 @@ span.footer-links-column{
 }
 .contacts  i {
   font-size: var(--fs-400);
-
+  color: var(--item-gold);
 }
 .contacts  i:hover{
 }
@@ -529,18 +612,18 @@ span.footer-links-column{
   width: 100%;
 }
 .divider-line{
-  background-color: white;
+  background-color: var(--item-gold);
   height: 1px;
   width: 100%;
 }
 .rights{
-  background-color: black;
-  color: white;
+  background-color: var(--bg-main);
+  color: var(--item-gold);
   padding: 2rem;
   font-size: var(--fs-sm);
 }
 .rights::before{
-  color: white;
+  color: var(--item-gold);
   content:"©";
   font-size: var(--fs-200);
 
