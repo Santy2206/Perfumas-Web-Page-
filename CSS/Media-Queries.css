@@ -422,7 +422,9 @@
   }
 
 
-
+  .catalogue__categories .call-to-action{
+    font-size: var(--fs-xs);
+  }
 
 }
 
