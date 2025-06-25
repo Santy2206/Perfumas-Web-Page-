@@ -1,3 +1,14 @@
 .carousel{
   width:100%;
 }
+
+.slide{
+  display: flex;
+  justify-content: left;
+}
+.carousel-slide-content {
+  width: 25%;
+}
+.carousel-slide-content img {
+  max-height: 200px;
+}
