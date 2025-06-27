@@ -166,7 +166,6 @@ i.fa-solid.fa-x {
 ul{
   display: flex;
   gap:var(--fs-xl);
-  position: relative;
 }
 li{
   display: flex;
@@ -362,6 +361,8 @@ img.testimony-client-photo{
 }
 .carousel ul{
   width: 100%;
+  position: relative;
+
 }
 .slide{
   position: absolute;
