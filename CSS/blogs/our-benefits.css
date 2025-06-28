@@ -4,9 +4,8 @@
 .slide > span.carousel-slide-content {
   display:flex;
   flex-direction: row;
-  width: auto;
-  height: auto;
 }
 .carousel-slide-content img {
   max-height: 200px;
+  
 }
