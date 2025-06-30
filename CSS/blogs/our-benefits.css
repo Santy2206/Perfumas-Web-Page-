@@ -6,5 +6,6 @@
   flex-direction: row;
 }
 .carousel-slide-content img {
-  
+  width: 50%;
+  height: 100px;
 }

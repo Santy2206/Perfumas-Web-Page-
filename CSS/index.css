@@ -324,30 +324,33 @@ img.testimony-client-photo{
   font-size: var(--fs-xl);
 }
 
-.five .part-content{
+.features-carousel {
+  background-color: var(--bg-secondary);
+}
+.features-carousel__content {
+  display: flex;
   flex-direction: row;
-  width:100%;
-  gap:0rem;
+  width: 100%;
+  gap: 0rem;
   background-color: var(--bg-main);
   border-top-left-radius: 10px;
   border-bottom-left-radius: 50px;
-  color:var(--text-main);
+  color: var(--text-main);
 }
-.five .part-content.mobile{
+.features-carousel__content.mobile {
   display: none;
 }
-.five .part-content span{
-  padding:var(--fs-sm);
+.features-carousel__content span {
+  padding: var(--fs-sm);
 }
-.part-five-image-container{
+.part-five-image-container {
   border-top-left-radius: 10px;
   border-bottom-left-radius: 50px;
   width: 40%;
   background-image: url("../Images/Home/Features.jpg");
-  background-position-x:center;
+  background-position-x: center;
   background-position-y: center;
   background-size: cover;
-  /* No color overlay, keep image as is */
 }
 .carousel{
   display: flex;
@@ -366,10 +369,12 @@ img.testimony-client-photo{
 }
 .slide{
   position: absolute;
-  inset: 0;
   opacity: 0;
   transition: 200ms opacity ease-in-out;
   justify-content: center;
+}
+.features .carousel .slide{
+    inset: 0;
 }
 .slide > span{
   display: flex;

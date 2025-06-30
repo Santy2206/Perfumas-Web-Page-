@@ -59,7 +59,7 @@
       font-size: 4.5rem;
       width: 95%;
     }
-    section.five .part-content{
+    .features.five .part-content{
       min-height: 95rem;
     }
     .footer-logo{
@@ -95,7 +95,7 @@
     .call-to-action-smaller {
       font-size: 3rem;
     }
-    section.five .part-content{
+    .features.five .part-content{
       min-height: 65rem;
     }
     footer div .section.one{
@@ -167,7 +167,7 @@
       font-size:1em;
       width: 85%;
     }
-    section.five .part-content{
+    .features.five .part-content{
       min-height: 40rem;
     }
     .footer-logo{
@@ -320,7 +320,7 @@
     border-bottom-left-radius: 0px;
     min-height: 30rem;
   }
-  section.five .part-content{
+  .features.five .part-content{
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -442,7 +442,7 @@
   section.proof.four,.section-headline{
     text-align: center;
   }
-  section.five .part-content .carousel{
+  .features.five .part-content .carousel{
     min-height: 50rem;
   }
 
@@ -496,10 +496,10 @@
     align-items: center;
     gap: var(--fs-sm);
   }
-  section.five .part-content .carousel{
+  .features.five .part-content .carousel{
     min-height: 55rem;
   }
-  section.five .part-content .carousel .slide span{
+  .features.five .part-content .carousel .slide span{
     width:80%;
   }
  
@@ -541,10 +541,10 @@
     flex-direction: column;
     gap: var(--fs-lg);
   }
-  section.five .part-content .carousel{
+  .features.five .part-content .carousel{
     min-height:55rem;
   }
-  section.five .part-content .carousel .slide span{
+  .features.five .part-content .carousel .slide span{
     width: 100%;
   }
   .button{
