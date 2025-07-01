@@ -59,7 +59,7 @@
       font-size: 4.5rem;
       width: 95%;
     }
-    .features.five .part-content{
+    .index-features-carousel__content{
       min-height: 95rem;
     }
     .footer-logo{
@@ -95,7 +95,7 @@
     .call-to-action-smaller {
       font-size: 3rem;
     }
-    .features.five .part-content{
+    .index-features-carousel__content{
       min-height: 65rem;
     }
     footer div .section.one{
@@ -167,7 +167,7 @@
       font-size:1em;
       width: 85%;
     }
-    .features.five .part-content{
+    .index-features-carousel__content{
       min-height: 40rem;
     }
     .footer-logo{
@@ -320,7 +320,7 @@
     border-bottom-left-radius: 0px;
     min-height: 30rem;
   }
-  .features.five .part-content{
+  .index-features-carousel__content{
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -331,15 +331,15 @@
   .button{
     font-size: var(--fs-lg);
   }
-  .part-content  .carousel{
+  .index-features-carousel__content  .carousel{
     width:100%;
     min-height: 40rem;
   }
-  .part-content .carousel{
+  .index-features-carousel__content .carousel{
     width:100%;
     min-height: 50rem;
   }
-  .part-content .carousel .slide span{
+  .index-features-carousel__content .carousel .slide span{
     display: flex;
     align-items: center;
     width: 60%;
@@ -442,7 +442,7 @@
   section.proof.four,.section-headline{
     text-align: center;
   }
-  .features.five .part-content .carousel{
+  .index-features-carousel__content .carousel{
     min-height: 50rem;
   }
 
@@ -496,10 +496,10 @@
     align-items: center;
     gap: var(--fs-sm);
   }
-  .features.five .part-content .carousel{
+  .index-features-carousel__content .carousel{
     min-height: 55rem;
   }
-  .features.five .part-content .carousel .slide span{
+  .index-features-carousel__content .carousel .slide span{
     width:80%;
   }
  
@@ -541,10 +541,10 @@
     flex-direction: column;
     gap: var(--fs-lg);
   }
-  .features.five .part-content .carousel{
+  .index-features-carousel__content .carousel{
     min-height:55rem;
   }
-  .features.five .part-content .carousel .slide span{
+  .index-features-carousel__content .carousel .slide span{
     width: 100%;
   }
   .button{
