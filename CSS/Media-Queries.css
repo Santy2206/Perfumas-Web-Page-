@@ -62,6 +62,9 @@
     .index-features-carousel__content{
       min-height: 95rem;
     }
+    .our-benefits-features-carousel__content{
+      min-height: 15rem;
+    }
     .footer-logo{
       width: 45rem;
     }
@@ -97,6 +100,9 @@
     }
     .index-features-carousel__content{
       min-height: 65rem;
+    }
+    .our-benefits-features-carousel__content{
+      min-height: 14rem;
     }
     footer div .section.one{
       width: 22%;
@@ -170,6 +176,7 @@
     .index-features-carousel__content{
       min-height: 40rem;
     }
+    
     .footer-logo{
       width: 25rem;
     }
@@ -328,6 +335,14 @@
     border-bottom-left-radius: 58px;
     border-bottom-right-radius: 101px;
   }
+  .our-benefits-features-carousel__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    border-top-left-radius: 116px;
+    border-bottom-left-radius: 58px;
+    border-bottom-right-radius: 101px;
+  }
   .button{
     font-size: var(--fs-lg);
   }
@@ -335,11 +350,24 @@
     width:100%;
     min-height: 40rem;
   }
+  .our-benefits-features-carousel__content  .carousel{
+    width:100%;
+    min-height: 40rem;
+  }
   .index-features-carousel__content .carousel{
     width:100%;
     min-height: 50rem;
   }
+  .our-benefits-features-carousel__content .carousel{
+    width:100%;
+    min-height: 50rem;
+  }
   .index-features-carousel__content .carousel .slide span{
+    display: flex;
+    align-items: center;
+    width: 60%;
+  }
+  .our-benefits-features-carousel__content .carousel .slide span{
     display: flex;
     align-items: center;
     width: 60%;
@@ -445,6 +473,9 @@
   .index-features-carousel__content .carousel{
     min-height: 50rem;
   }
+  .our-benefits-features-carousel__content .carousel{
+    min-height: 50rem;
+  }
 
   .visit-us article div img{
     width:100%;
@@ -499,7 +530,13 @@
   .index-features-carousel__content .carousel{
     min-height: 55rem;
   }
+  .our-benefits-features-carousel__content .carousel{
+    min-height: 55rem;
+  }
   .index-features-carousel__content .carousel .slide span{
+    width:80%;
+  }
+  .our-benefits-features-carousel__content .carousel .slide span{
     width:80%;
   }
  
@@ -544,7 +581,13 @@
   .index-features-carousel__content .carousel{
     min-height:55rem;
   }
+  .our-benefits-features-carousel__content .carousel{
+    min-height:55rem;
+  }
   .index-features-carousel__content .carousel .slide span{
+    width: 100%;
+  }
+  .our-benefits-features-carousel__content .carousel .slide span{
     width: 100%;
   }
   .button{
