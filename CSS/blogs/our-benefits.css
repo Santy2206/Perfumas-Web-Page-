@@ -9,3 +9,9 @@
   width: 50%;
   height: 100px;
 }
+.card-icon{
+  top:90%;
+}
+.our-benefits-features-carousel__content ul{
+  padding:var(--fs-xs) var(--fs-xl)
+}
