@@ -360,7 +360,7 @@
   }
   .our-benefits-features-carousel__content .carousel{
     width:100%;
-    min-height: 50rem;
+    min-height: 20rem;
   }
   .index-features-carousel__content .carousel .slide span{
     display: flex;
@@ -371,6 +371,9 @@
     display: flex;
     align-items: center;
     width: 60%;
+  }
+  .our-benefits-features-carousel__content .slide > span {
+    gap: var(--fs-sm);
   }
   .slide li{
     font-size:var(--fs-lg);
