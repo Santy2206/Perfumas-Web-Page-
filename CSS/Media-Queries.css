@@ -335,50 +335,23 @@
     border-bottom-left-radius: 58px;
     border-bottom-right-radius: 101px;
   }
-  .our-benefits-features-carousel__content{
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    border-top-left-radius: 116px;
-    border-bottom-left-radius: 58px;
-    border-bottom-right-radius: 101px;
-  }
+  
   .button{
     font-size: var(--fs-lg);
-  }
-  .index-features-carousel__content  .carousel{
-    width:100%;
-    min-height: 40rem;
-  }
-  .our-benefits-features-carousel__content  .carousel{
-    width:100%;
-    min-height: 10rem;
   }
   .index-features-carousel__content .carousel{
     width:100%;
     min-height: 50rem;
-  }
-  .our-benefits-features-carousel__content .carousel{
-    width:100%;
-    min-height: 20rem;
   }
   .index-features-carousel__content .carousel .slide span{
     display: flex;
     align-items: center;
     width: 60%;
   }
-  .our-benefits-features-carousel__content .carousel .slide span{
-    display: flex;
-    align-items: center;
-    width: 60%;
-  }
-  .our-benefits-features-carousel__content .slide > span {
-    gap: var(--fs-sm);
-  }
-  .slide li{
+  .index-features-carousel__content .slide li{
     font-size:var(--fs-lg);
   }
-  .slide > span >h3{
+  .index-features-carousel__content .slide > span >h3{
     font-size: var(--fs-lg);
   }
   .our-physical-store{
@@ -391,6 +364,38 @@
   .our-physical-store li {
     font-size: var(--fs-md);
   }
+
+
+
+  .slides-desktop{
+    display: none;
+  }
+  .slides-mobile{
+    display: flex;
+  }
+  
+  .our-benefits-features-carousel__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    border-top-left-radius: 116px;
+    border-bottom-left-radius: 58px;
+    border-bottom-right-radius: 101px;
+  }
+  .our-benefits-features-carousel__content .carousel{
+    width:100%;
+    min-height: 28rem;
+  }
+  .our-benefits-features-carousel__content .carousel .slide span{
+    display: flex;
+    align-items: center;
+    width: 60%;
+  }
+  .our-benefits-features-carousel__content .slide > span {
+    gap: var(--fs-xs);
+  }
+
+
 
   
 

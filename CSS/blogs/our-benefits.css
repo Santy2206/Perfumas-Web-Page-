@@ -15,3 +15,6 @@
 .our-benefits-features-carousel__content ul{
   padding:var(--fs-xs) var(--fs-xl)
 }
+.slides-mobile{
+  display: none;
+}
