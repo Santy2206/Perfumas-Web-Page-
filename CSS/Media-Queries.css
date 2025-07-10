@@ -367,10 +367,10 @@
 
 
 
-  .slides-desktop{
+  .desktop.carousel{
     display: none;
   }
-  .slides-mobile{
+  .mobile.carousel{
     display: flex;
   }
   

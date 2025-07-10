@@ -1,6 +1,12 @@
 .carousel{
   width:100%;
 }
+.mobile.carousel{
+  display: none;
+}
+.slide{
+  gap: var(--fs-md);
+}
 .slide > span.carousel-slide-content {
   display:flex;
   flex-direction: row;
@@ -14,7 +20,4 @@
 }
 .our-benefits-features-carousel__content ul{
   padding:var(--fs-xs) var(--fs-xl)
-}
-.slides-mobile{
-  display: none;
 }
