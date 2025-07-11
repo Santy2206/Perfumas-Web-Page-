@@ -324,7 +324,7 @@ img.testimony-client-photo{
   font-size: var(--fs-xl);
 }
 
-.features-carousel {
+.index-features-carousel__content .features-carousel {
   background-color: var(--bg-secondary);
 }
 .features-carousel__content {

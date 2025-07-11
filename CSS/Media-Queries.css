@@ -370,7 +370,7 @@
   .desktop.carousel{
     display: none;
   }
-  .mobile.carousel{
+  .mobile.medium.carousel{
     display: flex;
   }
   
@@ -537,9 +537,6 @@
   .index-features-carousel__content .carousel{
     min-height: 55rem;
   }
-  .our-benefits-features-carousel__content .carousel{
-    min-height: 55rem;
-  }
   .index-features-carousel__content .carousel .slide span{
     width:80%;
   }
@@ -549,6 +546,14 @@
  
   .future-vision article div{
     flex-wrap: wrap;
+  }
+
+
+  .mobile.medium.carousel{
+    display: none;
+  }
+  .mobile.small.carousel{
+    display: flex;
   }
 
  
@@ -588,23 +593,33 @@
   .index-features-carousel__content .carousel{
     min-height:55rem;
   }
-  .our-benefits-features-carousel__content .carousel{
-    min-height:55rem;
-  }
   .index-features-carousel__content .carousel .slide span{
     width: 100%;
   }
   .our-benefits-features-carousel__content .carousel .slide span{
     width: 100%;
   }
-  .button{
+  .index-features-carousel__content .button{
     transform: translateY(575%);
   }
-  .button.next{
+  .index-features-carousel__content .button.next{
     right: 6rem;
   }
-  .button.preview{
+  .index-features-carousel__content .button.preview{
     left: 6rem ;
+  }
+
+
+  .our-benefits-features-carousel__content  .button{
+    transform: translateY(115%);
+  }
+  .our-benefits-features-carousel__content .button.next{
+    right: 1rem;
+    font-size: var(--fs-md);
+  }
+  .our-benefits-features-carousel__content .button.preview{
+    left: 1rem ;
+    font-size: var(--fs-md);
   }
 
 

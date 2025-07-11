@@ -1,7 +1,7 @@
 .carousel{
   width:100%;
 }
-.mobile.carousel{
+.mobile.medium.carousel,.mobile.small.carousel{
   display: none;
 }
 .slide{
