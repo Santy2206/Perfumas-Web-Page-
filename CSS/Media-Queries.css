@@ -540,7 +540,7 @@
   .index-features-carousel__content .carousel .slide span{
     width:80%;
   }
-  .our-benefits-features-carousel__content .carousel .slide span{
+  .our-benefits-features-carousel__content .carousel .slide .carousel-slide-content{
     width:80%;
   }
  
@@ -596,7 +596,7 @@
   .index-features-carousel__content .carousel .slide span{
     width: 100%;
   }
-  .our-benefits-features-carousel__content .carousel .slide span{
+  .our-benefits-features-carousel__content .carousel .slide .carousel-slide-content{
     width: 100%;
   }
   .index-features-carousel__content .button{
