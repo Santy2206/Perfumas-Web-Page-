@@ -102,7 +102,7 @@
       min-height: 65rem;
     }
     .our-benefits-features-carousel__content{
-      min-height: 18rem;
+      min-height: 22rem;
     }
     footer div .section.one{
       width: 22%;
@@ -384,7 +384,7 @@
   }
   .our-benefits-features-carousel__content .carousel{
     width:100%;
-    min-height: 15rem;
+    min-height: 18rem;
   }
   .our-benefits-features-carousel__content .carousel .slide span{
     display: flex;
