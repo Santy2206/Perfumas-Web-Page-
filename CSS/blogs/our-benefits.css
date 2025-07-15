@@ -1,3 +1,10 @@
+
+.our-benefits-features-carousel__content  button.preview {
+  left: 0;
+}
+.our-benefits-features-carousel__content  button.next {
+  right: 0;
+}
 .carousel{
   width:100%;
 }
@@ -5,7 +12,7 @@
   display: none;
 }
 .slide{
-  gap: var(--fs-md);
+  gap: var(--fs-sm);
 }
 .slide > span.carousel-slide-content {
   display:flex;
@@ -19,12 +26,9 @@
   top:90%;
 }
 .our-benefits-features-carousel__content ul{
-  padding:var(--fs-xs) var(--fs-xl)
+  padding:var(--fs-xl);
 }
 .our-benefits-features-carousel__content .carousel .slide .carousel-slide-content {
-  justify-content: center;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+  gap:var(--fs-xs);
 }
