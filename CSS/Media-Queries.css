@@ -63,7 +63,7 @@
       min-height: 95rem;
     }
     .our-benefits-features-carousel__content{
-      min-height: 15rem;
+      min-height: 32rem;
     }
     .footer-logo{
       width: 45rem;
@@ -611,7 +611,7 @@
 
 
   .our-benefits-features-carousel__content  .button{
-    transform: translateY(115%);
+    transform: translateY(200%);
   }
   .our-benefits-features-carousel__content .button.next{
     right: 1rem;

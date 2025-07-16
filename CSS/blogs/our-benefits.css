@@ -1,4 +1,7 @@
 
+.our-benefits-features-carousel__content  button {
+  top: 40%;
+}
 .our-benefits-features-carousel__content  button.preview {
   left: 0;
 }
@@ -31,4 +34,5 @@
 .our-benefits-features-carousel__content .carousel .slide .carousel-slide-content {
   display: flex;
   gap:var(--fs-xs);
+  width: 45%;
 }
