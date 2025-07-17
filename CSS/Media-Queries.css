@@ -614,7 +614,7 @@
     transform: translateY(200%);
   }
   .our-benefits-features-carousel__content .button.next{
-    right: 1rem;
+    right: 0rem;
     font-size: var(--fs-md);
   }
   .our-benefits-features-carousel__content .button.preview{

@@ -17,9 +17,12 @@
 .slide{
   gap: var(--fs-sm);
 }
-.slide > span.carousel-slide-content {
-  display:flex;
-  flex-direction: row;
+.slide > .carousel-slide-content{
+  opacity: 0.5;
+}
+.carousel-slide-content:hover{
+  opacity: 1;
+  transition: 2s;
 }
 .carousel-slide-content img {
   width: 50%;
