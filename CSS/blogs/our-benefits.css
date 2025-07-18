@@ -15,7 +15,9 @@
   display: none;
 }
 .slide{
-  gap: var(--fs-sm);
+  display: grid;
+  grid-gap: var(--fs-sm);
+  grid-auto-flow: column;
 }
 .slide > .carousel-slide-content{
   opacity: 0.5;
@@ -37,5 +39,4 @@
 .our-benefits-features-carousel__content .carousel .slide .carousel-slide-content {
   display: flex;
   gap:var(--fs-xs);
-  width: 45%;
 }
