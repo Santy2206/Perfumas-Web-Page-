@@ -1,4 +1,6 @@
-
+.section-headline {
+  background-color: var(--bg-main);
+}
 .our-benefits-features-carousel__content  button {
   top: 40%;
 }
