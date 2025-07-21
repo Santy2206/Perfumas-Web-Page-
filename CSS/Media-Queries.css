@@ -541,7 +541,8 @@
     width:80%;
   }
   .our-benefits-features-carousel__content .carousel .slide .carousel-slide-content{
-    width:80%;
+    width:100%;
+    gap: var(--fs-lg);
   }
  
   .future-vision article div{
