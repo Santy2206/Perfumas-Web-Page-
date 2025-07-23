@@ -43,3 +43,7 @@
   gap:var(--fs-xs);
   width: 94%;
 }
+
+.blog-post article{
+  flex-direction: column;
+}
