@@ -1,3 +1,7 @@
+
+.features-carousel {
+  flex-direction:column;
+}
 .section-headline {
   background-color: var(--bg-main);
 }
@@ -46,4 +50,8 @@
 
 .blog-post article{
   flex-direction: column;
+}
+
+main section{
+  padding:var(--fs-sm)15rem;
 }
