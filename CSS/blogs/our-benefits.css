@@ -58,9 +58,13 @@ main section{
   padding:var(--fs-sm)15rem;
   align-items: start;
 }
+.blog-post a {
+  color: var(--text-muted);
+}
 p{
   font-size: var(--fs-md);
 }
 h2{
   font-size: var(--fs-lg);
+  color: var( --item-gold);
 }
