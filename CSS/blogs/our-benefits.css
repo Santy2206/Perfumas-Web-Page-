@@ -52,11 +52,10 @@
   flex-direction: column;
   gap: var(--fs-xs);
   font-size: var(--fs-md);
-  padding:var(--fs-md)
 }
 
 main section{
-  padding:var(--fs-sm)15rem;
+  padding:var(--fs-sm)var(--fs-padding);
   align-items: start;
 }
 .blog-post a {
