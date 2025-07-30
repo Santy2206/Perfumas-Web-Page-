@@ -466,6 +466,9 @@
 }
 
 @media(max-width:810px){
+  :root{
+    --fs-padding:6rem;
+  }
   
   .card{
     width: 75%;
@@ -500,14 +503,7 @@
 }
 
 @media(max-width:650px){
-  /* :root{
-    --fs-2xl:3rem;
-    --fs-xl:2.5rem;
-    --fs-lg:2rem;
-    --fs-md:1.5rem;
-    --fs-sm:1rem;
-    --fs-xs:1rem;
-  } */
+ 
   header{
     min-height: auto;
   }
@@ -562,6 +558,9 @@
 }
 
 @media(max-width:445px){
+  :root{
+    --fs-padding:1rem;
+  }
   section{
     padding: 2rem;
     background-color: var(--bg-main);
