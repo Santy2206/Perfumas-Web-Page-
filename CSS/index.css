@@ -329,6 +329,9 @@ img.testimony-client-photo{
 .index-features-carousel__content .features-carousel {
   background-color: var(--bg-secondary);
 }
+.index-features-carousel__content ul {
+  padding: var(--fs-xl);
+}
 .features-carousel__content {
   display: flex;
   flex-direction: row;
@@ -580,7 +583,6 @@ span.footer-links-column{
   font-size: var(--fs-md);
   display: flex;
   gap: var(--fs-xs);
-  color: var(--text-main);
 }
 .footer-links-column li:hover{
   opacity: 1;
