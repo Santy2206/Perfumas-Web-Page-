@@ -24,7 +24,7 @@
   background: var(--bg-main);
   color: var(--text-main);
   gap:var(--fs-xs);
-  height: 35rem;
+  height: 30rem;
 }
 span.card-content-container {
     font-size: var(--fs-xs);
