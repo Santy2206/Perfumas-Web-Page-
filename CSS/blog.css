@@ -13,7 +13,7 @@
   margin: 0 auto;
   display: grid;
   justify-content: center;
-  gap: var(--fs-sm); 
+  grid-gap: var(--fs-sm); 
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   box-sizing: border-box;
 }
