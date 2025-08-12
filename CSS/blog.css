@@ -1,20 +1,19 @@
-:root{
+/* :root{
   --fs-2xl:4.5rem;
   --fs-xl:4rem;
   --fs-lg:3.5rem;
   --fs-md:2.5rem;
   --fs-sm:2rem;
   --fs-xs:1.5rem;
-}
+} */
 
 .catalogue__categories{
   width: 100%;
-  max-width: 1200px;
   margin: 0 auto;
   display: grid;
   justify-content: center;
   grid-gap: var(--fs-sm); 
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   box-sizing: border-box;
 }
 

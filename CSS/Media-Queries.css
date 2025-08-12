@@ -68,6 +68,12 @@
     .footer-logo{
       width: 45rem;
     }
+    .catalogue__card.blog{
+      height: 62vh;
+    }
+
+
+
 
 
   
@@ -109,6 +115,10 @@
     }
     .footer-logo{
       width: 35rem;
+    }
+
+    .catalogue__card.blog{
+      height: 42vh;
     }
 
   
@@ -180,6 +190,9 @@
     .footer-logo{
       width: 25rem;
     }
+    .catalogue__card.blog{
+      height: 40rem;
+    }
     
 }
 
@@ -216,6 +229,9 @@
       justify-content: center;
       flex-wrap: wrap;
       max-width: 100%;
+    }
+    .catalogue__card.blog{
+      height: 30rem;
     }
 
    
@@ -394,6 +410,12 @@
   .our-benefits-features-carousel__content .slide > span {
     gap: var(--fs-md);
 
+  }
+  .catalogue__card.blog img{
+      height: 300px;
+    }
+  .catalogue__card.blog{
+    height: 40rem;
   }
 
 
