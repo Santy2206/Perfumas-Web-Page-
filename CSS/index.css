@@ -26,9 +26,9 @@ html , body{
   --fs-md:2.5rem;
   --fs-sm:2rem;
   --fs-xs:1.5rem;
-}  */
+}   */
 
-/* Red Version */
+/* Red Version 1 */
   /* :root {
   --bg-main: #1a0000;          
   --bg-accent: #330000;        
@@ -48,8 +48,9 @@ html , body{
   --fs-md: 2.5rem;
   --fs-sm: 2rem;
   --fs-xs: 1.5rem;
-}   */
- :root {
+}    */
+/* Red Version 2 */
+  :root {
   --bg-main: #5c1a1a;
   --bg-accent: #3d0f10;
   --bg-secondary: #752626;
@@ -70,7 +71,7 @@ html , body{
   --fs-md: 2.5rem;
   --fs-sm: 2rem;
   --fs-xs: 1.5rem;
-}  
+}   
 
 /* White Version  */
 
@@ -93,7 +94,7 @@ html , body{
   --fs-md: 2.5rem;
   --fs-sm: 2rem;
   --fs-xs: 1.5rem;
-} */
+}  */
 
 
 

@@ -191,7 +191,7 @@
       width: 25rem;
     }
     .catalogue__card.blog{
-      height: 40rem;
+      height: 35rem;
     }
     
 }
@@ -371,7 +371,7 @@
     font-size: var(--fs-lg);
   }
   .our-physical-store{
-    border-bottom-right-radius:114px ;
+    border-bottom-right-radius:70px ;
   }
   .our-physical-store ul {
     align-items: center;
@@ -521,6 +521,12 @@
     flex-direction: column;
 
   }
+  .ask-questions{
+    gap: var(--fs-2xl);
+  }
+  .drop-down{
+    gap: var(--fs-md);
+  }
 
 }
 
@@ -587,6 +593,9 @@
     padding: 2rem;
     background-color: var(--bg-main);
     color: var(--text-main);
+  }
+  .hero-text-about-us{
+    margin-bottom:3rem;
   }
   .card{
     width:100% ;
@@ -670,6 +679,12 @@
   }
   img.footer-logo{
     width:20rem;
+  }
+  .ask-questions{
+    gap: var(--fs-2xl);
+  }
+  .drop-down{
+    gap: var(--fs-xl);
   }
 
  
