@@ -3,33 +3,32 @@ html , body{
   overflow-x: hidden;
 }
 
-/* Black Version */
- /* :root{
-  
-  --bg-main: #121212;          
-  --bg-accent: #8B0000;         
-  --bg-secondary: #1e1e1e;    
-  --bg-section: #fdf6e3;      
 
-  
-  --item-accent: #b22222;       
-  --item-gold: #d4af37;         
+/* White Version  */
 
-  
-  --text-main: #f5f5f5;         
-  --text-inverse: #0a0a0a;     
-  --text-muted: #c0c0c0;       
+/* :root {
+  --bg-main: #fdfaf7;
+  --bg-accent: #5c1a1a;
+  --bg-secondary: #f1ece7;
+  --bg-section: #fffdf9;
 
-  --fs-2xl:4.5rem;
-  --fs-xl:4rem;
-  --fs-lg:3.5rem;
-  --fs-md:2.5rem;
-  --fs-sm:2rem;
-  --fs-xs:1.5rem;
+  --item-accent: #800020;
+  --item-gold: #bfa76f;
+
+  --text-main: #1e1e1e;
+  --text-inverse: black;
+  --text-muted: #7a6d6d;
+
+  --fs-2xl: 4.5rem;
+  --fs-xl: 4rem;
+  --fs-lg: 3.5rem;
+  --fs-md: 2.5rem;
+  --fs-sm: 2rem;
+  --fs-xs: 1.5rem;
 }   */
 
 /* Red Version 1 */
-  /* :root {
+   /* :root {
   --bg-main: #1a0000;          
   --bg-accent: #330000;        
   --bg-secondary: #2e0f0f;      
@@ -48,7 +47,9 @@ html , body{
   --fs-md: 2.5rem;
   --fs-sm: 2rem;
   --fs-xs: 1.5rem;
-}    */
+}   */
+
+
 /* Red Version 2 */
   :root {
   --bg-main: #5c1a1a;
@@ -73,29 +74,31 @@ html , body{
   --fs-xs: 1.5rem;
 }   
 
-/* White Version  */
 
-/* :root {
-  --bg-main: #fdfaf7;
-  --bg-accent: #5c1a1a;
-  --bg-secondary: #f1ece7;
-  --bg-section: #fffdf9;
+/* Black Version */
+  /* :root{
+  
+  --bg-main: #121212;          
+  --bg-accent: #8B0000;         
+  --bg-secondary: #1e1e1e;    
+  --bg-section: #fdf6e3;      
 
-  --item-accent: #800020;
-  --item-gold: #bfa76f;
+  
+  --item-accent: #b22222;       
+  --item-gold: #d4af37;         
 
-  --text-main: #1e1e1e;
-  --text-inverse: black;
-  --text-muted: #7a6d6d;
+  
+  --text-main: #f5f5f5;         
+  --text-inverse: #0a0a0a;     
+  --text-muted: #c0c0c0;       
 
-  --fs-2xl: 4.5rem;
-  --fs-xl: 4rem;
-  --fs-lg: 3.5rem;
-  --fs-md: 2.5rem;
-  --fs-sm: 2rem;
-  --fs-xs: 1.5rem;
-}  */
-
+  --fs-2xl:4.5rem;
+  --fs-xl:4rem;
+  --fs-lg:3.5rem;
+  --fs-md:2.5rem;
+  --fs-sm:2rem;
+  --fs-xs:1.5rem;
+}    */
 
 
 
