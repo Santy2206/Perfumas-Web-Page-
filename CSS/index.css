@@ -629,6 +629,7 @@ span.footer-links-column{
   align-items: center;
   text-align: center;
   width: 100%;
+  font-size: var(--fs-sm);
 }
 .divider-line{
   background-color: var(--item-gold);
@@ -639,12 +640,10 @@ span.footer-links-column{
   background-color: var(--bg-main);
   color: var(--item-gold);
   padding: 2rem;
-  font-size: var(--fs-sm);
 }
 .rights::before{
   color: var(--item-gold);
   content:"©";
-  font-size: var(--fs-200);
 
 }
 
