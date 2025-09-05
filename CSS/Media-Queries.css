@@ -81,11 +81,11 @@
 
 @media (max-width:2095px) {
     :root{
-      --fs-2xl:7rem;
-      --fs-xl:6rem;
-      --fs-lg:5rem;
-      --fs-md:4rem;
-      --fs-sm:3rem;
+      --fs-2xl:6rem;
+      --fs-xl:5rem;
+      --fs-lg:4rem;
+      --fs-md:3rem;
+      --fs-sm:2rem;
       --fs-xs:2rem;
     }
     nav ul {
@@ -102,7 +102,7 @@
       height: 30rem;
     }
     .call-to-action-smaller {
-      font-size: 3rem;
+      font-size: var(--fs-sm);
     }
     .index-features-carousel__content{
       min-height: 65rem;
