@@ -305,7 +305,7 @@ section.three , .features{
   gap:var(--fs-sm);
 }
 img.testimony-client-photo{
-  border-radius:50%;
+  border-radius:20%;
   width: 15%;
 }
 .text-testimony{
