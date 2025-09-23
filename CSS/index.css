@@ -6,7 +6,7 @@ html , body{
 
 /* White Version  */
 
-/* :root {
+:root {
   --bg-main: #fdfaf7;
   --bg-accent: #5c1a1a;
   --bg-secondary: #f1ece7;
@@ -25,33 +25,11 @@ html , body{
   --fs-md: 2.5rem;
   --fs-sm: 2rem;
   --fs-xs: 1.5rem;
-}   */
-
-/* Red Version 1 */
-   /* :root {
-  --bg-main: #1a0000;          
-  --bg-accent: #330000;        
-  --bg-secondary: #2e0f0f;      
-  --bg-section: #f4efe6;       
-
-  --item-accent: #a60000;       
-  --item-gold: #cba135;        
-  
-  --text-main: #f8f8f8;       
-  --text-inverse: #1a1a1a;    
-  --text-muted: #b8b8b8;       
-
-  --fs-2xl: 4.5rem;
-  --fs-xl: 4rem;
-  --fs-lg: 3.5rem;
-  --fs-md: 2.5rem;
-  --fs-sm: 2rem;
-  --fs-xs: 1.5rem;
-}   */
+}   
 
 
 /* Red Version 2 */
-  :root {
+  /* :root {
   --bg-main: #5c1a1a;
   --bg-accent: #3d0f10;
   --bg-secondary: #752626;
@@ -72,32 +50,6 @@ html , body{
   --fs-md: 2.5rem;
   --fs-sm: 2rem;
   --fs-xs: 1.5rem;
-}   
-
-
-/* Black Version */
-  /* :root{
-  
-  --bg-main: #121212;          
-  --bg-accent: #8B0000;         
-  --bg-secondary: #1e1e1e;    
-  --bg-section: #fdf6e3;      
-
-  
-  --item-accent: #b22222;       
-  --item-gold: #d4af37;         
-
-  
-  --text-main: #f5f5f5;         
-  --text-inverse: #0a0a0a;     
-  --text-muted: #c0c0c0;       
-
-  --fs-2xl:4.5rem;
-  --fs-xl:4rem;
-  --fs-lg:3.5rem;
-  --fs-md:2.5rem;
-  --fs-sm:2rem;
-  --fs-xs:1.5rem;
 }    */
 
 
