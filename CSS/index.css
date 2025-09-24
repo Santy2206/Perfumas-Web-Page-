@@ -7,25 +7,31 @@ html , body{
 /* White Version  */
 
 :root {
-  --bg-main: #fdfaf7;
-  --bg-accent: #5c1a1a;
-  --bg-secondary: #f1ece7;
-  --bg-section: #fffdf9;
+  /* --- Fondos --- */
+  --bg-main: #fdf5e6;       /* Blanco crema (tono marfil suave) */
+  --bg-accent: #8b0000;     /* Rojo intenso para áreas de acento */
+  --bg-secondary: #f6efe0;  /* Crema ligeramente más oscuro para secciones secundarias */
+  --bg-section: #fcf1da;    /* Crema cálido para bloques/sections */
 
-  --item-accent: #800020;
-  --item-gold: #bfa76f;
+  /* --- Elementos de color --- */
+  --item-accent: #b22222;   /* Rojo burdeos para elementos destacados */
+  --item-gold: #d4af37;     /* Dorado clásico para detalles elegantes */
 
-  --text-main: #1e1e1e;
-  --text-inverse: black;
-  --text-muted: #7a6d6d;
+  /* --- Tipografía --- */
+  --text-main: #1e1e1e;     /* Texto principal en gris oscuro/negro suave */
+  --text-inverse: #ffffff;  /* Texto inverso en blanco para fondos oscuros */
+  --text-muted: #7a6d6d;    /* Gris cálido para texto secundario */
 
+  /* --- Tamaños de fuente --- */
   --fs-2xl: 4.5rem;
   --fs-xl: 4rem;
   --fs-lg: 3.5rem;
   --fs-md: 2.5rem;
   --fs-sm: 2rem;
   --fs-xs: 1.5rem;
-}   
+}
+
+
 
 
 /* Red Version 2 */
