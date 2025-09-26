@@ -6,23 +6,33 @@ html , body{
 
 /* White Version  */
 
+ /* :root {
+  --bg-main: #fdf5e6;       
+  --bg-accent: #8b0000;     
+  --bg-secondary: #f6efe0;  
+  --bg-section: #fcf1da;    
+
+
+  --item-accent: #b22222;   
+  --item-gold: #d4af37;     
+
+  
+  --text-main: #1e1e1e;     
+  --text-inverse: #ffffff;  
+  --text-muted: #7a6d6d;    
+  --fs-2xl: 4.5rem;
+  --fs-xl: 4rem;
+  --fs-lg: 3.5rem;
+  --fs-md: 2.5rem;
+  --fs-sm: 2rem;
+  --fs-xs: 1.5rem;
+} */
 :root {
-  /* --- Fondos --- */
-  --bg-main: #fdf5e6;       /* Blanco crema (tono marfil suave) */
-  --bg-accent: #8b0000;     /* Rojo intenso para áreas de acento */
-  --bg-secondary: #f6efe0;  /* Crema ligeramente más oscuro para secciones secundarias */
-  --bg-section: #fcf1da;    /* Crema cálido para bloques/sections */
-
-  /* --- Elementos de color --- */
-  --item-accent: #b22222;   /* Rojo burdeos para elementos destacados */
-  --item-gold: #d4af37;     /* Dorado clásico para detalles elegantes */
-
-  /* --- Tipografía --- */
-  --text-main: #1e1e1e;     /* Texto principal en gris oscuro/negro suave */
-  --text-inverse: #ffffff;  /* Texto inverso en blanco para fondos oscuros */
-  --text-muted: #7a6d6d;    /* Gris cálido para texto secundario */
-
-  /* --- Tamaños de fuente --- */
+  --bg-white:#FFFFFF;
+  --bg-black:#0A0A0A;
+  --bg-red:#8B0000;
+  --bg-gold:#C9A227;
+  
   --fs-2xl: 4.5rem;
   --fs-xl: 4rem;
   --fs-lg: 3.5rem;
