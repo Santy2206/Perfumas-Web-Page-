@@ -146,9 +146,12 @@ li{
   list-style: none;
   font-size: var(--fs-sm);
 }
-.fa-x:hover,.fa-bars:hover,.desktop-links li:hover, .mobile-links li:hover{
-  text-shadow: 0 0 20px white;
+.fa-x:hover,.fa-bars:hover{
+  text-shadow: 0 0 20px black;
   transition: 0.3s ;
+}
+.desktop-links li:hover, .mobile-links li:hover{
+  color:var(--bg-red)
 }
 a{ 
   text-decoration: none;
