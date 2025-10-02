@@ -151,7 +151,8 @@ li{
   transition: 0.3s ;
 }
 .desktop-links li:hover, .mobile-links li:hover{
-  color:var(--bg-red)
+  color:var(--bg-gold);
+  transition: 0.3s;
 }
 a{ 
   text-decoration: none;
@@ -259,7 +260,8 @@ article.information-text span {
 } 
 
 section.three , .features{
-  background-color: var(--bg-secondary);
+  background-color: var(--bg-black);
+  color:var(--bg-white);
 }
 .part-content{
   display: flex;
@@ -299,6 +301,11 @@ img.testimony-client-photo{
 }
 .sub-static-icon{
   font-size: var(--fs-xl);
+}
+
+section.features-carousel{
+  background-color: var(--bg-black);
+  color:var(--bg-white)
 }
 
 .index-features-carousel__content .features-carousel {
@@ -493,8 +500,8 @@ span.icon-container{
 }
 
 footer { 
-  background-color: var(--bg-main);
-  color: var(--text-main);
+  background-color: var(--bg-black);
+  color: var(--bg-white);
   flex-direction: column;
 }
 .footer-content {
@@ -560,9 +567,9 @@ span.footer-links-column{
   gap: var(--fs-xs);
 }
 .footer-links-column li:hover{
-  opacity: 1;
+  opacity: 0.8;
   transition: 0.5s;
-  color: var(--item-gold);
+  color: var(--bg-gold);
 }
 .footer-links-column i{
   font-size: var(--fs-md);
