@@ -260,8 +260,8 @@ article.information-text span {
 } 
 
 section.three , .features{
-  background-color: var(--bg-black);
-  color:var(--bg-white);
+  background-color: #FFFDD0;
+  color:var(--bg-black);
 }
 .part-content{
   display: flex;
@@ -304,8 +304,8 @@ img.testimony-client-photo{
 }
 
 section.features-carousel{
-  background-color: var(--bg-black);
-  color:var(--bg-white)
+  background-color: #FFFDD0;
+  color:var(--bg-black)
 }
 
 .index-features-carousel__content .features-carousel {
