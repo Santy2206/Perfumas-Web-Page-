@@ -28,7 +28,7 @@
 }
 .card .face1{
   /* background-color: var(--bg-main); */
-  background-color: var(--item-accent);
+  background-color: var(--bg-red);
   position: relative;
   display: flex;
   color: white;
@@ -41,7 +41,7 @@
 }
 .card:hover .face1 {
   position: relative;
-  background: var(--item-accent);
+  background: var(--bg-black);
   z-index: 1;
   transform: translateY(0)
 

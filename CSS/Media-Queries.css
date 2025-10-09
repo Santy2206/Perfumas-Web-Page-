@@ -26,7 +26,6 @@
       width:90rem;
     }
     .card .face1 {
-      background-color: var(--item-accent);
       transform: translateY(0);
       box-shadow: none;
       height:35rem;
@@ -151,7 +150,6 @@
     }
 
     .card .face1 {
-      background-color: var(--item-accent);
       transform: translateY(50%);
       box-shadow: 0px 10px 10px #27282c;
       height: none;
@@ -301,7 +299,6 @@
     border-radius: 1rem;
   }
   .card .face1 {
-    background-color: var(--item-accent);
     transform: translateY(0);
     box-shadow: none;
     height:17rem;

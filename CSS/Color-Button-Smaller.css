@@ -1,8 +1,8 @@
 .call-to-action-smaller{
   text-align: center;
   position: absolute;
-  background: var(--bg-main);
-  color: var(--bg-main);
+  background: var(--bg-red);
+  color: var(--bg-white);
   text-transform: uppercase;
   font-size: 1em;
   letter-spacing:0.1em;
@@ -14,8 +14,8 @@
 }
 .call-to-action-smaller:hover 
 {
-  background:var(--text-main);
-  color: var(--item-gold);
+  background:var(--bg-black);
+  color: var(--bg-gold);
   letter-spacing: 0.2em; 
   box-shadow: 0 0 35px var(--text-main);
 }
