@@ -24,7 +24,7 @@
   content:"";
   position: absolute;
   inset:2px;
-  background: var(--item-accent);
+  background: var(--bg-black);
 }
 .call-to-action-smaller span {
   position: relative;
