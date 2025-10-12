@@ -265,7 +265,7 @@ article.information-text span {
 
 .section-headline{
   font-size: var(--fs-2xl);
-  color: var(--item-gold);
+  color: var(--bg-gold);
 }
 .two-content {
   display: flex;
