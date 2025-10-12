@@ -14,7 +14,7 @@
 }
 .call-to-action-smaller:hover 
 {
-  background:var(--bg-black);
+  background:var(--bg-red);
   color: var(--bg-gold);
   letter-spacing: 0.2em; 
   box-shadow: 0 0 35px var(--text-main);
