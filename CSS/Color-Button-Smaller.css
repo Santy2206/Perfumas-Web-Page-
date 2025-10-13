@@ -42,7 +42,7 @@
   left: 80%;
   width:10px;
   height:4px;
-  background: var(--item-accent);
+  background: var(--bg-red);
   transform: translateX(50%)skewX(325deg);
   transition: 0.5s;
 }
