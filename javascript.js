@@ -105,7 +105,7 @@ function toggleFaq(iconContainer) {
   answer.style.transition = '200ms opacity';
   answer.style.position = isOpen ? 'static' : 'absolute';
 
-  icon.style.color = isOpen ? 'red' : 'white';
+  icon.style.color = isOpen ? 'red' : 'black';
   icon.classList.replace(
     isOpen ? 'fa-caret-right' : 'fa-caret-down',
     isOpen ? 'fa-caret-down' : 'fa-caret-right'

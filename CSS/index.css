@@ -29,6 +29,7 @@ html , body{
 } */
 :root {
   --bg-white:#FFFFFF;
+  --bg-white-secondary:#FFFDD0;
   --bg-black:#0A0A0A;
   --bg-red:#8B0000;
   --bg-gold:#C9A227;
@@ -260,7 +261,7 @@ article.information-text span {
 } 
 
 section.three , .features{
-  background-color: #FFFDD0;
+  background-color:var(--bg-white-secondary);
   color:var(--bg-black);
 }
 .part-content{
@@ -284,6 +285,9 @@ img.testimony-client-photo{
 .text-testimony{
   font-size: var(--fs-md);
 }
+i.sub-static-icon {
+  color: var(--bg-red);
+}
 .statistic{
   display: flex;
   font-size: var(--fs-sm);
@@ -304,7 +308,7 @@ img.testimony-client-photo{
 }
 
 section.features-carousel{
-  background-color: #FFFDD0;
+  background-color: var(--bg-white-secondary);
   color:var(--bg-black)
 }
 
@@ -392,7 +396,7 @@ section.features-carousel{
   background: none;
   border: none;
   font-size: var(--fs-md);
-  color: rgba(255, 255, 255, .5);
+  color:black;
   background-color: rgba(0, 0, 0, .1);
   top: 50%;
   transform: translateY(-50%);
@@ -402,7 +406,7 @@ section.features-carousel{
 }
 .button:hover,
 .button:focus{
-  color:white;
+  color:black;
   background-color: rgba(0, 0, 0, .2);
 }
 .button:focus{
@@ -422,14 +426,14 @@ section.features-carousel{
   top:95%;
 }
 .card-icon i[data-white]{
-  color: var(--item-gold);
+  color: var(--bg-red);
 }
 .our-physical-store {
-  background-color: var(--bg-secondary);
+  background-color: var(--bg-black);
   background-blend-mode: multiply;
   background-position-x: center;
   background-size: cover;
-  color: var(--text-main);
+  color: var(--bg-white);
 }
 .our-physical-store ul{
   display: flex;
