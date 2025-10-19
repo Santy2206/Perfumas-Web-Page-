@@ -192,6 +192,9 @@
       font-size:1em;
       width: 85%;
     }
+    .call-to-action-smaller:before{
+        background: var(--bg-black);
+      }
     .index-features-carousel__content{
       min-height: 40rem;
     }
