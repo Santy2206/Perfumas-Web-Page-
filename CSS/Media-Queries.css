@@ -68,7 +68,10 @@
       letter-spacing: 0.2em; 
       box-shadow: 0 0 35px var(--bg-black);
     }
-    .call-to-action-smaller:hover:before{
+    .card:hover .call-to-action-smaller:before ,.call-to-action-smaller:hover:before{
+      background: var(--bg-black);
+    }
+    .card:hover .call-to-action-smaller i::before ,.card:hover .call-to-action-smaller i::after{
       background: var(--bg-black);
     }
     .index-features-carousel__content{
@@ -193,8 +196,19 @@
       width: 85%;
     }
     .call-to-action-smaller:before{
-        background: var(--bg-black);
-      }
+      background: var(--bg-black);
+    }
+    .call-to-action-smaller i::before ,.call-to-action-smaller i::after{
+      background: var(--bg-black);
+    }
+    .call-to-action-smaller:hover{
+      background:var(--bg-gold);
+      color: var(--bg-gold); 
+      box-shadow: 0 0 35px var(--bg-black);
+    }
+    .call-to-action-smaller:hover:before{
+      background: var(--bg-black);
+    }
     .index-features-carousel__content{
       min-height: 40rem;
     }
