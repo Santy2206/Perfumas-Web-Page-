@@ -17,7 +17,7 @@
 }
 .catalogue__card {
   display: flex;
-  opacity:0.4;
+  opacity:0.8;
   flex-direction: column;
   background: var(--bg-main);
   color: var(--text-main);
@@ -27,10 +27,10 @@
   transition:1s;
 }
 .catalogue__card:hover .call-to-action{
-  background: var(--item-accent);
-  color: var(--item-gold) ;
+  background: var(--bg-gold);
+  color: var(--bg-gold) ;
   letter-spacing: 0.2em; 
-  box-shadow: 0 0 35px var(--item-accent);
+  box-shadow: 0 0 35px var(--bg-black);
 }
 .call-to-action{
   display: flex;
