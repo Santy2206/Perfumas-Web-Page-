@@ -20,7 +20,7 @@
 .catalogue__card {
   display: flex;
   flex-direction: column;
-  background: var(--bg-main);
+  background: var(--bg-white);
   color: var(--text-main);
   gap:var(--fs-xs);
   height: 35rem;
