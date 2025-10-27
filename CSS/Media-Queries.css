@@ -552,6 +552,10 @@
   .drop-down{
     gap: var(--fs-md);
   }
+  .future-vision article div span {
+    width:100%;
+  }
+
 
 }
 
