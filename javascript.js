@@ -102,7 +102,7 @@ function toggleFaq(iconContainer) {
 
   answer.style.zIndex = isOpen ? '1' : '-999';
   answer.style.opacity = isOpen ? '1' : '0';
-  answer.style.transition = '200ms opacity';
+  answer.style.transition = '0ms opacity';
   answer.style.position = isOpen ? 'static' : 'absolute';
 
   icon.style.color = isOpen ? 'red' : 'black';
