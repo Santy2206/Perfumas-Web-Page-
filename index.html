@@ -1127,7 +1127,6 @@
           </div>
         </div>
       </section>
-
       <!-- ============ COMING SOON / NEWSLETTER ============ -->
       <section id="soon" class="bg-wine-950 py-24 relative overflow-hidden">
         <div
@@ -1435,7 +1434,6 @@
     <script>
       document.getElementById("year").textContent = new Date().getFullYear();
 
-      const revealEls = document.querySelectorAll(".reveal");
       if ("IntersectionObserver" in window) {
         const io = new IntersectionObserver(
           (entries) => {
@@ -1448,9 +1446,29 @@
           },
           { threshold: 0.15 },
         );
-        revealEls.forEach((el) => io.observe(el));
+
+        // Observe everything already on the page
+        document.querySelectorAll(".reveal").forEach((el) => io.observe(el));
+
+        // Also observe .reveal elements added later (e.g. Alpine's x-for, like the FAQ list)
+        const mo = new MutationObserver((mutations) => {
+          mutations.forEach((m) => {
+            m.addedNodes.forEach((node) => {
+              if (node.nodeType !== 1) return;
+              if (node.classList && node.classList.contains("reveal"))
+                io.observe(node);
+              if (node.querySelectorAll)
+                node
+                  .querySelectorAll(".reveal")
+                  .forEach((el) => io.observe(el));
+            });
+          });
+        });
+        mo.observe(document.body, { childList: true, subtree: true });
       } else {
-        revealEls.forEach((el) => el.classList.add("in-view"));
+        document
+          .querySelectorAll(".reveal")
+          .forEach((el) => el.classList.add("in-view"));
       }
     </script>
   </body>
