@@ -1,0 +1,1475 @@
+<!doctype html>
+<html lang="es" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Perfumas | Perfumería de Autor en Bogotá — Fragancias Premium, Precio
+      Justo
+    </title>
+    <meta
+      name="description"
+      content="Fragancias inspiradas en las casas de perfumería más exclusivas, elaboradas a base de aceite con hasta 10 horas de duración. Perfumería familiar en Bogotá desde 2015. Fontibón y Bonanza."
+    />
+    <meta
+      name="keywords"
+      content="perfumes Bogotá, perfumería, fragancias a base de aceite, réplicas de perfume, Perfumas Fontibón, Perfumas Bonanza, perfumería de autor"
+    />
+    <meta name="author" content="Perfumas" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://perfumas.com.co/" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Perfumas | Perfumería de Autor en Bogotá"
+    />
+    <meta
+      property="og:description"
+      content="Fragancias premium a base de aceite, hasta 10 horas de duración. Calidad de autor a precios justos, desde 2015."
+    />
+    <meta
+      property="og:image"
+      content="https://perfumas.com.co/Images/Home/Happy%20Client.jpg"
+    />
+    <meta property="og:url" content="https://perfumas.com.co/" />
+    <meta property="og:locale" content="es_CO" />
+    <meta property="og:site_name" content="Perfumas" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Perfumas | Perfumería de Autor en Bogotá"
+    />
+    <meta
+      name="twitter:description"
+      content="Fragancias premium a base de aceite, hasta 10 horas de duración. Desde 2015 en Bogotá."
+    />
+
+    <meta name="theme-color" content="#3a1010" />
+    <link rel="icon" type="image/png" href="Images/Perfumas-logo.png" />
+
+    <!-- Fonts: Fraunces (display, characterful serif with optical-size personality) + Work Sans (body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Work+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind (Play CDN) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              ink: "#201411",
+              bone: "#f5efe1",
+              wine: {
+                950: "#230a0b",
+                900: "#3a1010",
+                800: "#5c1a1a",
+                700: "#7a2222",
+                600: "#95302f",
+              },
+              burgundy: { 600: "#800020", 500: "#9c1230" },
+              gold: {
+                100: "#f2e4c2",
+                300: "#ddbd85",
+                400: "#caa969",
+                600: "#a5824a",
+              },
+            },
+            fontFamily: {
+              display: ['"Fraunces"', "serif"],
+              sans: ['"Work Sans"', "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- Font Awesome (existing Perfumas kit) -->
+    <script
+      src="https://kit.fontawesome.com/4f11154ed4.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Alpine.js (collapse plugin must load before core) -->
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/@alpinejs/collapse@3.x.x/dist/cdn.min.js"
+    ></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
+
+    <!-- JSON-LD structured data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Store",
+        "name": "Perfumas",
+        "image": "https://perfumas.com.co/Images/Home/Happy%20Client.jpg",
+        "url": "https://perfumas.com.co/",
+        "telephone": "+573503370279",
+        "email": "perfumas2015@gmail.com",
+        "priceRange": "$$",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Calle 18 #103a-26, Fontibón",
+          "addressLocality": "Bogotá",
+          "addressCountry": "CO"
+        },
+        "sameAs": [
+          "https://www.facebook.com/punto.perfumas",
+          "https://www.instagram.com/puntoperfumas",
+          "https://www.tiktok.com/@punto.perfumas1"
+        ]
+      }
+    </script>
+
+    <style>
+      [x-cloak] {
+        display: none !important;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        font-family: "Work Sans", sans-serif;
+        background: #f5efe1;
+        color: #201411;
+      }
+      .font-display {
+        font-family: "Fraunces", serif;
+      }
+      ::selection {
+        background: #caa969;
+        color: #230a0b;
+      }
+
+      .reveal {
+        opacity: 0;
+        transform: translateY(22px);
+        transition:
+          opacity 0.7s ease,
+          transform 0.7s ease;
+      }
+      .reveal.in-view {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .reveal {
+          opacity: 1 !important;
+          transform: none !important;
+          transition: none !important;
+        }
+        * {
+          animation-duration: 0.001ms !important;
+          animation-iteration-count: 1 !important;
+        }
+      }
+
+      .text-gold-gradient {
+        background: linear-gradient(120deg, #caa969, #f2e4c2 45%, #caa969);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+      }
+
+      .hairline {
+        border-color: rgba(202, 169, 105, 0.35) !important;
+      }
+
+      @keyframes drift {
+        0%,
+        100% {
+          transform: translate3d(0, 0, 0) scale(1);
+        }
+        50% {
+          transform: translate3d(2%, -3%, 0) scale(1.05);
+        }
+      }
+      .drift {
+        animation: drift 14s ease-in-out infinite;
+      }
+
+      @keyframes pulseRing {
+        0% {
+          box-shadow: 0 0 0 0 rgba(202, 169, 105, 0.55);
+        }
+        100% {
+          box-shadow: 0 0 0 16px rgba(202, 169, 105, 0);
+        }
+      }
+      .pulse-ring {
+        animation: pulseRing 2.2s ease-out infinite;
+      }
+
+      .label-card {
+        position: relative;
+      }
+      .label-card::before {
+        content: "";
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        width: 10px;
+        height: 10px;
+        border-top: 1px solid rgba(202, 169, 105, 0.6);
+        border-left: 1px solid rgba(202, 169, 105, 0.6);
+      }
+      .label-card::after {
+        content: "";
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        width: 10px;
+        height: 10px;
+        border-bottom: 1px solid rgba(202, 169, 105, 0.6);
+        border-right: 1px solid rgba(202, 169, 105, 0.6);
+      }
+    </style>
+  </head>
+
+  <body x-data="{ mobileOpen:false }" class="antialiased">
+    <a
+      href="#main"
+      class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[999] bg-gold-400 text-wine-950 px-4 py-2 text-sm font-medium rounded-sm"
+      >Saltar al contenido principal</a
+    >
+
+    <!-- ============ HEADER ============ -->
+    <header
+      x-data="{ scrolled:false }"
+      @scroll.window="scrolled = window.scrollY > 24"
+      :class="scrolled ? 'bg-wine-950/95 backdrop-blur-md py-3 shadow-lg shadow-black/30' : 'bg-transparent py-6'"
+      class="fixed inset-x-0 top-0 z-50 transition-all duration-500"
+    >
+      <div
+        class="max-w-7xl mx-auto px-6 lg:px-10 flex items-center justify-between"
+      >
+        <a href="#top" class="flex items-center gap-3 group">
+          <img
+            src="Images/Logo velas artesanales rosa/Perfumas-two.png"
+            alt="Perfumas"
+            class="h-9 md:h-11 w-auto"
+          />
+          <span class="font-display text-xl md:text-2xl tracking-wide text-bone"
+            >Perfumas</span
+          >
+        </a>
+
+        <nav
+          class="hidden lg:flex items-center gap-9 text-[11px] uppercase tracking-[0.22em] text-bone/85"
+        >
+          <a href="#coleccion" class="hover:text-gold-400 transition-colors"
+            >Colección</a
+          >
+          <a href="#beneficios" class="hover:text-gold-400 transition-colors"
+            >Beneficios</a
+          >
+          <a href="#testimonios" class="hover:text-gold-400 transition-colors"
+            >Testimonios</a
+          >
+          <a href="#faq" class="hover:text-gold-400 transition-colors"
+            >Preguntas</a
+          >
+          <a
+            href="HTML/about-us.html"
+            class="hover:text-gold-400 transition-colors"
+            >Nosotros</a
+          >
+          <a href="HTML/blog.html" class="hover:text-gold-400 transition-colors"
+            >Blog</a
+          >
+        </nav>
+
+        <div class="hidden lg:flex items-center gap-5">
+          <span class="group relative">
+            <button
+              type="button"
+              aria-disabled="true"
+              class="text-bone/50 text-lg cursor-not-allowed"
+              aria-label="Tienda en línea, próximamente"
+            >
+              <i class="fa-solid fa-bag-shopping"></i>
+            </button>
+            <span
+              class="pointer-events-none absolute -bottom-10 right-1/2 translate-x-1/2 whitespace-nowrap bg-wine-950 border hairline text-gold-400 text-[10px] uppercase tracking-widest px-3 py-1.5 rounded-sm opacity-0 group-hover:opacity-100 transition-opacity"
+              >Tienda: muy pronto</span
+            >
+          </span>
+          <a
+            href="https://wa.me/573503370279"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center gap-2 bg-gold-400 hover:bg-gold-300 text-wine-950 text-[11px] font-semibold uppercase tracking-[0.18em] px-6 py-3 rounded-sm transition-colors"
+          >
+            Escríbenos <i class="fa-brands fa-whatsapp"></i>
+          </a>
+        </div>
+
+        <button
+          @click="mobileOpen=true"
+          class="lg:hidden text-bone text-2xl"
+          aria-label="Abrir menú"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </header>
+
+    <!-- Mobile menu -->
+    <div
+      x-cloak
+      x-show="mobileOpen"
+      x-transition:enter="transition ease-out duration-300"
+      x-transition:enter-start="opacity-0"
+      x-transition:enter-end="opacity-100"
+      x-transition:leave="transition ease-in duration-200"
+      x-transition:leave-start="opacity-100"
+      x-transition:leave-end="opacity-0"
+      class="fixed inset-0 z-[100] bg-wine-950/98 backdrop-blur-lg flex flex-col"
+    >
+      <div class="flex justify-between items-center px-6 py-6">
+        <img
+          src="Images/Logo velas artesanales rosa/Perfumas-two.png"
+          alt="Perfumas"
+          class="h-9"
+        />
+        <button
+          @click="mobileOpen=false"
+          class="text-bone text-2xl"
+          aria-label="Cerrar menú"
+        >
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <nav
+        class="flex-1 flex flex-col items-center justify-center gap-7 font-display text-2xl text-bone"
+      >
+        <a @click="mobileOpen=false" href="#coleccion">Colección</a>
+        <a @click="mobileOpen=false" href="#beneficios">Beneficios</a>
+        <a @click="mobileOpen=false" href="#testimonios">Testimonios</a>
+        <a @click="mobileOpen=false" href="#faq">Preguntas</a>
+        <a @click="mobileOpen=false" href="HTML/about-us.html">Nosotros</a>
+        <a @click="mobileOpen=false" href="HTML/blog.html">Blog</a>
+        <a @click="mobileOpen=false" href="#contacto">Contacto</a>
+        <a
+          href="https://wa.me/573503370279"
+          target="_blank"
+          class="mt-4 bg-gold-400 text-wine-950 px-8 py-3 text-sm uppercase tracking-widest rounded-sm"
+          >Escríbenos</a
+        >
+      </nav>
+    </div>
+
+    <main id="main">
+      <!-- ============ HERO ============ -->
+      <section
+        id="top"
+        class="relative min-h-screen flex items-center bg-wine-950 overflow-hidden pt-36 pb-24 lg:pt-24"
+      >
+        <div
+          class="absolute -top-1/3 -left-1/4 w-[60rem] h-[60rem] rounded-full bg-burgundy-600/25 blur-3xl drift"
+        ></div>
+        <div
+          class="absolute -bottom-1/3 -right-1/4 w-[50rem] h-[50rem] rounded-full bg-gold-400/10 blur-3xl drift"
+          style="animation-delay: 3s"
+        ></div>
+
+        <div
+          class="max-w-7xl mx-auto px-6 lg:px-10 grid lg:grid-cols-[1.1fr_0.9fr] gap-16 items-center relative z-10"
+        >
+          <div class="reveal">
+            <p class="text-gold-400 uppercase tracking-[0.35em] text-xs mb-6">
+              Perfumería de autor · Bogotá, Colombia
+            </p>
+            <h1
+              class="font-display font-normal text-5xl md:text-6xl xl:text-7xl leading-[1.05] text-bone mb-7"
+            >
+              El lujo de oler bien,<br class="hidden md:block" />
+              <span class="italic text-gold-gradient">sin pagar de más.</span>
+            </h1>
+            <p class="text-bone/70 text-lg max-w-lg mb-10 leading-relaxed">
+              Fragancias inspiradas en las casas de perfumería más exclusivas
+              del mundo, elaboradas a base de aceite para una permanencia de
+              hasta 10 horas. Calidad de autor, precios honestos — familia
+              perfumista desde 2015.
+            </p>
+            <div class="flex flex-wrap gap-4 mb-16">
+              <a
+                href="HTML/catalogo.html"
+                class="inline-flex items-center gap-3 bg-gold-400 hover:bg-bone text-wine-950 px-8 py-4 text-sm font-semibold uppercase tracking-[0.16em] rounded-sm transition-colors"
+              >
+                Explorar colección
+                <i class="fa-solid fa-arrow-right text-xs"></i>
+              </a>
+              <a
+                href="https://wa.me/573503370279"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center gap-3 border hairline hover:border-gold-400 text-bone hover:text-gold-400 px-8 py-4 text-sm uppercase tracking-[0.16em] rounded-sm transition-colors"
+              >
+                Encuentra tu aroma ideal
+              </a>
+            </div>
+            <div class="flex flex-wrap gap-10">
+              <div>
+                <span class="block font-display text-3xl text-gold-400"
+                  >+8.000</span
+                >
+                <span class="text-[11px] uppercase tracking-widest text-bone/60"
+                  >Clientes felices</span
+                >
+              </div>
+              <div>
+                <span class="block font-display text-3xl text-gold-400"
+                  >10+ años</span
+                >
+                <span class="text-[11px] uppercase tracking-widest text-bone/60"
+                  >De trayectoria</span
+                >
+              </div>
+              <div>
+                <span class="block font-display text-3xl text-gold-400"
+                  >294</span
+                >
+                <span class="text-[11px] uppercase tracking-widest text-bone/60"
+                  >Fragancias</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Signature: hero image framed as a bottle silhouette, with a "cap" and floating stat chips -->
+          <div class="relative reveal justify-self-center">
+            <div
+              class="w-14 h-16 bg-gold-400 rounded-t-md mx-auto relative z-20 shadow-lg"
+            ></div>
+            <div
+              class="relative -mt-2 w-[17rem] sm:w-80 md:w-96 rounded-t-[999px] rounded-b-3xl overflow-hidden border hairline shadow-2xl shadow-black/50"
+            >
+              <img
+                src="Images/Home/Happy Client.jpg"
+                alt="Clienta feliz sosteniendo su fragancia Perfumas"
+                class="w-full h-[30rem] md:h-[36rem] object-cover"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-wine-950/70 via-transparent to-wine-950/20"
+              ></div>
+              <div class="absolute bottom-0 inset-x-0 text-center pb-6">
+                <span
+                  class="text-gold-400 text-[10px] uppercase tracking-[0.3em]"
+                  >Bogotá, Colombia — Est. 2015</span
+                >
+              </div>
+            </div>
+            <div
+              class="hidden md:block absolute top-10 -left-10 bg-bone/95 backdrop-blur rounded-sm px-5 py-4 shadow-xl border hairline"
+            >
+              <span class="block font-display text-2xl text-wine-900"
+                >10 hrs</span
+              >
+              <span class="text-[10px] uppercase tracking-widest text-ink/60"
+                >Duración promedio</span
+              >
+            </div>
+            <div
+              class="hidden md:block absolute bottom-14 -right-10 bg-bone/95 backdrop-blur rounded-sm px-5 py-4 shadow-xl border hairline"
+            >
+              <span class="block font-display text-2xl text-wine-900"
+                >Base de aceite</span
+              >
+              <span class="text-[10px] uppercase tracking-widest text-ink/60"
+                >Adaptada a tu piel</span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ TICKER STRIP ============ -->
+      <div
+        class="bg-gold-400 text-wine-950 overflow-hidden py-2.5 border-y border-wine-950/10"
+      >
+        <div
+          class="flex whitespace-nowrap text-[11px] font-semibold uppercase tracking-[0.25em]"
+          style="animation: marquee 26s linear infinite"
+        >
+          <span class="px-6">Envíos a toda Bogotá</span>·
+          <span class="px-6">Pago contraentrega</span>·
+          <span class="px-6">Atención personalizada</span>·
+          <span class="px-6">Preparación en 3–5 minutos</span>·
+          <span class="px-6">Programa de fidelidad</span>·
+          <span class="px-6">Envíos a toda Bogotá</span>·
+          <span class="px-6">Pago contraentrega</span>·
+          <span class="px-6">Atención personalizada</span>·
+          <span class="px-6">Preparación en 3–5 minutos</span>·
+          <span class="px-6">Programa de fidelidad</span>·
+        </div>
+      </div>
+      <style>
+        @keyframes marquee {
+          0% {
+            transform: translateX(0);
+          }
+          100% {
+            transform: translateX(-50%);
+          }
+        }
+      </style>
+
+      <!-- ============ LA DIFERENCIA PERFUMAS (cost + philosophy) ============ -->
+      <section class="bg-bone py-28 lg:py-36">
+        <div class="max-w-7xl mx-auto px-6 lg:px-10">
+          <div class="grid lg:grid-cols-2 gap-16 items-start">
+            <div class="reveal">
+              <p
+                class="text-burgundy-600 uppercase tracking-[0.3em] text-xs mb-5"
+              >
+                La realidad de la perfumería original
+              </p>
+              <h2
+                class="font-display text-4xl md:text-5xl leading-tight text-wine-950 mb-8"
+              >
+                ¿Vale la pena pagar <span class="italic">$800.000</span> por un
+                frasco de 100ml?
+              </h2>
+              <p class="text-ink/70 text-lg leading-relaxed mb-6">
+                A todos nos encanta oler bien — pero al revisar las finanzas, es
+                fácil sorprenderse con lo que cuesta el cuidado personal. Un
+                perfume original no baja de los
+                <strong class="text-wine-900">$150.000</strong> con descuento, y
+                en promedio ronda entre
+                <strong class="text-wine-900">$400.000 y $1.000.000</strong> de
+                pesos. Un frasco así dura, en el mejor de los casos, cuatro
+                meses.
+              </p>
+              <p class="text-ink/70 text-lg leading-relaxed">
+                Nuestras fragancias, igual que las originales, se elaboran a
+                base de aceite — lo que les da una alta perdurabilidad, ajustada
+                al pH de cada persona. Mismo ritual, mismo estatus, una fracción
+                del costo.
+              </p>
+            </div>
+
+            <div class="grid sm:grid-cols-3 gap-4 reveal">
+              <div
+                class="label-card bg-wine-950 text-bone p-7 rounded-sm border hairline"
+              >
+                <span class="block font-display text-3xl text-gold-400 mb-2"
+                  >$400K–$1M</span
+                >
+                <span
+                  class="text-xs text-bone/60 uppercase tracking-widest leading-relaxed"
+                  >Precio promedio de un perfume original</span
+                >
+              </div>
+              <div
+                class="label-card bg-wine-950 text-bone p-7 rounded-sm border hairline"
+              >
+                <span class="block font-display text-3xl text-gold-400 mb-2"
+                  >4 meses</span
+                >
+                <span
+                  class="text-xs text-bone/60 uppercase tracking-widest leading-relaxed"
+                  >Dura, en promedio, un frasco de 100ml</span
+                >
+              </div>
+              <div
+                class="label-card bg-wine-950 text-bone p-7 rounded-sm border hairline"
+              >
+                <span class="block font-display text-3xl text-gold-400 mb-2"
+                  >Alto riesgo</span
+                >
+                <span
+                  class="text-xs text-bone/60 uppercase tracking-widest leading-relaxed"
+                  >De fraude al comprar perfumería en línea</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ ANATOMÍA DE UNA FRAGANCIA (signature: real note pyramid) ============ -->
+      <section class="bg-wine-900 py-28 lg:py-32 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 lg:px-10 relative">
+          <div class="text-center max-w-2xl mx-auto mb-16 reveal">
+            <p class="text-gold-400 uppercase tracking-[0.3em] text-xs mb-4">
+              Cómo se compone una fragancia
+            </p>
+            <h2 class="font-display text-4xl md:text-5xl text-bone">
+              La anatomía de un aroma Perfumas
+            </h2>
+          </div>
+
+          <div class="grid md:grid-cols-3 gap-10 md:gap-6 relative">
+            <div
+              class="hidden md:block absolute top-8 left-[16.6%] right-[16.6%] h-px bg-gold-400/30"
+            ></div>
+
+            <div class="reveal text-center">
+              <span
+                class="relative z-10 inline-flex items-center justify-center w-16 h-16 rounded-full bg-wine-950 border hairline text-gold-400 font-display text-xl mb-6"
+                >01</span
+              >
+              <h3 class="font-display text-2xl text-bone mb-3">
+                Notas de salida
+              </h3>
+              <p class="text-bone/60 text-sm leading-relaxed max-w-xs mx-auto">
+                La primera impresión. Cítricas y frescas, se perciben al
+                instante y marcan el carácter inicial de la fragancia.
+              </p>
+            </div>
+            <div class="reveal text-center" style="transition-delay: 0.1s">
+              <span
+                class="relative z-10 inline-flex items-center justify-center w-16 h-16 rounded-full bg-wine-950 border hairline text-gold-400 font-display text-xl mb-6"
+                >02</span
+              >
+              <h3 class="font-display text-2xl text-bone mb-3">
+                Notas de corazón
+              </h3>
+              <p class="text-bone/60 text-sm leading-relaxed max-w-xs mx-auto">
+                La identidad de la fragancia. Florales, especiadas o amaderadas
+                — aquí vive el aroma que te representa.
+              </p>
+            </div>
+            <div class="reveal text-center" style="transition-delay: 0.2s">
+              <span
+                class="relative z-10 inline-flex items-center justify-center w-16 h-16 rounded-full bg-wine-950 border hairline text-gold-400 font-display text-xl mb-6"
+                >03</span
+              >
+              <h3 class="font-display text-2xl text-bone mb-3">
+                Notas de fondo
+              </h3>
+              <p class="text-bone/60 text-sm leading-relaxed max-w-xs mx-auto">
+                La huella duradera. Almizcladas o amaderadas, permanecen en la
+                piel horas después del primer contacto.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ COLECCIÓN DESTACADA ============ -->
+      <section id="coleccion" class="bg-bone py-28 lg:py-36">
+        <div class="max-w-7xl mx-auto px-6 lg:px-10">
+          <div
+            class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-16 reveal"
+          >
+            <div>
+              <p
+                class="text-burgundy-600 uppercase tracking-[0.3em] text-xs mb-4"
+              >
+                Nuestra colección
+              </p>
+              <h2 class="font-display text-4xl md:text-5xl text-wine-950">
+                Encuentra tu fragancia distintiva
+              </h2>
+            </div>
+            <p class="text-ink/60 max-w-sm">
+              Más de 294 fragancias inspiradas en las casas más exclusivas del
+              mundo, para cada personalidad y ocasión.
+            </p>
+          </div>
+
+          <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <a
+              href=""
+              class="label-card group relative bg-white rounded-sm overflow-hidden border hairline reveal"
+            >
+              <div class="aspect-[4/5] overflow-hidden">
+                <img
+                  src="Images/Catalogue/Good-Girl.jpg"
+                  alt="Perfumería Dama"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                />
+              </div>
+              <div class="p-6 flex items-center justify-between">
+                <h3 class="font-display text-xl text-wine-950">
+                  Perfumería Dama
+                </h3>
+                <span
+                  class="w-8 h-px bg-gold-600 group-hover:w-12 transition-all"
+                ></span>
+              </div>
+            </a>
+            <a
+              href=""
+              class="label-card group relative bg-white rounded-sm overflow-hidden border hairline reveal"
+              style="transition-delay: 0.05s"
+            >
+              <div class="aspect-[4/5] overflow-hidden">
+                <img
+                  src="Images/Catalogue/Invictus.jpg"
+                  alt="Perfumería Caballero"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                />
+              </div>
+              <div class="p-6 flex items-center justify-between">
+                <h3 class="font-display text-xl text-wine-950">
+                  Perfumería Caballero
+                </h3>
+                <span
+                  class="w-8 h-px bg-gold-600 group-hover:w-12 transition-all"
+                ></span>
+              </div>
+            </a>
+            <a
+              href=""
+              class="label-card group relative bg-white rounded-sm overflow-hidden border hairline reveal"
+              style="transition-delay: 0.1s"
+            >
+              <div class="aspect-[4/5] overflow-hidden">
+                <img
+                  src="Images/Catalogue/Ambientales.jpeg"
+                  alt="Ambientales"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                />
+              </div>
+              <div class="p-6 flex items-center justify-between">
+                <h3 class="font-display text-xl text-wine-950">Ambientales</h3>
+                <span
+                  class="w-8 h-px bg-gold-600 group-hover:w-12 transition-all"
+                ></span>
+              </div>
+            </a>
+            <a
+              href=""
+              class="label-card group relative bg-white rounded-sm overflow-hidden border hairline reveal"
+              style="transition-delay: 0.15s"
+            >
+              <div class="aspect-[4/5] overflow-hidden">
+                <img
+                  src="Images/Catalogue/Bisunteria.jpeg"
+                  alt="Bisutería"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                />
+              </div>
+              <div class="p-6 flex items-center justify-between">
+                <h3 class="font-display text-xl text-wine-950">Bisutería</h3>
+                <span
+                  class="w-8 h-px bg-gold-600 group-hover:w-12 transition-all"
+                ></span>
+              </div>
+            </a>
+            <a
+              href=""
+              class="label-card group relative bg-white rounded-sm overflow-hidden border hairline reveal"
+              style="transition-delay: 0.2s"
+            >
+              <div class="aspect-[4/5] overflow-hidden">
+                <img
+                  src="Images/Catalogue/Accesorios.jpg"
+                  alt="Accesorios"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                />
+              </div>
+              <div class="p-6 flex items-center justify-between">
+                <h3 class="font-display text-xl text-wine-950">Accesorios</h3>
+                <span
+                  class="w-8 h-px bg-gold-600 group-hover:w-12 transition-all"
+                ></span>
+              </div>
+            </a>
+            <a
+              href="#soon"
+              class="label-card group relative bg-wine-950 rounded-sm overflow-hidden border hairline reveal flex flex-col items-center justify-center text-center p-10 gap-4"
+              style="transition-delay: 0.25s"
+            >
+              <i class="fa-solid fa-bag-shopping text-gold-400 text-3xl"></i>
+              <h3 class="font-display text-xl text-bone">Tienda en línea</h3>
+              <span
+                class="text-gold-400 text-[10px] uppercase tracking-[0.25em]"
+                >Muy pronto</span
+              >
+            </a>
+          </div>
+
+          <div class="text-center mt-14 reveal">
+            <a
+              href="HTML/catalogo.html"
+              class="inline-flex items-center gap-3 border border-wine-900 hover:bg-wine-950 hover:text-bone text-wine-950 px-8 py-4 text-sm uppercase tracking-[0.16em] rounded-sm transition-colors"
+            >
+              Ver catálogo completo
+              <i class="fa-solid fa-arrow-right text-xs"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ BENEFICIOS / STAMP CARD ============ -->
+      <section id="beneficios" class="bg-wine-950 py-28 lg:py-36">
+        <div class="max-w-7xl mx-auto px-6 lg:px-10">
+          <div class="text-center max-w-2xl mx-auto mb-16 reveal">
+            <p class="text-gold-400 uppercase tracking-[0.3em] text-xs mb-4">
+              Beneficios exclusivos
+            </p>
+            <h2 class="font-display text-4xl md:text-5xl text-bone mb-6">
+              Más que perfumes, una membresía
+            </h2>
+            <p class="text-bone/60">
+              Cada compra o recarga suma un sello. Al completar diez, tu próxima
+              recarga es gratis.
+            </p>
+          </div>
+
+          <!-- signature stamp row, drawn from the real loyalty mechanic -->
+          <div
+            class="flex justify-center gap-2.5 sm:gap-3 mb-16 reveal flex-wrap px-4"
+          >
+            <template x-for="i in 10" :key="i">
+              <div
+                class="w-9 h-9 sm:w-10 sm:h-10 rounded-full border flex items-center justify-center"
+                :class="i <= 6 ? 'bg-gold-400 border-gold-400 text-wine-950' : 'border-bone/25 text-bone/25'"
+              >
+                <i class="fa-solid fa-spray-can-sparkles text-xs"></i>
+              </div>
+            </template>
+          </div>
+
+          <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+            <div class="reveal bg-wine-900/60 border hairline rounded-sm p-7">
+              <i
+                class="fa-solid fa-id-card-clip text-gold-400 text-2xl mb-5"
+              ></i>
+              <h3 class="font-display text-xl text-bone mb-3">
+                Recarga gratis
+              </h3>
+              <p class="text-bone/60 text-sm leading-relaxed">
+                Por cada compra o recarga acumulas un sello. Al completar 10, tu
+                próxima recarga es completamente gratis.
+              </p>
+            </div>
+            <div
+              class="reveal bg-wine-900/60 border hairline rounded-sm p-7"
+              style="transition-delay: 0.05s"
+            >
+              <i
+                class="fa-solid fa-cake-candles text-gold-400 text-2xl mb-5"
+              ></i>
+              <h3 class="font-display text-xl text-bone mb-3">Cumpleaños</h3>
+              <p class="text-bone/60 text-sm leading-relaxed">
+                20% en perfumería, 10% en bisutería y una crema de regalo.
+                Válido 5 días antes y después de tu cumpleaños.
+              </p>
+            </div>
+            <div
+              class="reveal bg-wine-900/60 border hairline rounded-sm p-7"
+              style="transition-delay: 0.1s"
+            >
+              <i class="fa-solid fa-leaf text-gold-400 text-2xl mb-5"></i>
+              <h3 class="font-display text-xl text-bone mb-3">Econorecarga</h3>
+              <p class="text-bone/60 text-sm leading-relaxed">
+                Trae tu envase y recarga tu fragancia favorita a un precio
+                preferencial. Menos residuos, más ahorro.
+              </p>
+            </div>
+            <div
+              class="reveal bg-wine-900/60 border hairline rounded-sm p-7"
+              style="transition-delay: 0.15s"
+            >
+              <i class="fa-solid fa-percent text-gold-400 text-2xl mb-5"></i>
+              <h3 class="font-display text-xl text-bone mb-3">
+                Refiere y gana
+              </h3>
+              <p class="text-bone/60 text-sm leading-relaxed">
+                Invita a alguien que aún no compre con nosotros. Si menciona tu
+                nombre, recibes 20% en tu próxima compra.
+              </p>
+            </div>
+          </div>
+
+          <div class="text-center mt-14 reveal">
+            <a
+              href="HTML/blogs/our-benefits.html"
+              class="text-gold-400 hover:text-bone text-sm uppercase tracking-[0.16em] border-b border-gold-400 pb-1 transition-colors"
+            >
+              Conoce todos los beneficios
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ STATS BAND ============ -->
+      <section class="bg-bone border-y hairline py-16">
+        <div
+          class="max-w-7xl mx-auto px-6 lg:px-10 grid grid-cols-2 md:grid-cols-4 gap-10 text-center"
+        >
+          <div class="reveal">
+            <span class="block font-display text-4xl text-wine-950 mb-2"
+              >+8.000</span
+            >
+            <span class="text-[11px] uppercase tracking-widest text-ink/50"
+              >Clientes</span
+            >
+          </div>
+          <div class="reveal" style="transition-delay: 0.05s">
+            <span class="block font-display text-4xl text-wine-950 mb-2"
+              >10+</span
+            >
+            <span class="text-[11px] uppercase tracking-widest text-ink/50"
+              >Años de experiencia</span
+            >
+          </div>
+          <div class="reveal" style="transition-delay: 0.1s">
+            <span class="block font-display text-4xl text-wine-950 mb-2"
+              >$1'500.000</span
+            >
+            <span class="text-[11px] uppercase tracking-widest text-ink/50"
+              >Ahorro promedio al año</span
+            >
+          </div>
+          <div class="reveal" style="transition-delay: 0.15s">
+            <span class="block font-display text-4xl text-wine-950 mb-2"
+              >294</span
+            >
+            <span class="text-[11px] uppercase tracking-widest text-ink/50"
+              >Fragancias</span
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ TESTIMONIOS ============ -->
+      <section id="testimonios" class="bg-bone py-28 lg:py-32">
+        <div class="max-w-4xl mx-auto px-6 lg:px-10 text-center reveal">
+          <p class="text-burgundy-600 uppercase tracking-[0.3em] text-xs mb-5">
+            Lo que dicen de nosotros
+          </p>
+          <div class="text-gold-600 mb-8 text-lg" aria-hidden="true">★★★★★</div>
+          <blockquote
+            class="font-display text-2xl md:text-3xl text-wine-950 leading-snug mb-8"
+          >
+            "Lo que más me gustó es la fragancia, que perdura durante horas. El
+            empaque es fantástico, puedes escoger entre una gran variedad, y el
+            precio es muy accesible. La calidad es excelente — un aroma que
+            conserva su esencia. Lo recomiendo 100% a mis amigos y conocidos."
+          </blockquote>
+          <div class="flex items-center justify-center gap-4">
+            <img
+              src="Images/Testimony.jpg"
+              alt="María Martínez Quiroga"
+              class="w-14 h-14 rounded-full object-cover border-2 border-gold-400"
+            />
+            <div class="text-left">
+              <p class="font-medium text-wine-950">María Martínez Quiroga</p>
+              <p class="text-ink/50 text-sm">Cliente Perfumas</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ DETALLES: FRAGANCIA / ENVASES (tabs) ============ -->
+      <section class="bg-wine-900 py-28 lg:py-32" x-data="{ tab:'fragancia' }">
+        <div class="max-w-6xl mx-auto px-6 lg:px-10">
+          <div class="text-center max-w-2xl mx-auto mb-14 reveal">
+            <p class="text-gold-400 uppercase tracking-[0.3em] text-xs mb-4">
+              Detalles que marcan la diferencia
+            </p>
+            <h2 class="font-display text-4xl md:text-5xl text-bone">
+              Cuidamos cada frasco, cada gota
+            </h2>
+          </div>
+
+          <div class="flex justify-center gap-3 mb-12 reveal">
+            <button
+              @click="tab='fragancia'"
+              :class="tab==='fragancia' ? 'bg-gold-400 text-wine-950' : 'text-bone/60 border hairline'"
+              class="px-6 py-2.5 text-xs uppercase tracking-widest rounded-sm transition-colors"
+            >
+              Fragancia
+            </button>
+            <button
+              @click="tab='envases'"
+              :class="tab==='envases' ? 'bg-gold-400 text-wine-950' : 'text-bone/60 border hairline'"
+              class="px-6 py-2.5 text-xs uppercase tracking-widest rounded-sm transition-colors"
+            >
+              Envases
+            </button>
+          </div>
+
+          <div class="grid md:grid-cols-2 gap-12 items-start">
+            <div>
+              <ul x-show="tab==='fragancia'" x-cloak class="space-y-4">
+                <li class="flex gap-3 text-bone/80">
+                  <i class="fa-solid fa-check text-gold-400 mt-1"></i>Hasta 10
+                  horas de durabilidad
+                </li>
+                <li class="flex gap-3 text-bone/80">
+                  <i class="fa-solid fa-check text-gold-400 mt-1"></i>Elaboradas
+                  a base de aceite
+                </li>
+                <li class="flex gap-3 text-bone/80">
+                  <i class="fa-solid fa-check text-gold-400 mt-1"></i>Preparadas
+                  por nosotros mismos
+                </li>
+                <li class="flex gap-3 text-bone/80">
+                  <i class="fa-solid fa-check text-gold-400 mt-1"></i>Feromonas
+                  y colorante al gusto
+                </li>
+                <li class="flex gap-3 text-bone/80">
+                  <i class="fa-solid fa-check text-gold-400 mt-1"></i
+                  >Inspiración árabe, de revista y francesa
+                </li>
+              </ul>
+              <ul x-show="tab==='envases'" x-cloak class="space-y-4">
+                <li class="flex gap-3 text-bone/80">
+                  <i class="fa-solid fa-check text-gold-400 mt-1"></i>Envases de
+                  vidrio reutilizables
+                </li>
+                <li class="flex gap-3 text-bone/80">
+                  <i class="fa-solid fa-check text-gold-400 mt-1"></i>Genéricos,
+                  cilíndricos o réplicas del original
+                </li>
+                <li class="flex gap-3 text-bone/80">
+                  <i class="fa-solid fa-check text-gold-400 mt-1"></i>Válvulas
+                  plásticas y metálicas
+                </li>
+                <li class="flex gap-3 text-bone/80">
+                  <i class="fa-solid fa-check text-gold-400 mt-1"></i>Perfumeros
+                  plásticos
+                </li>
+                <li class="flex gap-3 text-bone/80">
+                  <i class="fa-solid fa-check text-gold-400 mt-1"></i>Servicio
+                  de grafado y venta de envases sellables
+                </li>
+              </ul>
+            </div>
+
+            <div class="bg-wine-950 border hairline rounded-sm p-8 reveal">
+              <h3 class="font-display text-xl text-gold-400 mb-6">
+                Nuestra tienda física
+              </h3>
+              <ul class="space-y-4">
+                <li class="flex gap-3 text-bone/80">
+                  <i class="fa-solid fa-circle-check text-gold-400 mt-1"></i
+                  >100% soporte y consulta
+                </li>
+                <li class="flex gap-3 text-bone/80">
+                  <i class="fa-solid fa-circle-check text-gold-400 mt-1"></i
+                  >Cualquier método de pago
+                </li>
+                <li class="flex gap-3 text-bone/80">
+                  <i class="fa-solid fa-circle-check text-gold-400 mt-1"></i
+                  >Libertad de preparación y personalización
+                </li>
+                <li class="flex gap-3 text-bone/80">
+                  <i class="fa-solid fa-circle-check text-gold-400 mt-1"></i
+                  >Caja y bolsa para regalo
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ FAQ ============ -->
+      <section id="faq" class="bg-bone py-28 lg:py-32">
+        <div class="max-w-3xl mx-auto px-6 lg:px-10">
+          <div class="text-center mb-14 reveal">
+            <p
+              class="text-burgundy-600 uppercase tracking-[0.3em] text-xs mb-4"
+            >
+              Resolvemos tus dudas
+            </p>
+            <h2 class="font-display text-4xl md:text-5xl text-wine-950">
+              Preguntas frecuentes
+            </h2>
+          </div>
+
+          <div class="space-y-3" x-data="{ open:1 }">
+            <template
+              x-for="(item, idx) in [
+          {q:'¿Son seguras las réplicas de perfume para mi piel?', a:'Sí, nuestras réplicas de perfume son seguras para la piel. Utilizamos productos de alta calidad y seguimos estrictas normas de seguridad en la elaboración de nuestros perfumes.'},
+          {q:'¿Cuál es la diferencia entre un perfume original y una réplica?', a:'La principal diferencia es el precio y la concentración de los ingredientes. Los perfumes originales son producidos por marcas de lujo con concentraciones más altas de fragancia.'},
+          {q:'¿Cómo sé si un perfume de réplica es de buena calidad?', a:'Busca ingredientes seguros para la piel, un aroma intenso y duradero, ausencia de ingredientes tóxicos, y un envase de buena presentación.'},
+          {q:'¿Puedo devolver o cambiar un perfume si no me gusta?', a:'No damos garantía por los perfumes. Te recomendamos revisar tu compra antes de retirarte de la tienda, ya que no realizamos devoluciones ni cambios una vez entregado el producto.'},
+          {q:'¿Cuánto tiempo se demora en preparar un perfume?', a:'La preparación es muy rápida: en promedio, entre 3 y 5 minutos.'},
+          {q:'¿Dan garantía por los envases?', a:'No, no damos devolución por envases. Recomendamos revisar el envase antes de retirarte de la tienda para asegurarte de que esté en buen estado.'}
+        ]"
+              :key="idx"
+            >
+              <div
+                class="border hairline rounded-sm bg-white/60 overflow-hidden reveal"
+              >
+                <button
+                  @click="open === idx ? open = null : open = idx"
+                  class="w-full flex items-center justify-between gap-4 text-left px-6 py-5"
+                >
+                  <span
+                    class="font-display text-lg text-wine-950"
+                    x-text="item.q"
+                  ></span>
+                  <i
+                    class="fa-solid fa-plus text-gold-600 shrink-0 transition-transform duration-300"
+                    :class="open === idx && 'rotate-45'"
+                  ></i>
+                </button>
+                <div
+                  x-show="open === idx"
+                  x-collapse
+                  x-cloak
+                  class="px-6 pb-5 text-ink/65 leading-relaxed"
+                  x-text="item.a"
+                ></div>
+              </div>
+            </template>
+          </div>
+        </div>
+      </section>
+      <!-- ============ COMING SOON / NEWSLETTER ============ -->
+      <section id="soon" class="bg-wine-950 py-24 relative overflow-hidden">
+        <div
+          class="absolute inset-0 opacity-30"
+          style="
+            background-image: radial-gradient(
+              circle at 80% 30%,
+              rgba(202, 169, 105, 0.25),
+              transparent 45%
+            );
+          "
+        ></div>
+        <div
+          class="max-w-3xl mx-auto px-6 lg:px-10 text-center relative reveal"
+        >
+          <p class="text-gold-400 uppercase tracking-[0.3em] text-xs mb-4">
+            El futuro de Perfumas
+          </p>
+          <h2 class="font-display text-4xl md:text-5xl text-bone mb-6">
+            Muy pronto: compra en línea
+          </h2>
+          <p class="text-bone/65 mb-10 max-w-xl mx-auto">
+            Estamos construyendo una tienda en línea para que encuentres,
+            personalices y recibas tu fragancia favorita sin salir de casa. Sé
+            el primero en saberlo.
+          </p>
+
+          <form
+            x-data="{ sent:false, email:'' }"
+            @submit.prevent="sent = true"
+            class="flex flex-col sm:flex-row gap-3 max-w-md mx-auto"
+          >
+            <label for="newsletter-email" class="sr-only"
+              >Correo electrónico</label
+            >
+            <input
+              x-show="!sent"
+              id="newsletter-email"
+              type="email"
+              x-model="email"
+              required
+              placeholder="tu@correo.com"
+              class="flex-1 bg-wine-900 border hairline text-bone placeholder:text-bone/40 rounded-sm px-5 py-3.5 focus:outline-none focus:ring-2 focus:ring-gold-400"
+            />
+            <button
+              x-show="!sent"
+              type="submit"
+              class="bg-gold-400 hover:bg-bone text-wine-950 font-semibold text-sm uppercase tracking-widest px-7 py-3.5 rounded-sm transition-colors"
+            >
+              Notificarme
+            </button>
+            <p
+              x-show="sent"
+              x-cloak
+              class="text-gold-400 font-display text-lg py-3"
+            >
+              Gracias — te avisaremos apenas abramos la tienda.
+            </p>
+          </form>
+          <!-- Nota para desarrollo: conectar este formulario a un servicio de correo (Mailchimp, ConvertKit, etc.) o a un backend propio antes de producción. -->
+        </div>
+      </section>
+
+      <!-- ============ CONTACTO ============ -->
+      <section id="contacto" class="bg-bone py-28 lg:py-32">
+        <div class="max-w-7xl mx-auto px-6 lg:px-10">
+          <div class="text-center max-w-2xl mx-auto mb-16 reveal">
+            <p
+              class="text-burgundy-600 uppercase tracking-[0.3em] text-xs mb-4"
+            >
+              Visítanos
+            </p>
+            <h2 class="font-display text-4xl md:text-5xl text-wine-950">
+              Dos puntos, una misma pasión
+            </h2>
+          </div>
+
+          <div class="grid md:grid-cols-2 gap-8 mb-16">
+            <div
+              class="label-card bg-white border hairline rounded-sm p-8 reveal"
+            >
+              <h3 class="font-display text-2xl text-wine-950 mb-5">Fontibón</h3>
+              <ul class="space-y-3 text-ink/70 mb-6">
+                <li class="flex gap-3">
+                  <i class="fa-solid fa-location-dot text-gold-600 mt-1"></i
+                  >Calle 18 #103a-26
+                </li>
+                <li class="flex gap-3">
+                  <i class="fa-solid fa-phone text-gold-600 mt-1"></i>350 337
+                  0279
+                </li>
+              </ul>
+              <iframe
+                class="w-full rounded-sm"
+                height="260"
+                style="border: 0"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15906.162595768903!2d-74.1562363!3d4.6756559!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9d7b74160ed3%3A0xd5a56e271a40b92a!2sPerfumas!5e0!3m2!1ses-419!2sco!4v1742915049380!5m2!1ses-419!2sco"
+                allowfullscreen
+                title="Ubicación Perfumas Fontibón"
+              ></iframe>
+            </div>
+            <div
+              class="label-card bg-white border hairline rounded-sm p-8 reveal"
+              style="transition-delay: 0.05s"
+            >
+              <h3 class="font-display text-2xl text-wine-950 mb-5">Bonanza</h3>
+              <ul class="space-y-3 text-ink/70 mb-6">
+                <li class="flex gap-3">
+                  <i class="fa-solid fa-location-dot text-gold-600 mt-1"></i>Av.
+                  Calle 72 #70-90
+                </li>
+                <li class="flex gap-3">
+                  <i class="fa-solid fa-phone text-gold-600 mt-1"></i>322 351
+                  3913
+                </li>
+              </ul>
+              <iframe
+                class="w-full rounded-sm"
+                height="260"
+                style="border: 0"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.4870234191894!2d-74.0924765!3d4.6850936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9b16570147d7%3A0x1967ab4f3a23eb93!2zQ2wgNzIgIzcwLTkwLCBCb2dvdMOh!5e0!3m2!1sen!2sco!4v1748872384517!5m2!1sen!2sco"
+                allowfullscreen
+                title="Ubicación Perfumas Bonanza"
+              ></iframe>
+            </div>
+          </div>
+
+          <div class="text-center reveal">
+            <a
+              href="https://wa.me/573503370279"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center gap-3 bg-wine-950 hover:bg-burgundy-600 text-bone px-9 py-4 text-sm uppercase tracking-[0.16em] rounded-sm transition-colors"
+            >
+              Escríbenos por WhatsApp <i class="fa-brands fa-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="bg-wine-950 text-bone pt-20 pb-8">
+      <div class="max-w-7xl mx-auto px-6 lg:px-10">
+        <div class="grid md:grid-cols-4 gap-12 mb-16">
+          <div>
+            <img
+              src="Images/Logo velas artesanales rosa/2.png"
+              alt="Perfumas"
+              class="w-40 mb-5"
+            />
+            <p class="text-bone/60 text-sm leading-relaxed">
+              Perfumería familiar nacida en 2015 en Bogotá. Fragancias de alta
+              calidad y atención cercana, con el propósito de acompañar a cada
+              cliente en su búsqueda del aroma perfecto.
+            </p>
+            <div class="flex gap-4 mt-6 text-lg">
+              <a
+                href="https://www.facebook.com/punto.perfumas"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-bone/60 hover:text-gold-400 transition-colors"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/puntoperfumas?igsh=MThla2RkeXJ3ajBlaw=="
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-bone/60 hover:text-gold-400 transition-colors"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a
+                href="https://www.tiktok.com/@punto.perfumas1?_t=ZS-8wlFb6ZybHE&_r=1"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-bone/60 hover:text-gold-400 transition-colors"
+                ><i class="fa-brands fa-tiktok"></i
+              ></a>
+            </div>
+          </div>
+
+          <div>
+            <h4 class="font-display text-lg text-gold-400 mb-5">Navegación</h4>
+            <ul class="space-y-3 text-bone/60 text-sm">
+              <li>
+                <a href="#top" class="hover:text-gold-400 transition-colors"
+                  >Inicio</a
+                >
+              </li>
+              <li>
+                <a
+                  href="HTML/about-us.html"
+                  class="hover:text-gold-400 transition-colors"
+                  >Nosotros</a
+                >
+              </li>
+              <li>
+                <a
+                  href="HTML/catalogo.html"
+                  class="hover:text-gold-400 transition-colors"
+                  >Catálogo</a
+                >
+              </li>
+              <li>
+                <a
+                  href="HTML/blog.html"
+                  class="hover:text-gold-400 transition-colors"
+                  >Blog</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#contacto"
+                  class="hover:text-gold-400 transition-colors"
+                  >Contáctanos</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="font-display text-lg text-gold-400 mb-5">Explora</h4>
+            <ul class="space-y-3 text-bone/60 text-sm">
+              <li>
+                <a
+                  href="#coleccion"
+                  class="hover:text-gold-400 transition-colors"
+                  >Colección</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#beneficios"
+                  class="hover:text-gold-400 transition-colors"
+                  >Beneficios</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#testimonios"
+                  class="hover:text-gold-400 transition-colors"
+                  >Testimonios</a
+                >
+              </li>
+              <li>
+                <a href="#faq" class="hover:text-gold-400 transition-colors"
+                  >Preguntas frecuentes</a
+                >
+              </li>
+              <li>
+                <span class="text-bone/30">Tienda en línea — pronto</span>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="font-display text-lg text-gold-400 mb-5">Contacto</h4>
+            <ul class="space-y-3 text-bone/60 text-sm">
+              <li class="flex gap-2">
+                <i class="fa-solid fa-location-dot mt-1 text-gold-400"></i>Calle
+                18 #103a-26, Fontibón
+              </li>
+              <li class="flex gap-2">
+                <i class="fa-solid fa-location-dot mt-1 text-gold-400"></i>Av.
+                Calle 72 #70-90, Bonanza
+              </li>
+              <li class="flex gap-2">
+                <i class="fa-solid fa-phone mt-1 text-gold-400"></i>350 337 0279
+                · 322 351 3913
+              </li>
+              <li class="flex gap-2">
+                <i class="fa-solid fa-envelope mt-1 text-gold-400"></i
+                >perfumas2015@gmail.com
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div
+          class="border-t hairline pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-bone/40 text-xs"
+        >
+          <p>
+            © <span id="year"></span> Perfumas. Todos los derechos reservados.
+          </p>
+          <p>Bogotá, Colombia</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Floating WhatsApp CTA -->
+    <a
+      href="https://wa.me/573503370279"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full bg-gold-400 text-wine-950 flex items-center justify-center text-2xl shadow-2xl pulse-ring hover:bg-bone transition-colors"
+      aria-label="Escríbenos por WhatsApp"
+    >
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+
+      if ("IntersectionObserver" in window) {
+        const io = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("in-view");
+                io.unobserve(entry.target);
+              }
+            });
+          },
+          { threshold: 0.15 },
+        );
+
+        // Observe everything already on the page
+        document.querySelectorAll(".reveal").forEach((el) => io.observe(el));
+
+        // Also observe .reveal elements added later (e.g. Alpine's x-for, like the FAQ list)
+        const mo = new MutationObserver((mutations) => {
+          mutations.forEach((m) => {
+            m.addedNodes.forEach((node) => {
+              if (node.nodeType !== 1) return;
+              if (node.classList && node.classList.contains("reveal"))
+                io.observe(node);
+              if (node.querySelectorAll)
+                node
+                  .querySelectorAll(".reveal")
+                  .forEach((el) => io.observe(el));
+            });
+          });
+        });
+        mo.observe(document.body, { childList: true, subtree: true });
+      } else {
+        document
+          .querySelectorAll(".reveal")
+          .forEach((el) => el.classList.add("in-view"));
+      }
+    </script>
+  </body>
+</html>
