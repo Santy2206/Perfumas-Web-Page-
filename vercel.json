@@ -1,0 +1,57 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "rewrites": [
+    {
+      "source": "/tienda",
+      "destination": "https://SHOP_DEPLOYMENT_URL/tienda"
+    },
+    {
+      "source": "/tienda/:path*",
+      "destination": "https://SHOP_DEPLOYMENT_URL/tienda/:path*"
+    },
+    {
+      "source": "/crear",
+      "destination": "https://SHOP_DEPLOYMENT_URL/crear"
+    },
+    {
+      "source": "/crear/:path*",
+      "destination": "https://SHOP_DEPLOYMENT_URL/crear/:path*"
+    },
+    {
+      "source": "/carrito",
+      "destination": "https://SHOP_DEPLOYMENT_URL/carrito"
+    },
+    {
+      "source": "/checkout",
+      "destination": "https://SHOP_DEPLOYMENT_URL/checkout"
+    },
+    {
+      "source": "/producto/:path*",
+      "destination": "https://SHOP_DEPLOYMENT_URL/producto/:path*"
+    },
+    {
+      "source": "/mayoristas",
+      "destination": "https://SHOP_DEPLOYMENT_URL/mayoristas"
+    },
+    {
+      "source": "/mayoristas/:path*",
+      "destination": "https://SHOP_DEPLOYMENT_URL/mayoristas/:path*"
+    },
+    {
+      "source": "/cuenta",
+      "destination": "https://SHOP_DEPLOYMENT_URL/cuenta"
+    },
+    {
+      "source": "/cuenta/:path*",
+      "destination": "https://SHOP_DEPLOYMENT_URL/cuenta/:path*"
+    },
+    {
+      "source": "/api/:path*",
+      "destination": "https://SHOP_DEPLOYMENT_URL/api/:path*"
+    },
+    {
+      "source": "/_next/:path*",
+      "destination": "https://SHOP_DEPLOYMENT_URL/_next/:path*"
+    }
+  ]
+}

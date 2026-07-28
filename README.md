@@ -1,27 +1,44 @@
-# Perfumas Web
+# Perfumas Web Page
+
+Two projects, one domain ([perfumas.com.co](https://perfumas.com.co)):
 
 | Path | Role |
 |------|------|
-| [`PERFUMAS-E-COMMERCE/`](./PERFUMAS-E-COMMERCE/) | **Next.js storefront** |
-| [`PERFUMAS-E-COMMERCE/backend/`](./PERFUMAS-E-COMMERCE/backend/) | **Medusa v2** (full install + Perfumas custom routes) |
-| [`perfumas-backend/`](./perfumas-backend/) | Earlier scaffold copy (prefer `PERFUMAS-E-COMMERCE/backend`) |
-| `index.html`, `HTML/`, `Images/` | Legacy static site |
+| [`website/`](./website/) | **MAIN** — marketing site (hero, colección, beneficios, FAQ, WhatsApp) |
+| [`PERFUMAS-E-COMMERCE/`](./PERFUMAS-E-COMMERCE/) | **SECOND** — Next.js shop + Medusa (`backend/`) |
+| [`perfumas-backend/`](./perfumas-backend/) | Redirect stub only |
 
-## Storefront
+## URL map
+
+| URL | Serves |
+|-----|--------|
+| `/` | Marketing (`website/`) |
+| `/HTML/*`, `/Images/*` | Marketing pages/assets |
+| `/tienda`, `/crear`, `/carrito`, `/checkout`, `/producto/*`, `/mayoristas`, `/cuenta`, `/api/*` | E-commerce |
+
+See [`vercel.json`](./vercel.json) for same-domain rewrites.
+
+## Develop
 
 ```bash
+# Marketing
+cd website && npx serve .
+
+# Shop
 cd PERFUMAS-E-COMMERCE
-npm install
-npm run dev
+npm run dev              # :3000
+npm run backend:dev      # Medusa :9000
 ```
 
-## Medusa backend
+## Database
 
-```bash
-cd PERFUMAS-E-COMMERCE/backend
-docker compose up -d   # requires Docker Desktop
-# set DATABASE_URL in apps/backend/.env (local or Supabase)
-npm run backend:dev
-```
+Supabase Postgres URI → `PERFUMAS-E-COMMERCE/backend/apps/backend/.env` as `DATABASE_URL`  
+(not in the marketing site; not in storefront `.env.local` as a product DB).
 
-See `PERFUMAS-E-COMMERCE/CUTOVER.md` and `PERFUMAS-E-COMMERCE/backend/ADMIN.md`.
+## Funnel smoke test
+
+1. Open marketing `/`
+2. Click **Crear mi fragancia** → `/crear`
+3. Click **Tienda** → `/tienda`
+4. Bag icon → `/carrito`
+5. WhatsApp still works for consult
