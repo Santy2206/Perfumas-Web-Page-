@@ -37,7 +37,6 @@ const requiredFiles = [
   "HTML/blog.html",
   "HTML/contact-us.html",
   "HTML/catalogo.html",
-  "HTML/fragance-catalogue.html",
   "HTML/blogs/our-benefits.html",
   "HTML/blogs/fragrance-science.html",
   "HTML/blogs/gift-guide.html",
@@ -143,7 +142,11 @@ async function runServeChecks() {
   try {
     const home = await fetch(`http://127.0.0.1:${port}/`);
     const html = await home.text();
-    if (home.ok && html.includes("Perfumas") && html.includes("<!DOCTYPE html")) {
+    if (
+      home.ok &&
+      html.includes("Perfumas") &&
+      /<!doctype html>/i.test(html)
+    ) {
       ok("GET / returns marketing homepage");
     } else {
       fail("GET / did not look like marketing homepage");
