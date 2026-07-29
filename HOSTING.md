@@ -1,7 +1,7 @@
 # Same-domain hosting — perfumas.com.co
 
-Marketing (`website/`) is the primary site at `/`.  
-E-commerce (`PERFUMAS-E-COMMERCE/`) is the Next.js shop. Medusa is the commerce API.
+Marketing is this repo (static HTML at the root).  
+E-commerce is a **separate GitHub repo**: [Perfumas-E-Commerce](https://github.com/Santy2206/Perfumas-E-Commerce) (Next.js shop + Medusa).
 
 ## URL map (Hostinger + shop subdomain)
 
@@ -14,38 +14,38 @@ E-commerce (`PERFUMAS-E-COMMERCE/`) is the Next.js shop. Medusa is the commerce 
 
 ---
 
-## Hostinger (shared / Web hosting) — fix “needs index.html”
+## Hostinger (shared / Web hosting)
 
-Hostinger serves **`public_html/`**. It requires **`public_html/index.html`**.
+Hostinger serves **`public_html/`** and needs **`public_html/index.html`**.
 
-Your homepage lives in [`website/index.html`](./website/index.html). If you upload the **whole git repo**, there is no `index.html` at the Hostinger root → blank / missing index error.
+This repo already has `index.html` at the root (plus `HTML/`, `Images/`, `.htaccess`).
 
-### Package for upload
-
-From the repo root (Windows):
+### Option A — File Manager package
 
 ```powershell
-powershell -File scripts/package-hostinger.ps1
+npm run package
 ```
 
-This builds [`deploy/hostinger-public_html/`](./deploy/hostinger-public_html/) with:
+Builds `deploy/hostinger-public_html/` with:
 
 ```
 index.html
 HTML/
 Images/
-.htaccess          ← redirects /tienda, /crear, … to the shop host
+.htaccess
 shop-config.js
 ```
 
-### Upload steps
-
-1. Hostinger → **Files** → **File Manager** → open **`public_html`**.
-2. Remove the default Hostinger page and any wrong full-repo upload.
-3. Upload **everything inside** `deploy/hostinger-public_html/` (not the folder wrapper).
+1. Hostinger → **Files** → **File Manager** → `public_html`.
+2. Remove the default Hostinger page / wrong upload.
+3. Upload **everything inside** `deploy/hostinger-public_html/`.
 4. Confirm **`public_html/index.html`** exists.
-5. Open `https://perfumas.com.co/` — marketing homepage should load.
-6. Edit `public_html/.htaccess` and set the shop URL if it is not yet `https://tienda.perfumas.com.co` (use your temporary `*.vercel.app` URL until DNS is ready).
+5. Open `https://perfumas.com.co/`.
+6. If the shop URL is not ready, edit `public_html/.htaccess` and point redirects at your temporary `*.vercel.app` host.
+
+### Option B — Hostinger ↔ GitHub
+
+Connect this marketing repo and set the deploy root to the **repository root** (not a nested `website/` folder). Do not deploy the shop repo into `public_html`.
 
 **Do not** put Next.js or Medusa inside `public_html` — shared hosting cannot run them.
 
@@ -55,11 +55,11 @@ See also [`deploy/README.md`](./deploy/README.md).
 
 ## Shop on Vercel + Medusa
 
-Full checklist: [`PERFUMAS-E-COMMERCE/DEPLOY.md`](./PERFUMAS-E-COMMERCE/DEPLOY.md).
+Full checklist: [Perfumas-E-Commerce `DEPLOY.md`](https://github.com/Santy2206/Perfumas-E-Commerce/blob/main/DEPLOY.md).
 
 Summary:
 
-1. Vercel project, root directory `PERFUMAS-E-COMMERCE`, env from `.env.example` + `.seed-output.json`.
+1. Vercel project from **Perfumas-E-Commerce** (repo root = Next app), env from `.env.example` + Medusa `.seed-output.json`.
 2. Domain `tienda.perfumas.com.co` → Vercel; Hostinger DNS CNAME `tienda` → Vercel.
 3. Medusa host `api.perfumas.com.co` with Supabase `DATABASE_URL`, migrate + seed.
 4. Medusa `STORE_CORS` / `AUTH_CORS` must include:
@@ -73,8 +73,8 @@ Summary:
 
 ### Option A — two Vercel projects + domain rewrites
 
-1. Deploy **marketing** as a static project with root directory `website/`, domain `perfumas.com.co`.
-2. Deploy **shop** as Next.js with root directory `PERFUMAS-E-COMMERCE`.
+1. Deploy **marketing** as a static project from this repo root, domain `perfumas.com.co`.
+2. Deploy **shop** from [Perfumas-E-Commerce](https://github.com/Santy2206/Perfumas-E-Commerce).
 3. On the marketing project, edit [`vercel.json`](./vercel.json): replace every `SHOP_DEPLOYMENT_URL` with your shop host (no trailing slash).
 4. Attach `perfumas.com.co` to the marketing project.
 
@@ -84,7 +84,7 @@ Keep `/tienda` on the same hostname without a redirect:
 
 ```
 /tienda /crear /carrito /checkout /producto /mayoristas /cuenta /api /_next  →  Next.js
-/*                                                                         →  website/
+/*                                                                         →  marketing static
 ```
 
 ---
@@ -92,11 +92,16 @@ Keep `/tienda` on the same hostname without a redirect:
 ## Local simulation
 
 ```bash
-# Terminal 1 — marketing
-cd website && npx serve -p 5000
+# Terminal 1 — marketing (this repo)
+npm run dev
 
-# Terminal 2 — shop
-cd PERFUMAS-E-COMMERCE && npm run dev
+# Terminal 2 — shop (clone Perfumas-E-Commerce separately)
+cd ../Perfumas-E-Commerce && npm run dev
 ```
 
-Open marketing at `http://localhost:5000`. Shop links (`/tienda`) need the Next app (or Hostinger `.htaccess` redirects in production).
+Open marketing at `http://localhost:5000`. Shop paths need the Next app (or production `.htaccess` redirects).
+
+```bash
+npm test
+npm run test:serve
+```

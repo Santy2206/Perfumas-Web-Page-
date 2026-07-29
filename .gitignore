@@ -1,0 +1,18 @@
+# Generated Hostinger package
+deploy/hostinger-public_html/
+
+# Archives / local junk
+website.zip
+*.zip
+.DS_Store
+Thumbs.db
+
+# Leftover monorepo folder (shop lives in sibling Perfumas-E-Commerce)
+PERFUMAS-E-COMMERCE/
+
+# Editor / tooling
+.cursor/
+node_modules/
+.vercel/
+.env
+.env.local

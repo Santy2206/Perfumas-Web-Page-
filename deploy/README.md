@@ -1,9 +1,10 @@
 # Hostinger upload package (generated)
 
-Do **not** commit large generated trees if you prefer — regenerate with:
+Regenerate with:
 
 ```powershell
-powershell -File scripts/package-hostinger.ps1
+npm run package
+# or: powershell -File scripts/package-hostinger.ps1
 ```
 
 Then in Hostinger File Manager → `public_html`:
@@ -12,3 +13,5 @@ Then in Hostinger File Manager → `public_html`:
 2. Upload **all files and folders inside** `deploy/hostinger-public_html/` (not the folder itself).
 3. Confirm `public_html/index.html` exists.
 4. Edit `.htaccess` and set the shop host if it is not `https://tienda.perfumas.com.co` yet.
+
+This folder is gitignored; always regenerate before upload.

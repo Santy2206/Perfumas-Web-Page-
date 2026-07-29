@@ -1,44 +1,54 @@
-# Perfumas Web Page
+# Perfumas Web Page (marketing)
 
-Two projects, one domain ([perfumas.com.co](https://perfumas.com.co)):
+Static marketing site for [perfumas.com.co](https://perfumas.com.co) — hero, colección, beneficios, FAQ, WhatsApp.
+
+The **shop** lives in a separate repo: [Perfumas-E-Commerce](https://github.com/Santy2206/Perfumas-E-Commerce) (Next.js + Medusa).
+
+## Layout
+
+Marketing files sit at the **repo root** so Hostinger (and Git deploy) can serve `index.html` directly:
 
 | Path | Role |
 |------|------|
-| [`website/`](./website/) | **MAIN** — marketing site (hero, colección, beneficios, FAQ, WhatsApp) |
-| [`PERFUMAS-E-COMMERCE/`](./PERFUMAS-E-COMMERCE/) | **SECOND** — Next.js shop + Medusa (`backend/`) |
-| [`perfumas-backend/`](./perfumas-backend/) | Redirect stub only |
+| `index.html` | Homepage |
+| `HTML/` | About, blog, contact, catalogue pages |
+| `Images/` | Brand and page assets |
+| `.htaccess` | Redirects `/tienda`, `/crear`, … → shop host |
+| `shop-config.js` | Optional shop origin for pages |
+| `scripts/package-hostinger.ps1` | Build upload package |
+| `deploy/hostinger-public_html/` | Generated Hostinger package |
+| [`HOSTING.md`](./HOSTING.md) | Hostinger + shop subdomain guide |
 
 ## URL map
 
 | URL | Serves |
 |-----|--------|
-| `/` | Marketing (`website/`) |
-| `/HTML/*`, `/Images/*` | Marketing pages/assets |
-| `/tienda`, `/crear`, `/carrito`, `/checkout`, `/producto/*`, `/mayoristas`, `/cuenta`, `/api/*` | E-commerce |
-
-See [`vercel.json`](./vercel.json) for same-domain rewrites.
+| `/` , `/HTML/*`, `/Images/*` | This marketing site |
+| `/tienda`, `/crear`, `/carrito`, … | `.htaccess` → [shop on Vercel](https://github.com/Santy2206/Perfumas-E-Commerce) |
 
 ## Develop
 
 ```bash
-# Marketing
-cd website && npx serve .
-
-# Shop
-cd PERFUMAS-E-COMMERCE
-npm run dev              # :3000
-npm run backend:dev      # Medusa :9000
+npm run dev
 ```
 
-## Database
+Open `http://localhost:5000`.
 
-Supabase Postgres URI → `PERFUMAS-E-COMMERCE/backend/apps/backend/.env` as `DATABASE_URL`  
-(not in the marketing site; not in storefront `.env.local` as a product DB).
+## Test
 
-## Funnel smoke test
+```bash
+npm test              # file + content smoke checks
+npm run test:serve    # same + local HTTP checks
+```
 
-1. Open marketing `/`
-2. Click **Crear mi fragancia** → `/crear`
-3. Click **Tienda** → `/tienda`
-4. Bag icon → `/carrito`
-5. WhatsApp still works for consult
+## Hostinger
+
+```powershell
+npm run package
+# or: powershell -File scripts/package-hostinger.ps1
+```
+
+Upload contents of `deploy/hostinger-public_html/` into `public_html/`.  
+Because the site already lives at the repo root, connecting Hostinger → this GitHub repo also works if the document root is the clone root.
+
+See [`HOSTING.md`](./HOSTING.md).

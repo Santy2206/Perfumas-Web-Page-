@@ -1,2 +1,2 @@
-# Generated Hostinger upload tree (regenerate with scripts/package-hostinger.ps1)
-deploy/hostinger-public_html/
+# Generated Hostinger package
+hostinger-public_html/
