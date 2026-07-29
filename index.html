@@ -253,21 +253,18 @@
       class="fixed inset-x-0 top-0 z-50 transition-all duration-500"
     >
       <div
-        class="max-w-7xl mx-auto px-6 lg:px-10 flex items-center justify-between"
+        class="max-w-7xl mx-auto px-6 lg:px-10 flex items-center justify-between gap-4"
       >
-        <a href="#top" class="flex items-center gap-3 group">
+        <a href="#top" class="flex shrink-0 items-center group">
           <img
             src="Images/Logo velas artesanales rosa/Perfumas-two.png"
             alt="Perfumas"
             class="h-9 md:h-11 w-auto"
           />
-          <span class="font-display text-xl md:text-2xl tracking-wide text-bone"
-            >Perfumas</span
-          >
         </a>
 
         <nav
-          class="hidden lg:flex items-center gap-9 text-[11px] uppercase tracking-[0.22em] text-bone/85"
+          class="hidden xl:flex flex-1 items-center justify-center gap-5 2xl:gap-7 text-[11px] uppercase tracking-[0.18em] text-bone/85 whitespace-nowrap"
         >
           <a href="#coleccion" class="hover:text-gold-400 transition-colors"
             >Colección</a
@@ -294,7 +291,7 @@
           >
         </nav>
 
-        <div class="hidden lg:flex items-center gap-5">
+        <div class="hidden xl:flex shrink-0 items-center gap-4">
           <a
             href="/carrito"
             class="text-bone hover:text-gold-400 text-lg transition-colors"
@@ -304,7 +301,7 @@
           </a>
           <a
             href="/tienda"
-            class="inline-flex items-center gap-2 border hairline hover:border-gold-400 text-bone hover:text-gold-400 text-[11px] font-semibold uppercase tracking-[0.18em] px-5 py-3 rounded-sm transition-colors"
+            class="inline-flex items-center gap-2 border hairline hover:border-gold-400 text-bone hover:text-gold-400 text-[11px] font-semibold uppercase tracking-[0.18em] px-4 py-2.5 rounded-sm transition-colors"
           >
             Comprar
           </a>
@@ -312,7 +309,7 @@
             href="https://wa.me/573503370279"
             target="_blank"
             rel="noopener noreferrer"
-            class="inline-flex items-center gap-2 bg-gold-400 hover:bg-gold-300 text-wine-950 text-[11px] font-semibold uppercase tracking-[0.18em] px-6 py-3 rounded-sm transition-colors"
+            class="inline-flex items-center gap-2 bg-gold-400 hover:bg-gold-300 text-wine-950 text-[11px] font-semibold uppercase tracking-[0.18em] px-5 py-2.5 rounded-sm transition-colors"
           >
             Escríbenos <i class="fa-brands fa-whatsapp"></i>
           </a>
@@ -320,7 +317,7 @@
 
         <button
           @click="mobileOpen=true"
-          class="lg:hidden text-bone text-2xl"
+          class="xl:hidden text-bone text-2xl"
           aria-label="Abrir menú"
         >
           <i class="fa-solid fa-bars"></i>
