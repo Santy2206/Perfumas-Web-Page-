@@ -1,0 +1,24 @@
+# Hostinger public_html — Perfumas marketing + redirects to Next.js shop
+#
+# Before go-live: set SHOP_ORIGIN below to your Vercel shop host
+# (subdomain recommended: tienda.perfumas.com.co → Vercel).
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # --- Shop origin (no trailing slash) ---
+  # After DNS: https://tienda.perfumas.com.co
+  # Or temporarily: https://your-project.vercel.app
+  # Change this host to your Vercel URL until tienda.perfumas.com.co DNS is live.
+  RewriteCond %{REQUEST_URI} ^/(tienda|crear|carrito|checkout|producto|mayoristas|cuenta|api|_next)(/|$)
+  RewriteRule ^(.*)$ https://tienda.perfumas.com.co/$1 [R=302,L,NE,QSA]
+
+  # Prefer index.html for directory requests
+  DirectoryIndex index.html
+</IfModule>
+
+# Security / cache basics (safe defaults)
+<IfModule mod_headers.c>
+  Header set X-Content-Type-Options "nosniff"
+</IfModule>
