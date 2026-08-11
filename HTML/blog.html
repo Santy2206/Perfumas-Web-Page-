@@ -37,7 +37,7 @@
       content="Guías, consejos y la ciencia detrás de cada aroma."
     />
 
-    <meta name="theme-color" content="#3a1010" />
+    <meta name="theme-color" content="#0a0a0a" />
     <link rel="icon" type="image/png" href="../Images/Perfumas-logo.png" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -53,16 +53,17 @@
         theme: {
           extend: {
             colors: {
-              ink: "#201411",
+              ink: "#0a0a0a",
               bone: "#f5efe1",
+              paper: "#ffffff",
+              "paper-soft": "#f7f4ec",
               wine: {
-                950: "#230a0b",
-                900: "#3a1010",
-                800: "#5c1a1a",
-                700: "#7a2222",
-                600: "#95302f",
+                950: "#0a0a0a",
+                900: "#141414",
+                800: "#1f1f1f",
+                700: "#2a2a2a",
+                600: "#333333",
               },
-              burgundy: { 600: "#800020", 500: "#9c1230" },
               gold: {
                 100: "#f2e4c2",
                 300: "#ddbd85",
@@ -126,15 +127,15 @@
       }
       body {
         font-family: "Work Sans", sans-serif;
-        background: #f5efe1;
-        color: #201411;
+        background: #ffffff;
+        color: #0a0a0a;
       }
       .font-display {
         font-family: "Fraunces", serif;
       }
       ::selection {
         background: #caa969;
-        color: #230a0b;
+        color: #0a0a0a;
       }
       .reveal {
         opacity: 0;
@@ -233,12 +234,17 @@
       <div
         class="max-w-7xl mx-auto px-6 lg:px-10 flex items-center justify-between"
       >
-        <a href="../index.html" class="flex shrink-0 items-center">
+        <a href="../index.html" class="flex shrink-0 items-center gap-2.5 group">
           <img
-            src="../Images/Logo velas artesanales rosa/Perfumas-two.png"
-            alt="Perfumas"
-            class="h-9 md:h-11 w-auto"
+            src="../Images/Perfumas-logo.png"
+            alt=""
+            class="h-8 md:h-9 w-auto"
+            aria-hidden="true"
           />
+          <span
+            class="font-display text-xl md:text-2xl text-gold-400 tracking-wide group-hover:text-gold-100 transition-colors"
+            >Perfumas</span
+          >
         </a>
 
         <nav
@@ -313,11 +319,17 @@
       class="fixed inset-0 z-[100] bg-wine-950/98 backdrop-blur-lg flex flex-col"
     >
       <div class="flex justify-between items-center px-6 py-6">
-        <img
-          src="../Images/Logo velas artesanales rosa/Perfumas-two.png"
-          alt="Perfumas"
-          class="h-9"
-        />
+        <a href="../index.html" class="flex items-center gap-2.5" @click="mobileOpen=false">
+          <img
+            src="../Images/Perfumas-logo.png"
+            alt=""
+            class="h-8 w-auto"
+            aria-hidden="true"
+          />
+          <span class="font-display text-xl text-gold-400 tracking-wide"
+            >Perfumas</span
+          >
+        </a>
         <button
           @click="mobileOpen=false"
           class="text-bone text-2xl"
@@ -371,7 +383,7 @@
       </section>
 
       <!-- ============ ARTÍCULOS ============ -->
-      <section class="bg-bone py-24 lg:py-28">
+      <section class="bg-paper py-24 lg:py-28">
         <div class="max-w-7xl mx-auto px-6 lg:px-10">
           <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
             <article
@@ -403,7 +415,7 @@
                 </p>
                 <a
                   href="./blogs/our-benefits.html"
-                  class="inline-flex items-center gap-2 text-wine-950 text-xs uppercase tracking-widest font-semibold group-hover:text-burgundy-600 transition-colors"
+                  class="inline-flex items-center gap-2 text-wine-950 text-xs uppercase tracking-widest font-semibold group-hover:text-gold-400 transition-colors"
                   >Leer artículo
                   <i class="fa-solid fa-arrow-right text-[10px]"></i
                 ></a>
@@ -442,7 +454,7 @@
                 </p>
                 <a
                   href="./blogs/fragrance-science.html"
-                  class="inline-flex items-center gap-2 text-wine-950 text-xs uppercase tracking-widest font-semibold group-hover:text-burgundy-600 transition-colors"
+                  class="inline-flex items-center gap-2 text-wine-950 text-xs uppercase tracking-widest font-semibold group-hover:text-gold-400 transition-colors"
                   >Leer artículo
                   <i class="fa-solid fa-arrow-right text-[10px]"></i
                 ></a>
@@ -480,7 +492,7 @@
                 </p>
                 <a
                   href="./blogs/occasion-guides.html"
-                  class="inline-flex items-center gap-2 text-wine-950 text-xs uppercase tracking-widest font-semibold group-hover:text-burgundy-600 transition-colors"
+                  class="inline-flex items-center gap-2 text-wine-950 text-xs uppercase tracking-widest font-semibold group-hover:text-gold-400 transition-colors"
                   >Leer artículo
                   <i class="fa-solid fa-arrow-right text-[10px]"></i
                 ></a>
@@ -518,7 +530,7 @@
                 </p>
                 <a
                   href="./blogs/personal-style.html"
-                  class="inline-flex items-center gap-2 text-wine-950 text-xs uppercase tracking-widest font-semibold group-hover:text-burgundy-600 transition-colors"
+                  class="inline-flex items-center gap-2 text-wine-950 text-xs uppercase tracking-widest font-semibold group-hover:text-gold-400 transition-colors"
                   >Leer artículo
                   <i class="fa-solid fa-arrow-right text-[10px]"></i
                 ></a>
@@ -556,7 +568,7 @@
                 </p>
                 <a
                   href="./blogs/gift-guide.html"
-                  class="inline-flex items-center gap-2 text-wine-950 text-xs uppercase tracking-widest font-semibold group-hover:text-burgundy-600 transition-colors"
+                  class="inline-flex items-center gap-2 text-wine-950 text-xs uppercase tracking-widest font-semibold group-hover:text-gold-400 transition-colors"
                   >Leer artículo
                   <i class="fa-solid fa-arrow-right text-[10px]"></i
                 ></a>
@@ -587,11 +599,18 @@
       <div class="max-w-7xl mx-auto px-6 lg:px-10">
         <div class="grid md:grid-cols-4 gap-12 mb-16">
           <div>
-            <img
-              src="../Images/Logo velas artesanales rosa/2.png"
-              alt="Perfumas"
-              class="w-40 mb-5"
-            />
+            <a href="../index.html" class="inline-flex items-center gap-3 mb-5 group">
+              <img
+                src="../Images/Perfumas-logo.png"
+                alt=""
+                class="h-10 w-auto"
+                aria-hidden="true"
+              />
+              <span
+                class="font-display text-2xl text-gold-400 tracking-wide group-hover:text-gold-100 transition-colors"
+                >Perfumas</span
+              >
+            </a>
             <p class="text-bone/60 text-sm leading-relaxed">
               Perfumería familiar nacida en 2015 en Bogotá. Fragancias de alta
               calidad y atención cercana, con el propósito de acompañar a cada
@@ -742,7 +761,7 @@
       href="https://wa.me/573503370279"
       target="_blank"
       rel="noopener noreferrer"
-      class="fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full bg-gold-400 text-wine-950 flex items-center justify-center text-2xl shadow-2xl pulse-ring hover:bg-bone transition-colors"
+      class="fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full bg-gold-400 text-wine-950 flex items-center justify-center text-2xl shadow-2xl pulse-ring hover:bg-gold-100 transition-colors"
       aria-label="Escríbenos por WhatsApp"
     >
       <i class="fa-brands fa-whatsapp"></i>
