@@ -237,18 +237,26 @@
       <div
         class="max-w-7xl mx-auto px-6 lg:px-10 flex items-center justify-between"
       >
-        <a href="../index.html" class="flex shrink-0 items-center gap-2.5 group">
-          <img
-            src="../Images/Perfumas-logo.png"
-            alt=""
-            class="h-8 md:h-9 w-auto"
-            aria-hidden="true"
-          />
-          <span
-            class="font-display text-xl md:text-2xl text-gold-400 tracking-wide group-hover:text-gold-100 transition-colors"
-            >Perfumas</span
+        <span class="flex shrink-0 items-center gap-2.5">
+          <a
+            href="../index.html"
+            class="shrink-0 transition-opacity hover:opacity-80"
+            aria-label="Ir al sitio Perfumas"
+            title="Sitio Perfumas"
           >
-        </a>
+            <img
+              src="../Images/Perfumas-logo.png"
+              alt=""
+              class="h-8 md:h-9 w-auto"
+              aria-hidden="true"
+            />
+          </a>
+          <a
+            href="/tienda"
+            class="font-display text-xl md:text-2xl text-gold-400 tracking-wide hover:text-gold-100 transition-colors"
+            >Perfumas</a
+          >
+        </span>
 
         <nav
           class="hidden lg:flex items-center gap-5 xl:gap-7 text-[11px] uppercase tracking-[0.18em] text-bone/85 whitespace-nowrap"
@@ -322,17 +330,28 @@
       class="fixed inset-0 z-[100] bg-wine-950/98 backdrop-blur-lg flex flex-col"
     >
       <div class="flex justify-between items-center px-6 py-6">
-        <a href="../index.html" class="flex items-center gap-2.5" @click="mobileOpen=false">
-          <img
-            src="../Images/Perfumas-logo.png"
-            alt=""
-            class="h-8 w-auto"
-            aria-hidden="true"
-          />
-          <span class="font-display text-xl text-gold-400 tracking-wide"
-            >Perfumas</span
+        <span class="flex items-center gap-2.5">
+          <a
+            href="../index.html"
+            class="shrink-0 transition-opacity hover:opacity-80"
+            @click="mobileOpen=false"
+            aria-label="Ir al sitio Perfumas"
+            title="Sitio Perfumas"
           >
-        </a>
+            <img
+              src="../Images/Perfumas-logo.png"
+              alt=""
+              class="h-8 w-auto"
+              aria-hidden="true"
+            />
+          </a>
+          <a
+            href="/tienda"
+            class="font-display text-xl text-gold-400 tracking-wide hover:text-gold-100 transition-colors"
+            @click="mobileOpen=false"
+            >Perfumas</a
+          >
+        </span>
         <button
           @click="mobileOpen=false"
           class="text-bone text-2xl"
@@ -665,18 +684,26 @@
       <div class="max-w-7xl mx-auto px-6 lg:px-10">
         <div class="grid md:grid-cols-4 gap-12 mb-16">
           <div>
-            <a href="../index.html" class="inline-flex items-center gap-3 mb-5 group">
-              <img
-                src="../Images/Perfumas-logo.png"
-                alt=""
-                class="h-10 w-auto"
-                aria-hidden="true"
-              />
-              <span
-                class="font-display text-2xl text-gold-400 tracking-wide group-hover:text-gold-100 transition-colors"
-                >Perfumas</span
+            <span class="inline-flex items-center gap-3 mb-5">
+              <a
+                href="../index.html"
+                class="shrink-0 transition-opacity hover:opacity-80"
+                aria-label="Ir al sitio Perfumas"
+                title="Sitio Perfumas"
               >
-            </a>
+                <img
+                  src="../Images/Perfumas-logo.png"
+                  alt=""
+                  class="h-10 w-auto"
+                  aria-hidden="true"
+                />
+              </a>
+              <a
+                href="/tienda"
+                class="font-display text-2xl text-gold-400 tracking-wide hover:text-gold-100 transition-colors"
+                >Perfumas</a
+              >
+            </span>
             <p class="text-bone/60 text-sm leading-relaxed">
               Perfumería familiar nacida en 2015 en Bogotá. Fragancias de alta
               calidad y atención cercana, con el propósito de acompañar a cada
